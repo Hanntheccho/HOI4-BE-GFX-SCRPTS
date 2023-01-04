@@ -1,0 +1,254 @@
+guiTypes = {
+	containerWindowType = {
+		name = "COL_national_rebuilding_effort_open"
+		size = { width = 220 height = 128 }
+		position = { x = 0 y = 289 }
+	
+		buttonType = {
+			name = "COL_national_rebuilding_effort_button"
+			spriteType = "GFX_icon_occupied_territories"
+			position = { x = 500 y = -45 }
+		}
+	}
+	
+	containerWindowType = {
+		name = "COL_national_rebuilding_effort_window"
+		position = { x=0 y=0 }	
+		size = { width = 900 height = 592 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		fade_type = linear
+		click_to_front = no
+		clipping = yes
+		moveable = yes
+		#verticalScrollbar = "right_vertical_slider"
+		
+		show_position = { x=0 y =45 }
+		hide_animation_type = decelerated
+		show_animation_type = accelerated
+		animation_time = 200
+		
+		iconType = {
+			name = "COL_GUI_Bar_stance"
+			spriteType = "GFX_COL_GUI_Bar"
+			position = { x = 100 y = 125 }
+		}
+
+		iconType = {
+			name = "COL_GUI_Bar_secured"
+			spriteType = "GFX_COL_GUI_Bar"
+			position = { x = 100 y = 195 }
+		}
+		
+		#iconType = {
+		#	name = "COL_GUI_Bar_Tick"
+		#	spriteType = "GFX_COL_GUI_Bar_Tick"
+		#}
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		
+		buttonType = {
+			name = "COL_close_button"
+			position = { x = -43 y = 5 }
+			spriteType = "GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+		}
+		
+		buttonType = {
+			name = "COL_president_button"
+			position = { x = 200 y = 250 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_parliament_button"
+			position = { x = 150 y = 325 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_judiciary_button"
+			position = { x = 250 y = 325 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_defense_button"
+			position = { x = 100 y = 400 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_economic_button"
+			position = { x = 200 y = 400 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_foreign_button"
+			position = { x = 300 y = 400 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_educational_button"
+			position = { x = 50 y = 475 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_agricultural_button"
+			position = { x = 150 y = 475 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_cultural_button"
+			position = { x = 250 y = 475 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		buttonType = {
+			name = "COL_security_button"
+			position = { x = 350 y = 475 }
+			spriteType = "GFX_add_pol_idea_button"
+		}
+		
+		#OPTION 1
+		buttonType = {
+			name = "COL_button1"
+			position = { x = 600 y = 375 }
+			spriteType = "GFX_sort_button_100x29_2"
+			buttonFont = "Arialsmall"
+			buttonText = "Option 1"
+			pdx_tooltip = button1_tooltip
+		}
+		
+		#OPTION 2
+		buttonType = {
+			name = "COL_button2"
+			position = { x = 700 y = 375 }
+			spriteType = "GFX_sort_button_100x29_2"
+			buttonFont = "Arialsmall"
+			buttonText = "Option 2"
+			pdx_tooltip = button2_tooltip
+		}
+		
+		#OPTION 3
+		buttonType = {
+			name = "COL_button3"
+			position = { x = 600 y = 450 }
+			spriteType = "GFX_sort_button_100x29_2"
+			buttonFont = "Arialsmall"
+			buttonText = "Option 3"
+			pdx_tooltip = button3_tooltip
+		}
+		
+		#OPTION 4
+		buttonType = {
+			name = "COL_button4"
+			position = { x = 700 y = 450 }
+			spriteType = "GFX_sort_button_100x29_2"
+			buttonFont = "Arialsmall"
+			buttonText = "Option 4"
+			pdx_tooltip = button4_tooltip
+		}
+		
+		#ALIGN BRANCH
+		buttonType = {
+			name = "COL_align_button"
+			position = { x = 600 y = 500 }
+			spriteType = "GFX_sort_button_202x29"
+			buttonFont = "Arialsmall"
+			buttonText = "ALIGN"
+			pdx_tooltip = align_tooltip
+		}
+		
+		buttonType = {
+			name = "COL_liberalize_button"
+			position = { x = 310 y = 546 }
+			spriteType = "GFX_sort_button_100x29_2"
+			buttonFont = "Arialsmall"
+			buttonText = "LIBERALIZE"
+			pdx_tooltip = liberalize_tooltip
+		}
+		
+		instantTextBoxType = {
+			name = "COL_selected_branch_name"
+			position = { x = 600 y = 250 }
+			font = "Arialsmall"
+			text = "[COL_selected_branch_name]"
+			maxWidth = 200
+			maxHeight = 29
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "COL_selected_branch_name2"
+			position = { x = 360 y = 30 }
+			font = "Arialsmall"
+			text = "[COL_selected_branch_name]"
+			maxWidth = 200
+			maxHeight = 29
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "COL_selected_branch_desc"
+			position = { x = 600 y = 300 }
+			font = "Arialsmall"
+			text = "[COL_selected_branch_desc]"
+			maxWidth = 200
+			maxHeight = 29
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "COL_liberalization_progress"
+			position = { x = 15 y = 552 }
+			font = "Arialsmall"
+			text = "Liberalization Progress: [?COL_liberalization_progress|0]%"
+			maxWidth = 200
+			maxHeight = 29
+			format = center
+		}
+		
+		instantTextBoxType = {
+			name = "COL_trend"
+			position = { x = 360 y = 55 }
+			font = "Arialsmall"
+			text = "[COL_selected_branch_trend]"
+			maxWidth = 200
+			maxHeight = 29
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "COL_stance_bar_text"
+			position = { x = 360 y = 100 }
+			font = "Arialsmall"
+			text = "[COL_selected_branch_stance]"
+			maxWidth = 200
+			maxHeight = 29
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "COL_secured_bar_text"
+			position = { x = 360 y = 165 }
+			font = "Arialsmall"
+			text = "[COL_selected_branch_secured]"
+			maxWidth = 200
+			maxHeight = 29
+			format = center
+		}
+	}
+}
+	

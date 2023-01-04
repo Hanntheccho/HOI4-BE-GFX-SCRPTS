@@ -1,0 +1,452 @@
+spriteTypes = {	
+	####
+	SpriteType = {
+		name = "GFX_goal_USA_ad_maria_per_aspera"
+		texturefile = "gfx/interface/goals/goal_USA_ad_maria_per_aspera.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_prepare_our_boats"
+		texturefile = "gfx/interface/goals/goal_USA_prepare_our_boats.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_repair_our_boats"
+		texturefile = "gfx/interface/goals/goal_USA_repair_our_boats.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_prepare_our_army"
+		texturefile = "gfx/interface/goals/goal_USA_prepare_our_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_repair_our_army"
+		texturefile = "gfx/interface/goals/goal_USA_repair_our_army.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_last_voyage"
+		texturefile = "gfx/interface/goals/goal_USA_the_last_voyage.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_amphibious_landings"
+		texturefile = "gfx/interface/goals/goal_USA_amphibious_landings.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_recruit_from_bluehelmets"
+		texturefile = "gfx/interface/goals/goal_USA_recruit_from_bluehelmets.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_scavenge_arc_ships"
+		texturefile = "gfx/interface/goals/goal_USA_scavenge_arc_ships.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_steal_arc_aid"
+		texturefile = "gfx/interface/goals/goal_USA_steal_arc_aid.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_step_into_the_22nd_century"
+		texturefile = "gfx/interface/goals/goal_USA_step_into_the_22nd_century.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_pravins_patronage"
+		texturefile = "gfx/interface/goals/goal_USA_pravins_patronage.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_promises_of_democracy"
+		texturefile = "gfx/interface/goals/goal_USA_promises_of_democracy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_sic_semper_tyrannis"
+		texturefile = "gfx/interface/goals/goal_USA_sic_semper_tyrannis.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_death_to_traitors"
+		texturefile = "gfx/interface/goals/goal_USA_death_to_traitors.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_restart_the_judicial_process"
+		texturefile = "gfx/interface/goals/goal_USA_restart_the_judicial_process.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_eliminate_threats_to_america"
+		texturefile = "gfx/interface/goals/goal_USA_eliminate_threats_to_america.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_decapitate_the_snakes"
+		texturefile = "gfx/interface/goals/goal_USA_decapitate_the_snakes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_datalink_propaganda"
+		texturefile = "gfx/interface/goals/goal_USA_datalink_propaganda.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_inherit_arc_security"
+		texturefile = "gfx/interface/goals/goal_USA_inherit_arc_security.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_covert_policing_unit"
+		texturefile = "gfx/interface/goals/goal_USA_covert_policing_unit.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_train_more_militia"
+		texturefile = "gfx/interface/goals/goal_USA_train_more_militia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_scavenge_for_arms"
+		texturefile = "gfx/interface/goals/goal_USA_scavenge_for_arms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_draft_former_arcites"
+		texturefile = "gfx/interface/goals/goal_USA_draft_former_arcites.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_appease_the_bluehelmets"
+		texturefile = "gfx/interface/goals/goal_USA_appease_the_bluehelmets.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_utilize_arc_infrastructure"
+		texturefile = "gfx/interface/goals/goal_USA_utilize_arc_infrastructure.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_refurbish_the_navy"
+		texturefile = "gfx/interface/goals/goal_USA_refurbish_the_navy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_use_arc_technology"
+		texturefile = "gfx/interface/goals/goal_USA_use_arc_technology.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_inherit_arc_construction"
+		texturefile = "gfx/interface/goals/goal_USA_inherit_arc_construction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_give_me_liberty"
+		texturefile = "gfx/interface/goals/goal_USA_give_me_liberty.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_forced_freedom"
+		texturefile = "gfx/interface/goals/goal_USA_forced_freedom.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_american_values"
+		texturefile = "gfx/interface/goals/goal_USA_american_values.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_preaching_to_the_deaf"
+		texturefile = "gfx/interface/goals/goal_USA_preaching_to_the_deaf.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_or_give_me_death"
+		texturefile = "gfx/interface/goals/goal_USA_or_give_me_death.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_a_land_of_extremes"
+		texturefile = "gfx/interface/goals/goal_USA_a_land_of_extremes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_extreme_weather_training"
+		texturefile = "gfx/interface/goals/goal_USA_extreme_weather_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_a_mari_usque_ad_mare"
+		texturefile = "gfx/interface/goals/goal_USA_a_mari_usque_ad_mare.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_test_out_new_ships"
+		texturefile = "gfx/interface/goals/goal_USA_test_out_new_ships.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_blockade_the_southerners"
+		texturefile = "gfx/interface/goals/goal_USA_blockade_the_southerners.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_speramus_in_deo"
+		texturefile = "gfx/interface/goals/goal_USA_speramus_in_deo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_making_the_most_of_the_least"
+		texturefile = "gfx/interface/goals/goal_USA_making_the_most_of_the_least.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_new_guns"
+		texturefile = "gfx/interface/goals/goal_USA_new_guns.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_new_vehicles"
+		texturefile = "gfx/interface/goals/goal_USA_new_vehicles.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_march_to_the_west"
+		texturefile = "gfx/interface/goals/goal_USA_march_to_the_west.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_new_planes"
+		texturefile = "gfx/interface/goals/goal_USA_new_planes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_ad_astra_per_aspera"
+		texturefile = "gfx/interface/goals/goal_USA_ad_astra_per_aspera.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_one_final_push"
+		texturefile = "gfx/interface/goals/goal_USA_one_final_push.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_eagles_soar"
+		texturefile = "gfx/interface/goals/goal_USA_the_eagles_soar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_a_true_democracy"
+		texturefile = "gfx/interface/goals/goal_USA_a_true_democracy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_preparing_for_elections"
+		texturefile = "gfx/interface/goals/goal_USA_preparing_for_elections.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_limiting_the_selection"
+		texturefile = "gfx/interface/goals/goal_USA_limiting_the_selection.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_democratic_education"
+		texturefile = "gfx/interface/goals/goal_USA_democratic_education.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_ulriks_sacrifice"
+		texturefile = "gfx/interface/goals/goal_USA_ulriks_sacrifice.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_liberating_canada"
+		texturefile = "gfx/interface/goals/goal_USA_liberating_canada.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_freedom_under_supervision"
+		texturefile = "gfx/interface/goals/goal_USA_freedom_under_supervision.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_quelling_riots"
+		texturefile = "gfx/interface/goals/goal_USA_quelling_riots.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_expand_the_bluehelmets"
+		texturefile = "gfx/interface/goals/goal_USA_expand_the_bluehelmets.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_first_new_elections"
+		texturefile = "gfx/interface/goals/goal_USA_the_first_new_elections.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_republican_victory"
+		texturefile = "gfx/interface/goals/goal_USA_republican_victory.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_protectors_of_liberty"
+		texturefile = "gfx/interface/goals/goal_USA_protectors_of_liberty.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_instilling_duty"
+		texturefile = "gfx/interface/goals/goal_USA_instilling_duty.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_guns_of_freedom"
+		texturefile = "gfx/interface/goals/goal_USA_the_guns_of_freedom.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_home_of_the_brave"
+		texturefile = "gfx/interface/goals/goal_USA_home_of_the_brave.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_rd_coalition"
+		texturefile = "gfx/interface/goals/goal_USA_rd_coalition.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_restoring_old_america"
+		texturefile = "gfx/interface/goals/goal_USA_restoring_old_america.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_instilling_patriotism"
+		texturefile = "gfx/interface/goals/goal_USA_instilling_patriotism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_city_on_the_hill"
+		texturefile = "gfx/interface/goals/goal_USA_city_on_the_hill.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_e_pluribus_unum"
+		texturefile = "gfx/interface/goals/goal_USA_e_pluribus_unum.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_democrat_victory"
+		texturefile = "gfx/interface/goals/goal_USA_democrat_victory.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_fixing_our_mistakes"
+		texturefile = "gfx/interface/goals/goal_USA_fixing_our_mistakes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_instilling_responsibility"
+		texturefile = "gfx/interface/goals/goal_USA_instilling_responsibility.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_green_america"
+		texturefile = "gfx/interface/goals/goal_USA_green_america.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_breadbasket_of_the_world"
+		texturefile = "gfx/interface/goals/goal_USA_breadbasket_of_the_world.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_ulriks_democracy"
+		texturefile = "gfx/interface/goals/goal_USA_ulriks_democracy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_preparing_the_result"
+		texturefile = "gfx/interface/goals/goal_USA_preparing_the_result.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_selecting_the_coalition"
+		texturefile = "gfx/interface/goals/goal_USA_selecting_the_coalition.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_prevent_chaos"
+		texturefile = "gfx/interface/goals/goal_USA_prevent_chaos.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_ulriks_vision"
+		texturefile = "gfx/interface/goals/goal_USA_ulriks_vision.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_disuading_false_hopes"
+		texturefile = "gfx/interface/goals/goal_USA_disuading_false_hopes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_trust_in_strength"
+		texturefile = "gfx/interface/goals/goal_USA_trust_in_strength.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_united_in_usa"
+		texturefile = "gfx/interface/goals/goal_USA_the_united_in_usa.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_stability_above_everything"
+		texturefile = "gfx/interface/goals/goal_USA_stability_above_everything.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_first_election"
+		texturefile = "gfx/interface/goals/goal_USA_the_first_election.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_expected_outcome"
+		texturefile = "gfx/interface/goals/goal_USA_the_expected_outcome.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_aiming_outwards"
+		texturefile = "gfx/interface/goals/goal_USA_aiming_outwards.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_hacking_up_the_hackers"
+		texturefile = "gfx/interface/goals/goal_USA_hacking_up_the_hackers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_centralising_central_america"
+		texturefile = "gfx/interface/goals/goal_USA_centralising_central_america.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_repeating_mistakes"
+		texturefile = "gfx/interface/goals/goal_USA_repeating_mistakes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_the_dream_is_alive"
+		texturefile = "gfx/interface/goals/goal_USA_the_dream_is_alive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_USA_what_is_america"
+		texturefile = "gfx/interface/goals/goal_USA_what_is_america.dds"
+	}
+

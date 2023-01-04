@@ -1,0 +1,57 @@
+#Checks if the requirements for the branch to be aligned are met
+COL_are_branch_requirements_met = {
+	OR = {
+		AND = {
+			check_variable = {COL_selected_branch = 1}
+			check_variable = {COL_judiciary_liberalized = 1}
+			check_variable = {COL_parliament_liberalized = 1}
+			check_variable = {COL_president_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 2}
+			check_variable = {COL_economic_liberalized = 1}
+			check_variable = {COL_defense_liberalized = 1}
+			check_variable = {COL_parliament_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 3}
+			check_variable = {COL_economic_liberalized = 1}
+			check_variable = {COL_foreign_liberalized = 1}
+			check_variable = {COL_judiciary_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 4}
+			check_variable = {COL_agricultural_liberalized = 1}
+			check_variable = {COL_educational_liberalized = 1}
+			check_variable = {COL_defense_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 5}
+			check_variable = {COL_agricultural_liberalized = 1}
+			check_variable = {COL_cultural_liberalized = 1}
+			check_variable = {COL_economic_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 6}
+			check_variable = {COL_security_liberalized = 1}
+			check_variable = {COL_cultural_liberalized = 1}
+			check_variable = {COL_foreign_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 7}
+			check_variable = {COL_educational_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 8}
+			check_variable = {COL_agricultural_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 9}
+			check_variable = {COL_cultural_liberalized = 0}
+		}
+		AND = {
+			check_variable = {COL_selected_branch = 10}
+			check_variable = {COL_security_liberalized = 0}
+		}
+	}
+}

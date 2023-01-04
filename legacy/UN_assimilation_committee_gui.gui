@@ -1,0 +1,78 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "UN_assimilation_committee_decision_category_gui"
+		size = { width = 511 height = 178 }
+		position = { x = 0 y = 0 }
+	
+		iconType = {
+			name = "UN_assimilation_committee_decision_category_map"
+			spriteType = "GFX_UN_assimilation_committee_decision_category_map"
+			position = { x = 1 y = -24 }
+			Orientation = UPPER_LEFT
+		}
+
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_north_america"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 90 y = 25 }
+			Orientation = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_south_america"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 160 y = 110 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_europe"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 250 y = 30 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_central_asia"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 335 y = 40 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_middle_east"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 290 y = 70 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_africa"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 275 y = 120 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_india"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 353 y = 70 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_china"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 405 y = 50 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_indo_china"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 390 y = 95 }
+			Orientation = UPPER_LEFT
+		}
+		buttonType = {
+			name = "UN_assimilation_committee_decision_gui_australia"
+			spriteType = "GFX_show_dismissed_alerts_icon_2"
+			position = { x = 435 y = 140 }
+			Orientation = UPPER_LEFT
+		}
+	}
+
+}
+	

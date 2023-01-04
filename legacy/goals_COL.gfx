@@ -1,0 +1,351 @@
+spriteTypes = {	
+	##COL##
+	SpriteType = {
+		name = "GFX_goal_COL_23rd_century_innovations"
+		texturefile = "gfx/interface/goals/goal_COL_23rd_century_innovations.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_and_justice"
+		texturefile = "gfx/interface/goals/goal_COL_and_justice.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_and_we_are_the_butchers"
+		texturefile = "gfx/interface/goals/goal_COL_and_we_are_the_butchers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_assign_new_bodyguards"
+		texturefile = "gfx/interface/goals/goal_COL_assign_new_bodyguards.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_create_a_specialist_base"
+		texturefile = "gfx/interface/goals/goal_COL_create_a_specialist_base.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_cut_redundant_regulations"
+		texturefile = "gfx/interface/goals/goal_COL_cut_redundant_regulations.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_decrease_conscription"
+		texturefile = "gfx/interface/goals/goal_COL_decrease_conscription.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_demilitarise_society"
+		texturefile = "gfx/interface/goals/goal_COL_demilitarise_society.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_driven_into_the_ocean"
+		texturefile = "gfx/interface/goals/goal_COL_driven_into_the_ocean.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_end_filibustering"
+		texturefile = "gfx/interface/goals/goal_COL_end_filibustering.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_foreign_office_renovation"
+		texturefile = "gfx/interface/goals/goal_COL_foreign_office_renovation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_fortress_bolivar"
+		texturefile = "gfx/interface/goals/goal_COL_fortress_bolivar.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_from_prey_to_hunter"
+		texturefile = "gfx/interface/goals/goal_COL_from_prey_to_hunter.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_hello_world"
+		texturefile = "gfx/interface/goals/goal_COL_hello_world.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_import_new_harvesters"
+		texturefile = "gfx/interface/goals/goal_COL_import_new_harvesters.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_into_their_homes"
+		texturefile = "gfx/interface/goals/goal_COL_into_their_homes.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_invite_southern_investors"
+		texturefile = "gfx/interface/goals/goal_COL_invite_southern_investors.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_like_they_meant_for_us"
+		texturefile = "gfx/interface/goals/goal_COL_like_they_meant_for_us.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_look_the_other_way"
+		texturefile = "gfx/interface/goals/goal_COL_look_the_other_way.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_make_them_bleed"
+		texturefile = "gfx/interface/goals/goal_COL_make_them_bleed.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_more_guns"
+		texturefile = "gfx/interface/goals/goal_COL_more_guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_more_jets"
+		texturefile = "gfx/interface/goals/goal_COL_more_jets.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_more_of_everything"
+		texturefile = "gfx/interface/goals/goal_COL_more_of_everything.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_more_soldiers"
+		texturefile = "gfx/interface/goals/goal_COL_more_soldiers.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_online_schooling"
+		texturefile = "gfx/interface/goals/goal_COL_online_schooling.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_organize_a_sphere_of_influence"
+		texturefile = "gfx/interface/goals/goal_COL_organize_a_sphere_of_influence.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_permit_local_elections"
+		texturefile = "gfx/interface/goals/goal_COL_permit_local_elections.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_renegotiate_andean_support"
+		texturefile = "gfx/interface/goals/goal_COL_renegotiate_andean_support.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_repay_the_debt"
+		texturefile = "gfx/interface/goals/goal_COL_repay_the_debt.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_retire_old_judges"
+		texturefile = "gfx/interface/goals/goal_COL_retire_old_judges.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_review_defense_budgets"
+		texturefile = "gfx/interface/goals/goal_COL_review_defense_budgets.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_slaughtered_to_the_last"
+		texturefile = "gfx/interface/goals/goal_COL_slaughtered_to_the_last.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_so_they_learn_fear"
+		texturefile = "gfx/interface/goals/goal_COL_so_they_learn_fear.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_source_foreign_specialists"
+		texturefile = "gfx/interface/goals/goal_COL_source_foreign_specialists.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_support_pan-americanism"
+		texturefile = "gfx/interface/goals/goal_COL_support_pan-americanism.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_the_great_thaw"
+		texturefile = "gfx/interface/goals/goal_COL_the_great_thaw.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_then_we_will_call_it_peace"
+		texturefile = "gfx/interface/goals/goal_COL_then_we_will_call_it_peace.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_they_are_all_beasts"
+		texturefile = "gfx/interface/goals/goal_COL_they_are_all_beasts.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_to_a_watery_death"
+		texturefile = "gfx/interface/goals/goal_COL_to_a_watery_death.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_to_be_put_down."
+		texturefile = "gfx/interface/goals/goal_COL_to_be_put_down..dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_use_ancient_laws"
+		texturefile = "gfx/interface/goals/goal_COL_use_ancient_laws.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_what_did_i_say"
+		texturefile = "gfx/interface/goals/goal_COL_what_did_i_say.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_with_fire_and_sword"
+		texturefile = "gfx/interface/goals/goal_COL_with_fire_and_sword.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_man_the_guns"
+		texturefile = "gfx/interface/goals/goal_COL_man_the_guns.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_man_the_factories"
+		texturefile = "gfx/interface/goals/goal_COL_man_the_factories.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_our_worst_fear_come_true"
+		texturefile = "gfx/interface/goals/goal_COL_our_worst_fear_come_true.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_we_will_never_surrender"
+		texturefile = "gfx/interface/goals/goal_COL_we_will_never_surrender.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_we_will_push_them_back"
+		texturefile = "gfx/interface/goals/goal_COL_we_will_push_them_back.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_BOL_we_will_stand_our_ground"
+		texturefile = "gfx/interface/goals/goal_BOL_we_will_stand_our_ground.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_a_hive"
+		texturefile = "gfx/interface/goals/goal_COL_a_hive.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_a_new_constitution"
+		texturefile = "gfx/interface/goals/goal_COL_a_new_constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_ai_naval_command"
+		texturefile = "gfx/interface/goals/goal_COL_ai_naval_command.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_allow_civilian_shipyards"
+		texturefile = "gfx/interface/goals/goal_COL_allow_civilian_shipyards.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_an_anthill"
+		texturefile = "gfx/interface/goals/goal_COL_an_anthill.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_built_on_a_lie"
+		texturefile = "gfx/interface/goals/goal_COL_built_on_a_lie.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_but_a_white_lie"
+		texturefile = "gfx/interface/goals/goal_COL_but_a_white_lie.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_community_building"
+		texturefile = "gfx/interface/goals/goal_COL_community_building.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_connect_the_oceans"
+		texturefile = "gfx/interface/goals/goal_COL_connect_the_oceans.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_cut_all_ties"
+		texturefile = "gfx/interface/goals/goal_COL_cut_all_ties.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_eliminate_enemies_of_bolivaria"
+		texturefile = "gfx/interface/goals/goal_COL_eliminate_enemies_of_bolivaria.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_encourage_religion"
+		texturefile = "gfx/interface/goals/goal_COL_encourage_religion.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_expand_northern_industry"
+		texturefile = "gfx/interface/goals/goal_COL_expand_northern_industry.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_forge_international_connections"
+		texturefile = "gfx/interface/goals/goal_COL_forge_international_connections.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_government_of_national_salvation"
+		texturefile = "gfx/interface/goals/goal_COL_government_of_national_salvation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_gunboat_overhaul"
+		texturefile = "gfx/interface/goals/goal_COL_gunboat_overhaul.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_initiate_modernisation"
+		texturefile = "gfx/interface/goals/goal_COL_initiate_modernisation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_localized_road_building_initiatives"
+		texturefile = "gfx/interface/goals/goal_COL_localized_road_building_initiatives.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_measure_349"
+		texturefile = "gfx/interface/goals/goal_COL_measure_349.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_measure_384"
+		texturefile = "gfx/interface/goals/goal_COL_measure_384.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_new_naval_direction"
+		texturefile = "gfx/interface/goals/goal_COL_new_naval_direction.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_plan_the_economy"
+		texturefile = "gfx/interface/goals/goal_COL_plan_the_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_plant_new_forests"
+		texturefile = "gfx/interface/goals/goal_COL_plant_new_forests.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_privatize_railways"
+		texturefile = "gfx/interface/goals/goal_COL_privatize_railways.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_R&D_companies"
+		texturefile = "gfx/interface/goals/goal_COL_R&D_companies.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_reverse_privatisation"
+		texturefile = "gfx/interface/goals/goal_COL_reverse_privatisation.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_reverse_sustenance_farming"
+		texturefile = "gfx/interface/goals/goal_COL_reverse_sustenance_farming.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_streamline_gunsmiths"
+		texturefile = "gfx/interface/goals/goal_COL_streamline_gunsmiths.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_the_communalist_cause"
+		texturefile = "gfx/interface/goals/goal_COL_the_communalist_cause.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_the_divinist_agenda"
+		texturefile = "gfx/interface/goals/goal_COL_the_divinist_agenda.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_the_impervious"
+		texturefile = "gfx/interface/goals/goal_COL_the_impervious.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_the_inevitable"
+		texturefile = "gfx/interface/goals/goal_COL_the_inevitable.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_the_masterist_dream"
+		texturefile = "gfx/interface/goals/goal_COL_the_masterist_dream.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_the_new_bolivarian_citizen"
+		texturefile = "gfx/interface/goals/goal_COL_the_new_bolivarian_citizen.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_TRACK_expansion"
+		texturefile = "gfx/interface/goals/goal_COL_TRACK_expansion.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_trust_no_one"
+		texturefile = "gfx/interface/goals/goal_COL_trust_no_one.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_we_are_alone"
+		texturefile = "gfx/interface/goals/goal_COL_we_are_alone.dds"
+	}
+	SpriteType = {
+		name = "GFX_goal_COL_work_with_the_rich"
+		texturefile = "gfx/interface/goals/goal_COL_work_with_the_rich.dds"
+	}
+}

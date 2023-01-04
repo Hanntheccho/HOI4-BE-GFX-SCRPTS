@@ -1,0 +1,95 @@
+spriteTypes = {
+
+	# leaders we need to override in DLC go in this file
+
+	spriteType = {
+		name = "GFX_portrait_operative_unknown"
+		texturefile = "gfx/leaders/operative_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown"
+		texturefile = "gfx/leaders/leader_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_unknown_female"
+		texturefile = "gfx/leaders/leader_unknown.dds"
+	}
+
+	# mod leaders
+
+	#Generic
+
+	spriteType = {
+		name = "GFX_portrait_government_character_purity"
+		texturefile = "gfx/leaders/government_character_purity.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_government_character_harmony"
+		texturefile = "gfx/leaders/government_character_harmony.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_government_character_supremacy"
+		texturefile = "gfx/leaders/government_character_supremacy.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_government_character_neutral"
+		texturefile = "gfx/leaders/government_character_neutral.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_government_character_divinity"
+		texturefile = "gfx/leaders/government_character_divinity.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_government_character_voracity"
+		texturefile = "gfx/leaders/government_character_voracity.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_government_character_mastery"
+		texturefile = "gfx/leaders/government_character_mastery.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ai_command"
+		texturefile = "gfx/leaders/ai_command.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_1"
+		texturefile = "gfx/leaders/ai_command1.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_2"
+		texturefile = "gfx/leaders/ai_command2.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_3"
+		texturefile = "gfx/leaders/ai_command3.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_4"
+		texturefile = "gfx/leaders/ai_command4.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_5"
+		texturefile = "gfx/leaders/ai_command5.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_6"
+		texturefile = "gfx/leaders/ai_command6.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_7"
+		texturefile = "gfx/leaders/ai_command7.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_8"
+		texturefile = "gfx/leaders/ai_command8.dds"
+	}
+	spriteType = {
+		name = "GFX_portrait_ai_command_lvl_9"
+		texturefile = "gfx/leaders/ai_command9.dds"
+	}
+	
+}

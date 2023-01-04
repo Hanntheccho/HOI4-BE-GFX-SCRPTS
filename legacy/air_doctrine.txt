@@ -1,0 +1,726 @@
+#technologies = {
+#	
+#	##Tactical Layer Doctrine##
+#	tactical_layer_doctrine = {
+#		doctrine_name = "TACTICAL_LAYER_DOCTRINE_TITLE"
+#
+#		air_superiority_detect_factor = 0.15
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		xor = {strategic_layer_doctrine}
+#
+#		path = {
+#			leads_to_tech = rapid_response_wings
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=0}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 20
+#		}
+#	}
+#
+#	rapid_response_wings = {
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_superiority_efficiency = 0.15
+#		air_mission_xp_gain_factor = 0.05
+#
+#		path = {
+#			leads_to_tech = target_locating_software
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=2}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	target_locating_software = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_cas_efficiency = 0.2
+#
+#		path = {
+#			leads_to_tech = longbeak_bomber_formations
+#			research_cost_coeff = 1
+#		}
+#
+#		path = {
+#			leads_to_tech = naval_derangement
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=4}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	longbeak_bomber_formations = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_strategic_bomber_bombing_factor = 0.2
+#
+#		xor = {naval_derangement}
+#
+#		path = {
+#			leads_to_tech = vr_dogfight_training
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=-2 y=6}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	naval_derangement = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_strategic_bomber_bombing_factor = 0.15
+#
+#		xor = {longbeak_bomber_formations}
+#
+#		path = {
+#			leads_to_tech = vr_dogfight_training
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=2 y=6}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	vr_dogfight_training = {
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_ace_generation_chance_factor = 0.25
+#		air_mission_xp_gain_factor = 0.05
+#
+#		path = {
+#			leads_to_tech = anti_hull_barrages
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=8}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	anti_hull_barrages = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		cv_cas = {
+#			air_agility = 0.20
+#		}
+#		cas = {
+#			air_agility = 0.20
+#		}
+#		air_superiority_efficiency = 0.1
+#
+#		path = {
+#			leads_to_tech = anti_personnel_missiles
+#			research_cost_coeff = 1
+#		}
+#
+#		path = {
+#			leads_to_tech = vertical_minelaying
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=10}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	anti_personnel_missiles = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		xor = {vertical_minelaying}
+#
+#		air_cas_efficiency = 0.2
+#
+#		path = {
+#			leads_to_tech = wildfire_creation
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=-2 y=12}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	vertical_minelaying = {
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		mines_planting_by_air_factor = 0.1
+#		air_cas_efficiency = 0.2
+#
+#		xor = {anti_personnel_missiles}
+#
+#		path = {
+#			leads_to_tech = wildfire_creation
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=2 y=12}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	wildfire_creation = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_strategic_bomber_bombing_factor = 0.1
+#		air_cas_efficiency = 0.2
+#		path = {
+#			leads_to_tech = weather_manipulation
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=14}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	weather_manipulation = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_interception_detect_factor = 0.15
+#		air_superiority_detect_factor = 0.1
+#
+#		path = {
+#			leads_to_tech = long_range_targeting_matrix
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=16}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	long_range_targeting_matrix = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_superiority_efficiency = 0.2
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=18}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_tactical_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	##Strategic Layer Doctrine##
+#	strategic_layer_doctrine = {
+#		doctrine_name = "STRATEGIC_LAYER_DOCTRINE_TITLE"
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_interception_detect_factor = 0.2
+#		air_mission_xp_gain_factor = 0.05
+#
+#		xor = {tactical_layer_doctrine}
+#
+#		path = {
+#			leads_to_tech = full_cloud_locations
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=0}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 20
+#		}
+#	}
+#
+#	full_cloud_locations = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_escort_efficiency = 0.25
+#		air_night_penalty = -0.5
+#
+#
+#		path = {
+#			leads_to_tech = airfleet_in_being
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=2}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	airfleet_in_being = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_superiority_efficiency = 0.2
+#
+#		path = {
+#			leads_to_tech = tactical_nuclear_strike_facilitation
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=4}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	tactical_nuclear_strike_facilitation = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_strategic_bomber_bombing_factor = 0.1
+#		air_cas_efficiency = 0.1
+#
+#		path = {
+#			leads_to_tech = drone_clusters
+#			research_cost_coeff = 1
+#		}
+#
+#		path = {
+#			leads_to_tech = supersonic_scouts
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=6}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	drone_clusters = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_strategic_bomber_bombing_factor = 0.20
+#		air_strategic_bomber_defence_factor = 0.25
+#
+#		path = {
+#			leads_to_tech = bomb_miniaturization
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=-2 y=8}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	supersonic_scouts = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_superiority_detect_factor = 0.1
+#		air_interception_detect_factor = 0.1
+#
+#		path = {
+#			leads_to_tech = water_power_through_air_power
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=2 y=8}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	bomb_miniaturization = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_strategic_bomber_bombing_factor = 0.1
+#		air_cas_efficiency = 0.1
+#
+#		path = {
+#			leads_to_tech = environmental_destruction
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=-2 y=10}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	water_power_through_air_power = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_nav_efficiency = 0.1
+#
+#		path = {
+#			leads_to_tech = environmental_destruction
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=2 y=10}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	environmental_destruction = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_strategic_bomber_bombing_factor = 0.2
+#
+#		path = {
+#			leads_to_tech = gunship_escorts
+#			research_cost_coeff = 1
+#		}
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=12}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#
+#	gunship_escorts = {
+#
+#		xp_research_type = air
+#		xp_unlock_cost = 100
+#		xp_research_bonus = 1.00
+#
+#		air_superiority_efficiency = 0.1
+#		fighter = {
+#			air_agility = 0.1
+#		}
+#		cv_fighter ={
+#			air_agility = 0.1
+#		} 
+#
+#		doctrine = yes
+#		research_cost = 2.25
+#		
+#		folder = {
+#			name = air_doctrine_folder
+#			position = {x=0 y=14}
+#		}
+#
+#		categories = {
+#			be_air_doctrine
+#			be_strategic_layer_doctrine
+#		}
+#
+#		ai_will_do = {
+#			factor = 1
+#		}
+#	}
+#}
+#

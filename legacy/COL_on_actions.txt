@@ -1,0 +1,452 @@
+#on_actions = {
+#	on_startup = {
+#		effect = {
+#			COL = {
+#				set_variable = { COL_liberalization_progress = 0 }
+#				set_variable = { COL_scripted_loc_last_liberalized = 0}
+#				set_variable = { COL_country_liberalized = 0}
+#				
+#				set_variable = { COL_president_stance = 0 } #1
+#				set_variable = { COL_president_secured = 0 }
+#				set_variable = { COL_president_trend = 0 }
+#				set_variable = { COL_president_liberalized = 0}
+#				
+#				set_variable = { COL_parliament_stance = 0 } #2
+#				set_variable = { COL_parliament_secured = 0 }
+#				set_variable = { COL_parliament_trend = 0 }
+#				set_variable = { COL_parliament_liberalized = 0}
+#				
+#				set_variable = { COL_judiciary_stance = 0 } #3
+#				set_variable = { COL_judiciary_secured = 0 }
+#				set_variable = { COL_judiciary_trend = 0 }
+#				set_variable = { COL_judiciary_liberalized = 0}
+#				
+#				set_variable = { COL_defense_stance = 0 } #4
+#				set_variable = { COL_defense_secured = 0 }
+#				set_variable = { COL_defense_trend = 0 }
+#				set_variable = { COL_defense_liberalized = 0}
+#				
+#				set_variable = { COL_economic_stance = 0 } #5
+#				set_variable = { COL_economic_secured = 0 }
+#				set_variable = { COL_economic_trend = 0 }
+#				set_variable = { COL_economic_liberalized = 0}
+#				
+#				set_variable = { COL_foreign_stance = 0 } #6
+#				set_variable = { COL_foreign_secured = 0 }
+#				set_variable = { COL_foreign_trend = 0 }
+#				set_variable = { COL_foreign_liberalized = 0}
+#				
+#				set_variable = { COL_educational_stance = 0 } #7
+#				set_variable = { COL_educational_secured = 0 }
+#				set_variable = { COL_educational_trend = 0 }
+#				set_variable = { COL_educational_liberalized = 0}
+#				
+#				set_variable = { COL_agricultural_stance = 0 } #8
+#				set_variable = { COL_agricultural_secured = 0 }
+#				set_variable = { COL_agricultural_trend = 0 }
+#				set_variable = { COL_agricultural_liberalized = 0}
+#				
+#				set_variable = { COL_cultural_stance = 0 } #9
+#				set_variable = { COL_cultural_secured = 0 }
+#				set_variable = { COL_cultural_trend = 0 }
+#				set_variable = { COL_cultural_liberalized = 0}
+#				
+#				set_variable = { COL_security_stance = 0 } #10
+#				set_variable = { COL_security_secured = 0 }
+#				set_variable = { COL_security_trend = 0 }
+#				set_variable = { COL_security_liberalized = 0}
+#				
+#				set_variable = { COL_selected_branch = 10 }
+#				set_variable = { COL_current_stance = 0}
+#				set_variable = { COL_current_secured = 0}
+#				
+#				country_event = {
+#					id = bolivar.1
+#					days = 1278
+#				}
+#				
+#				country_event = {
+#					id = bolivar.29
+#					days = 95
+#				}
+#				
+#				country_event = {
+#					id = bolivar.30
+#					days = 66
+#				}
+#				
+#				country_event = {
+#					id = bolivar.31
+#					days = 160
+#				}
+#				
+#				country_event = {
+#					id = bolivar.32
+#					days = 200
+#				}
+#				
+#				country_event = {
+#					id = bolivar.33
+#					days = 242
+#				}
+#				
+#				country_event = {
+#					id = bolivar.34
+#					days = 306
+#				}
+#				
+#				country_event = {
+#					id = bolivar.35
+#					days = 311
+#				}
+#				
+#				country_event = {
+#					id = bolivar.36
+#					days = 406
+#				}
+#				
+#				country_event = {
+#					id = bolivar.37
+#					days = 436
+#				}
+#				
+#				random_list = {
+#					2 = {
+#						country_event = {
+#							id = bolivar.44
+#							days = 1766
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#	on_daily_COL = {
+#		effect = {
+#			if = { #Educational Branch
+#				limit = {
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_educational_stance < 81}
+#						check_variable = {COL_educational_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_educational_secured = 1}
+#				clamp_variable = {
+#					var = COL_educational_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						OR = {
+#							check_variable = {COL_educational_stance > 80}
+#							check_variable = {COL_educational_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_educational_secured = 1}
+#					clamp_variable = {
+#						var = COL_educational_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_educational_stance = COL_educational_trend}
+#			}
+#			if = { #Agricultural Branch
+#				limit = {
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_agricultural_stance < 81}
+#						check_variable = {COL_agricultural_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_agricultural_secured = 1}
+#				clamp_variable = {
+#					var = COL_agricultural_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						OR = {
+#							check_variable = {COL_agricultural_stance > 80}
+#							check_variable = {COL_agricultural_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_agricultural_secured = 1}
+#					clamp_variable = {
+#						var = COL_agricultural_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_agricultural_stance = COL_agricultural_trend}
+#			}
+#			if = { #Cultural Branch
+#				limit = {
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_cultural_stance < 81}
+#						check_variable = {COL_cultural_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_cultural_secured = 1}
+#				clamp_variable = {
+#					var = COL_cultural_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						OR = {
+#							check_variable = {COL_cultural_stance > 80}
+#							check_variable = {COL_cultural_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_cultural_secured = 1}
+#					clamp_variable = {
+#						var = COL_cultural_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_cultural_stance = COL_cultural_trend}
+#			}
+#			if = { #Security Branch
+#				limit = {
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_security_stance < 81}
+#						check_variable = {COL_security_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_security_secured = 1}
+#				clamp_variable = {
+#					var = COL_security_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						OR = {
+#							check_variable = {COL_security_stance > 80}
+#							check_variable = {COL_security_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_security_secured = 1}
+#					clamp_variable = {
+#						var = COL_security_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_security_stance = COL_security_trend}
+#			}
+#			if = { #Defense Branch
+#				limit = {# Only do stuff if the pre-reqs have been liberalized
+#					check_variable = {COL_educational_liberalized = 1}
+#					check_variable = {COL_agricultural_liberalized = 1}
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_defense_stance < 81}
+#						check_variable = {COL_defense_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_defense_secured = 1}
+#				clamp_variable = {
+#					var = COL_defense_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						check_variable = {COL_educational_liberalized = 1}
+#						check_variable = {COL_agricultural_liberalized = 1}
+#						OR = {
+#							check_variable = {COL_defense_stance > 80}
+#							check_variable = {COL_defense_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_defense_secured = 1}
+#					clamp_variable = {
+#						var = COL_defense_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_defense_stance = COL_defense_trend}
+#			}
+#			if = { #Economic Branch
+#				limit = {# Only do stuff if the pre-reqs have been liberalized
+#					check_variable = {COL_agricultural_liberalized = 1}
+#					check_variable = {COL_cultural_liberalized = 1}
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_economic_stance < 81}
+#						check_variable = {COL_economic_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_economic_secured = 1}
+#				clamp_variable = {
+#					var = COL_economic_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						check_variable = {COL_agricultural_liberalized = 1}
+#						check_variable = {COL_cultural_liberalized = 1}
+#						OR = {
+#							check_variable = {COL_economic_stance > 80}
+#							check_variable = {COL_economic_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_economic_secured = 1}
+#					clamp_variable = {
+#						var = COL_economic_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_economic_stance = COL_economic_trend}
+#			}
+#			if = { #Foreign Branch
+#				limit = {# Only do stuff if the pre-reqs have been liberalized
+#					check_variable = {COL_cultural_liberalized = 1}
+#					check_variable = {COL_security_liberalized = 1}
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_foreign_stance < 81}
+#						check_variable = {COL_foreign_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_foreign_secured = 1}
+#				clamp_variable = {
+#					var = COL_foreign_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						check_variable = {COL_cultural_liberalized = 1}
+#						check_variable = {COL_security_liberalized = 1}
+#						OR = {
+#							check_variable = {COL_foreign_stance > 80}
+#							check_variable = {COL_foreign_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_foreign_secured = 1}
+#					clamp_variable = {
+#						var = COL_foreign_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_foreign_stance = COL_foreign_trend}
+#			}
+#			if = { #Parliament Branch
+#				limit = {# Only do stuff if the pre-reqs have been liberalized
+#					check_variable = {COL_defense_liberalized = 1}
+#					check_variable = {COL_economic_liberalized = 1}
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_parliament_stance < 81}
+#						check_variable = {COL_parliament_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_parliament_secured = 1}
+#				clamp_variable = {
+#					var = COL_parliament_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						check_variable = {COL_defense_liberalized = 1}
+#						check_variable = {COL_economic_liberalized = 1}
+#						OR = {
+#							check_variable = {COL_parliament_stance > 80}
+#							check_variable = {COL_parliament_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_parliament_secured = 1}
+#					clamp_variable = {
+#						var = COL_parliament_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_parliament_stance = COL_parliament_trend}
+#			}
+#			if = { #Judiciary Branch
+#				limit = {# Only do stuff if the pre-reqs have been liberalized
+#					check_variable = {COL_economic_liberalized = 1}
+#					check_variable = {COL_foreign_liberalized = 1}
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_judiciary_stance < 81}
+#						check_variable = {COL_judiciary_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_judiciary_secured = 1}
+#				clamp_variable = {
+#					var = COL_judiciary_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						check_variable = {COL_economic_liberalized = 1}
+#						check_variable = {COL_foreign_liberalized = 1}
+#						OR = {
+#							check_variable = {COL_judiciary_stance > 80}
+#							check_variable = {COL_judiciary_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_judiciary_secured = 1}
+#					clamp_variable = {
+#						var = COL_judiciary_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_judiciary_stance = COL_judiciary_trend}
+#			}
+#			if = { #President Branch
+#				limit = {# Only do stuff if the pre-reqs have been liberalized
+#					check_variable = {COL_parliament_liberalized = 1}
+#					check_variable = {COL_judiciary_liberalized = 1}
+#					OR = { #Within the range 60-80
+#						check_variable = {COL_president_stance < 81}
+#						check_variable = {COL_president_stance > 59}
+#					}
+#				}
+#				#Add to secured for the branch, clamp between 60 and 80
+#				add_to_variable = {COL_president_secured = 1}
+#				clamp_variable = {
+#					var = COL_president_secured
+#					min = 0
+#					max = 80
+#				}
+#				else_if = {
+#					limit = { #Outside the range
+#						check_variable = {COL_parliament_liberalized = 1}
+#						check_variable = {COL_judiciary_liberalized = 1}
+#						OR = {
+#							check_variable = {COL_president_stance > 80}
+#							check_variable = {COL_president_stance < 60}
+#						}
+#					}
+#					subtract_from_variable = {COL_president_secured = 1}
+#					clamp_variable = {
+#						var = COL_president_secured
+#						min = 0
+#						max = 80
+#					}
+#				}
+#				add_to_variable = {COL_president_stance = COL_president_trend}
+#			}
+#		}
+#	}
+#}

@@ -1,0 +1,73 @@
+spriteTypes = {	
+	##ENG##
+	SpriteType = {
+		name = "GFX_goal_ENG_scattered_england"
+		texturefile = "gfx/interface/goals/goal_ENG_scattered_england.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_the_birmingham_uproar"
+		texturefile = "gfx/interface/goals/goal_ENG_the_birmingham_uproar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_the_sinking_ship"
+		texturefile = "gfx/interface/goals/goal_ENG_the_sinking_ship.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_the_damned_mps"
+		texturefile = "gfx/interface/goals/goal_ENG_the_damned_mps.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_the_bloody_economy"
+		texturefile = "gfx/interface/goals/goal_ENG_the_bloody_economy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_decapitate_the_embezzlement"
+		texturefile = "gfx/interface/goals/goal_ENG_decapitate_the_embezzlement.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_sack_the_useless_ministers"
+		texturefile = "gfx/interface/goals/goal_ENG_sack_the_useless_ministers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_sack_the_other_ministers"
+		texturefile = "gfx/interface/goals/goal_ENG_sack_the_other_ministers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_anti_corruption_legislation"
+		texturefile = "gfx/interface/goals/goal_ENG_anti_corruption_legislation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_what_comes_next"
+		texturefile = "gfx/interface/goals/goal_ENG_what_comes_next.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_cut_redundant_relief_aid"
+		texturefile = "gfx/interface/goals/goal_ENG_cut_redundant_relief_aid.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_closer_ties_to_scotland"
+		texturefile = "gfx/interface/goals/goal_ENG_closer_ties_to_scotland.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_industrialize_the_farmlands"
+		texturefile = "gfx/interface/goals/goal_ENG_industrialize_the_farmlands.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_ENG_jumpstart_the_industrial_heart"
+		texturefile = "gfx/interface/goals/goal_ENG_jumpstart_the_industrial_heart.dds"
+	}
+
+}

@@ -1,0 +1,219 @@
+defined_text = {
+	name = COL_selected_branch_name
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 1 } }
+		localization_key = "President"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 2 } }
+		localization_key = "Parliament"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 3 } }
+		localization_key = "Judiciary"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 4 } }
+		localization_key = "Defense"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 5 } }
+		localization_key = "Economic"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 6 } }
+		localization_key = "Foreign"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 7 } }
+		localization_key = "Educational"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 8 } }
+		localization_key = "Agricultural"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 9 } }
+		localization_key = "Cultural"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 10 } }
+		localization_key = "Security"
+	}
+}
+
+defined_text = {
+	name = COL_selected_branch_desc
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 1 } }
+		localization_key = "President description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 2 } }
+		localization_key = "Parliament description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 3 } }
+		localization_key = "Judiciary description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 4 } }
+		localization_key = "Defense description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 5 } }
+		localization_key = "Economic description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 6 } }
+		localization_key = "Foreign description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 7 } }
+		localization_key = "Educational description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 8 } }
+		localization_key = "Agricultural description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 9 } }
+		localization_key = "Cultural description"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 10 } }
+		localization_key = "Security description"
+	}
+}
+
+defined_text = {
+	name = COL_selected_branch_trend
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 1 } }
+		localization_key = "Trend: [?COL_president_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 2 } }
+		localization_key = "Trend: [?COL_parliament_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 3 } }
+		localization_key = "Trend: [?COL_judiciary_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 4 } }
+		localization_key = "Trend: [?COL_defense_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 5 } }
+		localization_key = "Trend: [?COL_economic_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 6 } }
+		localization_key = "Trend: [?COL_foreign_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 7 } }
+		localization_key = "Trend: [?COL_educational_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 8 } }
+		localization_key = "Trend: [?COL_agricultural_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 9 } }
+		localization_key = "Trend: [?COL_cultural_trend|+%0] weekly"
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 10 } }
+		localization_key = "Trend: [?COL_security_trend|+%0] weekly"
+	}
+}
+
+defined_text = {
+	name = COL_selected_branch_secured
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 1 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 2 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 3 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 4 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 5 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 6 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 7 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 8 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 9 } }
+		localization_key = COL_selected_secured
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 10 } }
+		localization_key = COL_selected_secured
+	}
+}
+
+defined_text = {
+	name = COL_selected_branch_stance
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 1 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 2 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 3 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 4 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 5 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 6 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 7 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 8 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 9 } }
+		localization_key = COL_selected_stance
+	}
+	text = {
+		trigger = { check_variable = { COL_selected_branch = 10 } }
+		localization_key = COL_selected_stance
+	}
+}

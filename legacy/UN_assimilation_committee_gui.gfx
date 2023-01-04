@@ -1,0 +1,20 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_UN_assimilation_committee_decision_category_map"
+		texturefile = "gfx/interface/UN_decisions/UN_assimilation_committee_decision_category_map.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_UN_assimilation_committee_decisions_icon"
+		texturefile = "gfx/interface/UN_decisions/UN_assimilation_committee_decisions_icon.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_show_dismissed_alerts_icon_2"
+		texturefile = "gfx/interface/UN_decisions/show_dismissed_alerts_icon_2.dds"
+		noOfFrames = 1
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+
+}

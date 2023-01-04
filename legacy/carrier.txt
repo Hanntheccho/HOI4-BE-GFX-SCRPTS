@@ -1,0 +1,326 @@
+equipments = {
+
+	ship_hull_carrier = {
+		year = 2180
+
+		is_archetype = yes
+		is_buildable = no
+		type = carrier
+		sprite = carrier
+		group_by = archetype
+		priority = 1000
+		
+		interface_category = interface_category_capital_ships
+		
+		#upgrades = {
+		#	ship_deckspace_upgrade
+		#	carrier_armor_upgrade
+		#	ship_engine_upgrade
+		#	ship_reliability_upgrade			
+		#}
+		
+		lg_armor_piercing = 0
+		lg_attack = 0
+		
+		hg_armor_piercing = 0
+		hg_attack = 0
+		
+		torpedo_attack = 0
+		sub_attack = 0
+		
+		anti_air_attack = 0
+		
+		armor_value = 0
+
+		
+		surface_detection = 26
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 26
+		reliability = 0.70
+		
+		naval_range = 4500 # 3000
+		
+		max_strength = 187.5 # 250
+		
+
+		fuel_consumption = 87
+
+		# (Describes combat behaviour - hidden stat)
+		offensive_weapons = no
+		
+		build_cost_ic = 2450
+		resources = {
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 4500
+	}
+
+###Prescripted designs for people without MtG
+
+	be_carrier_1 = {
+		year = 2180
+		visual_level = 1
+		archetype = ship_hull_carrier		
+		priority = 1000
+		#module_slots = {
+		#	fixed_ship_deck_slot_1 = {
+		#		required = yes
+		#		allowed_module_categories = { ship_deck_space }
+		#		gfx = ship_deck_space_slot
+		#	}
+		#	fixed_ship_deck_slot_2 = {
+		#		required = no
+		#		allowed_module_categories = { ship_deck_space ship_carrier_armor }
+		#		gfx = ship_deck_space_slot
+		#	}
+		#	fixed_ship_anti_air_slot = {
+		#		required = no
+		#		allowed_module_categories = { ship_anti_air }
+		#	}
+		#	fixed_ship_radar_slot = {
+		#		required = no
+		#		allowed_module_categories = { ship_radar }
+		#	}
+		#	fixed_ship_engine_slot = {
+		#		required = yes
+		#		allowed_module_categories = { carrier_ship_engine }
+		#	}
+		#	fixed_ship_secondaries_slot = {
+		#		required = no
+		#		allowed_module_categories = { ship_secondaries }
+		#	}
+		#	
+		#	front_1_custom_slot = {
+		#		required = no
+		#		allowed_module_categories = {
+		#			ship_deck_space
+		#			ship_carrier_armor
+		#			ship_secondaries
+		#			ship_anti_air
+		#		}
+		#	}
+		#}
+		#default_modules = {
+		#	fixed_ship_deck_slot_1 = ship_deck_space
+		#	fixed_ship_deck_slot_2 = ship_deck_space
+		#	fixed_ship_anti_air_slot = ship_anti_air_1
+		#	fixed_ship_radar_slot = empty
+		#	fixed_ship_engine_slot = carrier_ship_engine_1
+		#	fixed_ship_secondaries_slot = ship_secondaries_1
+		#	front_1_custom_slot = ship_anti_air_1
+		#}
+		lg_armor_piercing = 0
+		lg_attack = 0
+		
+		torpedo_attack = 0
+		carrier_size = 80
+		
+		anti_air_attack = 0
+		
+		armor_value = 7
+
+		
+		surface_detection = 10
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 26
+		reliability = 0.70
+		
+		naval_range = 4500 # 3000
+		
+		max_strength = 187.5 # 250
+		
+
+		fuel_consumption = 87
+
+		# (Describes combat behaviour - hidden stat)
+		offensive_weapons = no
+		
+		build_cost_ic = 3750
+		resources = {
+			#oil = 1
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 4500
+	}
+
+	be_carrier_2 = {
+		year = 2200
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = be_carrier_1
+		#module_slots = {
+		#	fixed_ship_deck_slot_1 = {
+		#		required = yes
+		#		allowed_module_categories = { ship_deck_space }
+		#		gfx = ship_deck_space_slot
+		#	}
+		#	fixed_ship_deck_slot_2 = {
+		#		required = no
+		#		allowed_module_categories = { ship_deck_space ship_carrier_armor }
+		#		gfx = ship_deck_space_slot
+		#	}
+		#	fixed_ship_anti_air_slot = {
+		#		required = no
+		#		allowed_module_categories = { ship_anti_air }
+		#	}
+		#	fixed_ship_radar_slot = {
+		#		required = no
+		#		allowed_module_categories = { ship_radar }
+		#	}
+		#	fixed_ship_engine_slot = {
+		#		required = yes
+		#		allowed_module_categories = { carrier_ship_engine }
+		#	}
+		#	fixed_ship_secondaries_slot = {
+		#		required = no
+		#		allowed_module_categories = { ship_secondaries }
+		#	}
+		#	
+		#	front_1_custom_slot = {
+		#		required = no
+		#		allowed_module_categories = {
+		#			ship_deck_space
+		#			ship_carrier_armor
+		#			ship_secondaries
+		#			ship_anti_air
+		#		}
+		#	}
+		#}
+		#default_modules = {
+		#	fixed_ship_deck_slot_1 = ship_deck_space
+		#	fixed_ship_deck_slot_2 = ship_deck_space
+		#	fixed_ship_anti_air_slot = ship_anti_air_1
+		#	fixed_ship_radar_slot = empty
+		#	fixed_ship_engine_slot = carrier_ship_engine_2
+		#	fixed_ship_secondaries_slot = ship_secondaries_1
+		#	front_1_custom_slot = ship_anti_air_1
+		#}
+		lg_armor_piercing = 0
+		lg_attack = 0
+		torpedo_attack = 0
+		carrier_size = 120
+		
+		anti_air_attack = 2
+		
+		armor_value = 9
+
+		
+		surface_detection = 10
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 28
+		reliability = 0.80
+
+		naval_range = 6000 # 4000
+		max_strength = 243.75 # 325
+		
+		build_cost_ic = 4500
+		resources = {
+			#oil = 1
+			steel = 4
+			chromium = 1
+		}
+		manpower = 5000
+	}
+
+	be_carrier_3 = {
+		year = 2203
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = be_carrier_2
+		#module_slots = inherit
+		#default_modules = {
+		#	fixed_ship_deck_slot_1 = ship_deck_space
+		#	fixed_ship_deck_slot_2 = ship_deck_space
+		#	fixed_ship_anti_air_slot = ship_anti_air_1
+		#	fixed_ship_radar_slot = empty
+		#	fixed_ship_engine_slot = carrier_ship_engine_3
+		#	fixed_ship_secondaries_slot = ship_secondaries_2
+		#	front_1_custom_slot = ship_deck_space
+		#}
+		lg_armor_piercing = 0
+		lg_attack = 0
+		torpedo_attack = 0
+		carrier_size = 160
+		
+		anti_air_attack = 8
+		
+		armor_value = 11
+
+		
+		surface_detection = 20
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 30
+		reliability = 0.85
+
+		naval_range = 7500 # 5000
+		
+		max_strength = 262.5 # 350
+		
+
+
+		build_cost_ic = 5250
+		resources = {
+			#oil = 2
+			steel = 4
+			chromium = 2
+		}
+		manpower = 5500
+	}
+
+	be_carrier_4 = {
+		year = 2206
+		visual_level = 1
+		archetype = ship_hull_carrier
+		priority = 1000
+		parent = be_carrier_3
+		#module_slots = inherit
+		#default_modules = {
+		#	fixed_ship_deck_slot_1 = ship_deck_space
+		#	fixed_ship_deck_slot_2 = ship_deck_space
+		#	fixed_ship_anti_air_slot = ship_anti_air_1
+		#	fixed_ship_radar_slot = empty
+		#	fixed_ship_engine_slot = carrier_ship_engine_4
+		#	fixed_ship_secondaries_slot = dp_ship_secondaries
+		#	front_1_custom_slot = ship_deck_space
+		#}
+		lg_armor_piercing = 0
+		lg_attack = 0
+		torpedo_attack = 0
+		carrier_size = 200
+		
+		anti_air_attack = 10
+		
+		armor_value = 13
+
+		
+		surface_detection = 30
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 32
+		reliability = 0.90
+
+		naval_range = 10500 # 6000
+		
+		max_strength = 281.25 # 375
+		
+
+
+		build_cost_ic = 6000
+		resources = {
+			#oil = 2
+			steel = 5
+			chromium = 2
+		}		
+		manpower = 6000
+	}
+}

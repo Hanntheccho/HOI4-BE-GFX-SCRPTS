@@ -1,0 +1,139 @@
+scripted_gui = {
+	UN_assimilation_committee_decision_category_scripted_gui = {
+		context_type = decision_category
+		
+		window_name = "UN_assimilation_committee_decision_category_gui"
+		
+		visible = {
+            tag = TRE
+		}
+		
+		effects = {
+			UN_assimilation_committee_decision_gui_north_america_click = {
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_north_america_flag
+            }
+            UN_assimilation_committee_decision_gui_south_america_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_south_america_flag
+            }
+            UN_assimilation_committee_decision_gui_europe_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_europe_flag
+            }
+            UN_assimilation_committee_decision_gui_central_asia_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_central_asia_flag
+            }
+            UN_assimilation_committee_decision_gui_middle_east_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_middle_east_flag
+            }
+            UN_assimilation_committee_decision_gui_africa_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_africa_flag
+            }
+            UN_assimilation_committee_decision_gui_india_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_india_flag
+            }
+            UN_assimilation_committee_decision_gui_china_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_china_flag
+            }
+            UN_assimilation_committee_decision_gui_indo_china_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_oceania_flag
+                set_country_flag = TRE_assimilate_indo_china_flag
+            }
+            UN_assimilation_committee_decision_gui_australia_click = {
+                clr_country_flag = TRE_assimilate_north_america_flag
+                clr_country_flag = TRE_assimilate_europe_flag
+                clr_country_flag = TRE_assimilate_africa_flag
+                clr_country_flag = TRE_assimilate_middle_east_flag
+                clr_country_flag = TRE_assimilate_central_asia_flag
+                clr_country_flag = TRE_assimilate_china_flag
+                clr_country_flag = TRE_assimilate_indo_china_flag
+                clr_country_flag = TRE_assimilate_india_flag
+                clr_country_flag = TRE_assimilate_south_america_flag
+                set_country_flag = TRE_assimilate_oceania_flag
+            }
+
+		}
+        triggers = {
+           
+        }
+	}
+
+}

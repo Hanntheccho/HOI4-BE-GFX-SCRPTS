@@ -1,0 +1,248 @@
+spriteTypes = {	
+	##{##
+	SpriteType = {
+		name = "GFX_goal_generic_23rd_politics"
+		texturefile = "gfx/interface/goals/generic/goal_generic_23rd_politics.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_political_scheme"
+		texturefile = "gfx/interface/goals/generic/goal_generic_political_scheme.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_stability_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_stability_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_stability_boost_better"
+		texturefile = "gfx/interface/goals/generic/goal_generic_stability_boost_better.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_war_support"
+		texturefile = "gfx/interface/goals/generic/goal_generic_war_support.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_war_support_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_war_support_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_cultural_revolution"
+		texturefile = "gfx/interface/goals/generic/goal_generic_cultural_revolution.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_cultural_revolution_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_cultural_revolution_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_grand_political_scheme"
+		texturefile = "gfx/interface/goals/generic/goal_generic_grand_political_scheme.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_industrial_effort"
+		texturefile = "gfx/interface/goals/generic/goal_generic_industrial_effort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_resource_extraction"
+		texturefile = "gfx/interface/goals/generic/goal_generic_resource_extraction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_resource_extraction_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_resource_extraction_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_minor_civilian_effort"
+		texturefile = "gfx/interface/goals/generic/goal_generic_minor_civilian_effort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_substantial_civilian_effort"
+		texturefile = "gfx/interface/goals/generic/goal_generic_substantial_civilian_effort.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_great_industrial_subsidy"
+		texturefile = "gfx/interface/goals/generic/goal_generic_great_industrial_subsidy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_industrial_subsidies"
+		texturefile = "gfx/interface/goals/generic/goal_generic_industrial_subsidies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_industrial_subsidies_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_industrial_subsidies_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_scientific_reform"
+		texturefile = "gfx/interface/goals/generic/goal_generic_scientific_reform.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_wonders_research"
+		texturefile = "gfx/interface/goals/generic/goal_generic_wonders_research.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_wonders_research_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_wonders_research_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_labs_modernization"
+		texturefile = "gfx/interface/goals/generic/goal_generic_labs_modernization.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_labs_expansion"
+		texturefile = "gfx/interface/goals/generic/goal_generic_labs_expansion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_breakthroughs_of_tomorrow"
+		texturefile = "gfx/interface/goals/generic/goal_generic_breakthroughs_of_tomorrow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_satellite_expansion"
+		texturefile = "gfx/interface/goals/generic/goal_generic_satellite_expansion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_satellite_expansion_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_satellite_expansion_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_land_forces"
+		texturefile = "gfx/interface/goals/generic/goal_generic_land_forces.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_military_industry"
+		texturefile = "gfx/interface/goals/generic/goal_generic_military_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_military_industry_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_military_industry_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_grand_military_industry"
+		texturefile = "gfx/interface/goals/generic/goal_generic_grand_military_industry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_land_tech"
+		texturefile = "gfx/interface/goals/generic/goal_generic_land_tech.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_land_tech_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_land_tech_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_army_training"
+		texturefile = "gfx/interface/goals/generic/goal_generic_army_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_army_training_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_army_training_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_air_forces"
+		texturefile = "gfx/interface/goals/generic/goal_generic_air_forces.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_fighter_models"
+		texturefile = "gfx/interface/goals/generic/goal_generic_fighter_models.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_cas_models"
+		texturefile = "gfx/interface/goals/generic/goal_generic_cas_models.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_air_training"
+		texturefile = "gfx/interface/goals/generic/goal_generic_air_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_air_training_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_air_training_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_air_base_foundation"
+		texturefile = "gfx/interface/goals/generic/goal_generic_air_base_foundation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_air_base_expansion"
+		texturefile = "gfx/interface/goals/generic/goal_generic_air_base_expansion.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_gran_air_shield"
+		texturefile = "gfx/interface/goals/generic/goal_generic_gran_air_shield.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_naval_forces"
+		texturefile = "gfx/interface/goals/generic/goal_generic_naval_forces.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_coastal_defense"
+		texturefile = "gfx/interface/goals/generic/goal_generic_coastal_defense.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_coastal_defense_improved"
+		texturefile = "gfx/interface/goals/generic/goal_generic_coastal_defense_improved.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_drydocks"
+		texturefile = "gfx/interface/goals/generic/goal_generic_drydocks.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_drydocks_improved"
+		texturefile = "gfx/interface/goals/generic/goal_generic_drydocks_improved.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_naval_training"
+		texturefile = "gfx/interface/goals/generic/goal_generic_naval_training.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_naval_training_boost"
+		texturefile = "gfx/interface/goals/generic/goal_generic_naval_training_boost.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_generic_modular_designs"
+		texturefile = "gfx/interface/goals/generic/goal_generic_modular_designs.dds"
+	}
+
+}

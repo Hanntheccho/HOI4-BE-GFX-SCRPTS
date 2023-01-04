@@ -1,0 +1,448 @@
+#spriteTypes = {
+#	#Army Doctrine
+#	SpriteType = {
+#		name = "GFX_mobility_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #mobility_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_protracted_defense_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #protracted_defense.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_tact_strat_lay_integ_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #tact_strat_lay_integ.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_triple_offensive_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #triple_offensive.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_mobile_pillboxes_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #mobile_pillboxes.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_calculate_collat_dmg_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #calculate_collat_dmg.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_circular_offensives_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #circular_offensives.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_deception_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #deception_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_maneuver_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #maneuver_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_recombined_arms_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #recombined_arms.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_armor_wall_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #armor_wall.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_mobile_infantry_dep_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #mobile_infantry_dep.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_pinpoint_fire_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #pinpoint_fire.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_military_service_rewards_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #military_service_rewards.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_augment_specialization_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #augment_specialization.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_global_offensives_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #global_offensives.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_flexibility_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #flexibility_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_protracted_defense_flex_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #protracted_defense_flex.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_adaptational_warfare_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #adaptational_warfare.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_nutrient_stations_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #nutrient_stations.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_point_defense_systems_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #point_defense_systems.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_army_corps_engineers_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #army_corps_engineers.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_raiding_operations_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #raiding_operations.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_all_terrain_tracks_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #all_terrain_tracks.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_area_containment_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #area_containment.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_total_pacification_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #total_pacification.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_technology_splicing_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #technology_splicing.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_advanced_land_utilization_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #advanced_land_utilization.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_further_army_subdivisions_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #further_army_subdivisions.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_maximum_augment_utilization_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #maximum_augment_utilization.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_integrity_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #integrity_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_spirit_of_the_people_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #spirit_of_the_people.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_modern_trenches_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #modern_trenches.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_partisan_tactics_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #partisan_tactics.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_mass_conscription_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #mass_conscription.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_deep_infiltration_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #deep_infiltration.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_utilization_of_labor_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #utilization_of_labor.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_dotted_line_offensive_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #dotted_line_offensive.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_prepared_assaults_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #prepared_assaults.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_mass_offensive_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #mass_offensive.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_global_planning_initiative_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #global_planning_initiative.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_infantry_armor_integration_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #infantry_armor_integration.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_divide_and_conquer_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #divide_and_conquer.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_rapid_engagement_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #rapid_engagement.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_universal_algorithm_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #universal_algorithm.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_initiative_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #initiative_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_ai_assisted_warfare_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #ai_assisted_warfare.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_individual_unit_tracking_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #individual_unit_tracking.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_limited_artificial_officers_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #limited_artificial_officers.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_keypoint_advance_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #keypoint_advance.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_simulated_wargames_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #simulated_wargames.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_redoubled_processing_capabilities_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #redoubled_processing_capabilities.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_satellite_guidance_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #satellite_guidance.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_continental_defence_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #continental_defence.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_positronic_drivers_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #positronic_drivers.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_calculated_outcomes_medium"
+#		textureFile = "gfx/interface/technologies/generic_land_doctrine.dds" #calculated_outcomes.dds"
+#	}
+#
+#	#Naval Doctrine
+#	SpriteType = {
+#		name = "GFX_hegemony_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #hegemony_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_total_water_fleet_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #total_water_fleet.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_transport_priority_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #transport_priority.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_simulation_exercises_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #simulation_exercises.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_asw_triad_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #asw_triad.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_carrier_sam_stations_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #carrier_sam_stations.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_ai_torpedo_matrixes_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #ai_torpedo_matrixes.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_offense_maximization_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #offense_maximization.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_satellite_aviation_integration_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #satellite_aviation_integration.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_marauder_strategy_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #marauder_strategy.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_floating_redoubt_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #floating_redoubt.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_floating_hive_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #floating_hive.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_autonomous_hunter_groups_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #autonomous_hunter_groups.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_hydrodynamic_predictions_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #hydrodynamic_predictions.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_transport_safety_groups_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #transport_safety_groups.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_ancillary_small_craft_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #ancillary_small_craft.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_adequacy_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #adequacy_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_augmented_crews_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #augmented_crews.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_coastal_detection_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #coastal_detection.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_global_coverage_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #global_coverage.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_ships_desant_support_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #ships_desant_support.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_hive_tactics_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #hive_tactics.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_guided_missile_swarm_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #guided_missile_swarm.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_carrier_ai_matrixes_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #carrier_ai_matrixes.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_drone_10_strikes_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #drone_10_strikes.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_enveloping_net_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #enveloping_net.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_littoral_combat_ships_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #littoral_combat_ships.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_avoidance_tactics_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #avoidance_tactics.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_deep_diving_capacity_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #deep_diving_capacity.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_cruiser_defense_protocols_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #cruiser_defense_protocols.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_attritional_annihiliation_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #attritional_annihiliation.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_sea_denial_strategies_medium"
+#		textureFile = "gfx/interface/technologies/generic_naval_doctrine.dds" #sea_denial_strategies.dds"
+#	}
+#
+#	#Air Doctrine
+#	SpriteType = {
+#		name = "GFX_tactical_layer_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #tactical_layer_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_rapid_response_wings_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #rapid_response_wings.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_target_locating_software_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #target_locating_software.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_longbeak_bomber_formations_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #longbeak_bomber_formations.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_naval_derangement_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #naval_derangement.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_vr_dogfight_training_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #vr_dogfight_training.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_anti_hull_barrages_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #anti_hull_barrages.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_anti_personnel_missiles_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #anti_personnel_missiles.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_vertical_minelaying_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #vertical_minelaying.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_wildfire_creation_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #wildfire_creation.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_weather_manipulation_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #weather_manipulation.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_long_range_targeting_matrix_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #long_range_targeting_matrix.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_strategic_layer_doctrine_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #strategic_layer_doctrine.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_full_cloud_locations_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #full_cloud_locations.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_airfleet_in_being_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #airfleet_in_being.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_tactical_nuclear_strike_facilitation_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #tactical_nuclear_strike_facilitation.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_drone_clusters_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #drone_clusters.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_supersonic_scouts_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #supersonic_scouts.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_bomb_miniaturization_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #bomb_miniaturization.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_water_power_through_air_power_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #water_power_through_air_power.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_environmental_destruction_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #environmental_destruction.dds"
+#	}
+#	SpriteType = {
+#		name = "GFX_gunship_escorts_medium"
+#		textureFile = "gfx/interface/technologies/generic_air_doctrine.dds" #gunship_escorts.dds"
+#	}
+#}
+#

@@ -1,0 +1,32 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			BRA = {
+				country_event = {
+					id = brazil.1
+					days = 2
+				}
+				country_event = {
+					id = brazil.12
+					days = 91
+				}
+				country_event = {
+					id = brazil.26
+					days = 147
+				}
+				country_event = {
+					id = brazil.27
+					days = 60
+				}
+				country_event = {
+					id = brazil.28
+					days = 87
+				}
+				country_event = {
+					id = brazil.33
+					days = 186
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,722 @@
+scripted_gui = {
+	COL_national_rebuilding_effort_open = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "COL_national_rebuilding_effort_open"
+		
+		#visible = {
+		#	tag = COL
+		#	is_ai = no
+		#}
+
+		visible = {
+			always = no
+		}
+
+		effects = {
+			COL_national_rebuilding_effort_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = COL_politics_gui_open } }
+					set_country_flag = COL_politics_gui_open
+				}
+				else_if = {
+					limit = { has_country_flag = COL_politics_gui_open }
+					clr_country_flag = COL_politics_gui_open
+				}
+			}
+		}
+		
+		triggers = {
+			
+		}
+		
+		#properties = {
+		#	COL_GUI_Bar = {
+		#		frame = COL_educational_stance
+		#	}
+		#}
+	}
+	
+	COL_national_rebuilding_effort_window = {
+		context_type = player_context
+		parent_window_token = "COL_national_rebuilding_effort_open"
+		window_name = "COL_national_rebuilding_effort_window"
+		
+		visible = {
+			has_country_flag = COL_politics_gui_open
+		}
+		
+		effects = {
+			COL_close_button_click = {
+				clr_country_flag = COL_politics_gui_open
+			}
+			COL_president_button_click = {
+				set_variable = { COL_selected_branch = 1 }
+				set_variable = { COL_current_secured = COL_president_secured }
+				set_variable = { COL_current_stance = COL_president_stance}
+			}
+			COL_parliament_button_click = {
+				set_variable = { COL_selected_branch = 2 }
+				set_variable = { COL_current_secured = COL_parliament_secured }
+				set_variable = { COL_current_stance = COL_parliament_stance}
+			}
+			COL_judiciary_button_click = {
+				set_variable = { COL_selected_branch = 3 }
+				set_variable = { COL_current_secured = COL_judiciary_secured }	
+				set_variable = { COL_current_stance = COL_judiciary_stance}	
+			}
+			COL_defense_button_click = {
+				set_variable = { COL_selected_branch = 4 }
+				set_variable = { COL_current_secured = COL_defense_secured }	
+				set_variable = { COL_current_stance = COL_defense_stance}			
+			}
+			COL_economic_button_click = {
+				set_variable = { COL_selected_branch = 5 }				
+				set_variable = { COL_current_secured = COL_economic_secured }
+				set_variable = { COL_current_stance = COL_economic_stance}
+			}
+			COL_foreign_button_click = {
+				set_variable = { COL_selected_branch = 6 }				
+				set_variable = { COL_current_secured = COL_foreign_secured }
+				set_variable = { COL_current_stance = COL_foreign_stance}
+			}
+			COL_educational_button_click = {
+				set_variable = { COL_selected_branch = 7 }				
+				set_variable = { COL_current_secured = COL_educational_secured }
+				set_variable = { COL_current_stance = COL_educational_stance}
+			}
+			COL_agricultural_button_click = {
+				set_variable = { COL_selected_branch = 8 }				
+				set_variable = { COL_current_secured = COL_agricultural_secured }
+				set_variable = { COL_current_stance = COL_agricultural_stance}
+			}
+			COL_cultural_button_click = {
+				set_variable = { COL_selected_branch = 9 }				
+				set_variable = { COL_current_secured = COL_cultural_secured }
+				set_variable = { COL_current_stance = COL_cultural_stance}
+			}
+			COL_security_button_click = {
+				set_variable = { COL_selected_branch = 10 }			
+				set_variable = { COL_current_secured = COL_security_secured }
+				set_variable = { COL_current_stance = COL_security_stance}
+			}
+			#OPTION 1
+			COL_button1_click = {
+				#President Branch Option 1
+				if = {
+					limit = {
+						check_variable = { COL_selected_branch = 1}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_president_trend = 0.02}
+				}
+				else_if = {
+					#Parliament Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 2}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_parliament_trend = 0.02}
+				}
+				else_if = {
+					#Judiciary Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 3}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_judiciary_trend = 0.02}
+				}
+				else_if = {
+					#Defense Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 4}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_defense_trend = 0.02}
+				}
+				else_if = {
+					#Economic Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 5}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_economic_trend = 0.02}
+				}	
+				else_if = {
+					#Foreign Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 6}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_foreign_trend = 0.02}
+				}
+				else_if = {
+					#Educational Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 7}
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_educational_trend = 0.02}
+				}
+				else_if = {
+					#Agricultural Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 8}
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_agricultural_trend = 0.02}
+				}
+				else_if = {
+					#Cultural Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 9}
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_cultural_trend = 0.02}
+				}	
+				else_if = {
+					#Security Branch Option 1
+					limit = {
+						check_variable = { COL_selected_branch = 10}
+					}
+					#Remove 40 PP from the player
+					add_political_power = -40
+
+					#Increase the trend of said branch by +2%
+					add_to_variable = {COL_security_trend = 0.02}
+				}			
+			}
+
+			#OPTION 2
+			COL_button2_click = {
+				#President Branch Option 2
+				if = {
+					limit = {
+						check_variable = { COL_selected_branch = 1}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_president_trend = -0.04}
+				}
+				else_if = {
+					#Parliament Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 2}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_parliament_trend = -0.04}
+				}
+				else_if = {
+					#Judiciary Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 3}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_judiciary_trend = -0.04}
+				}
+				else_if = {
+					#Defense Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 4}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_defense_trend = -0.04}
+				}
+				else_if = {
+					#Economic Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 5}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					set_temp_variable = {temp1 = COL_economic_trend}
+					multiply_temp_variable = {temp1 = -0.04}
+					add_to_variable = {COL_economic_trend = temp1}
+				}	
+				else_if = {
+					#Foreign Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 6}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_foreign_trend = -0.04}
+				}
+				else_if = {
+					#Educational Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 7}
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_educational_trend = -0.04}
+				}
+				else_if = {
+					#Agricultural Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 8}
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_agricultural_trend = -0.04}
+				}
+				else_if = {
+					#Cultural Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 9}
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_cultural_trend = -0.04}
+				}	
+				else_if = {
+					#Security Branch Option 2
+					limit = {
+						check_variable = { COL_selected_branch = 10}
+					}
+					#Remove 50 PP from the player
+					add_political_power = -50
+
+					#Decrease the trend of said branch by -4%
+					add_to_variable = {COL_security_trend = -0.04}
+				}
+			}
+
+			#OPTION 3
+			COL_button3_click = {
+				if = {
+					#President Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 1}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_president_stance = 0.05}
+				}
+				else_if = {
+					#Parliament Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 2}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_parliament_stance = 0.05}
+				}
+				else_if = {
+					#Judiciary Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 3}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_judiciary_stance = 0.05}
+				}
+				else_if = {
+					#Defense Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 4}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_defense_stance = 0.05}
+				}
+				else_if = {
+					#Economic Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 5}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_economic_stance = 0.05}
+				}	
+				else_if = {
+					#Foreign Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 6}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_foreign_stance = 0.05}
+				}
+				else_if = {
+					#Educational Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 7}
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_educational_stance = 0.05}
+				}
+				else_if = {
+					#Agricultural Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 8}
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_agricultural_stance = 0.05}
+				}
+				else_if = {
+					#Cultural Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 9}
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_cultural_stance = 0.05}
+				}	
+				else_if = {
+					#Security Branch Option 3
+					limit = {
+						check_variable = { COL_selected_branch = 10}
+					}
+					#Remove 75 PP from the player
+					add_political_power = -75
+
+					#Increase stance of said branch by 5%
+					add_to_variable = {COL_security_stance = 0.05}
+				}
+			}
+
+			#Option 4
+			COL_button4_click = {
+				if = {
+					#President Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 1}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_president_stance = -0.1}
+				}
+				else_if = {
+					#Parliament Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 2}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_parliament_stance = -0.1}
+				}
+				else_if = {
+					#Judiciary Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 3}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_judiciary_stance = -0.1}
+				}
+				else_if = {
+					#Defense Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 4}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_defense_stance = -0.1}
+				}
+				else_if = {
+					#Economic Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 5}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_economic_stance = -0.1}
+				}	
+				else_if = {
+					#Foreign Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 6}
+						COL_are_branch_requirements_met = yes
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_foreign_stance = -0.1}
+				}
+				else_if = {
+					#Educational Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 7}
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_educational_stance = -0.1}
+				}
+				else_if = {
+					#Agricultural Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 8}
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_agricultural_stance = -0.1}
+				}
+				else_if = {
+					#Cultural Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 9}
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_cultural_stance = -0.1}
+				}	
+				else_if = {
+					#Security Branch Option 4
+					limit = {
+						check_variable = { COL_selected_branch = 10}
+					}
+					#Remove 90 PP from the player
+					add_political_power = -90
+
+					#Decrease stance of said branch by -10%
+					add_to_variable = {COL_security_stance = -0.1}
+				}
+			}
+
+			#Align Branch
+			COL_align_button_click = {
+				#Bottom 4
+				if = {
+					limit = {
+						check_variable = {COL_selected_branch = 10}
+					}
+					set_variable = {COL_security_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 10} #Set to brach 10 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 9}
+					}
+					set_variable = {COL_cultural_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 9} #Set to brach 9 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 8}
+					}
+					set_variable = {COL_agricultural_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 8} #Set to brach 8 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 7}
+					}
+					set_variable = {COL_educational_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 7} #Set to brach 7 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 6}
+						COL_are_branch_requirements_met = yes
+					} #Prereqs: 10, 9
+					set_variable = {COL_foreign_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 6} #Set to brach 6 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 5}
+						COL_are_branch_requirements_met = yes
+					} #Prereqs: 9, 8
+					set_variable = {COL_economic_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 5} #Set to brach 5 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 4}
+						COL_are_branch_requirements_met = yes
+					} #Prereqs: 8, 7
+					set_variable = {COL_defense_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 4} #Set to brach 4 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 3}
+						COL_are_branch_requirements_met = yes
+					} #Prereqs: 6, 5
+					set_variable = {COL_judiciary_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 3} #Set to brach 3 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 2}
+						COL_are_branch_requirements_met = yes
+					} #Prereqs: 5, 4
+					set_variable = {COL_parliament_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 2} #Set to brach 2 for event
+					country_event = {id = bolivar.2 days = 0}
+				} else_if = {
+					limit = {
+						check_variable = {COL_selected_branch = 1}
+						COL_are_branch_requirements_met = yes
+					} #Prereqs: 3, 2
+					set_variable = {COL_president_liberalized = 1}
+					add_to_variable = {COL_liberalization_progress = 10} #Add 10% to Liberalization progress
+					set_variable = {COL_scripted_loc_last_liberalized = 1} #Set to brach 1 for event
+					country_event = {id = bolivar.2 days = 0}
+				}
+			}
+
+			#Liberalize the country
+			COL_liberalize_button_click = {
+				set_country_flag = country_liberalized
+				country_event = {id = bolivar.1 days = 0}
+				set_variable = {COL_country_liberalized = 1}
+			}
+		}
+
+		triggers = {
+			COL_button1_click_enabled = {
+				COL_are_branch_requirements_met = yes
+				check_variable = {political_power > 39}
+			}
+			COL_button2_click_enabled = {
+				COL_are_branch_requirements_met = yes
+				check_variable = {political_power > 49}
+			}
+			COL_button3_click_enabled = {
+				COL_are_branch_requirements_met = yes
+				check_variable = {political_power > 74}
+			}
+			COL_button4_click_enabled = {
+				COL_are_branch_requirements_met = yes
+				check_variable = {political_power > 89}
+			}
+			COL_align_button_click_enabled = {
+				COL_are_branch_requirements_met = yes #Pre-reqs are met
+				check_variable = {COL_current_secured = 100}
+
+			}
+			COL_liberalize_button_click_enabled = {
+				check_variable = {COL_country_liberalized = 0}
+				check_variable = {COL_liberalization_progress > 99}
+			}
+		}
+
+		properties = {
+			COL_GUI_Bar_stance = {
+				frame = COL_current_stance
+			}
+			COL_GUI_Bar_secured = {
+				frame = COL_current_secured
+			}
+		}
+	}
+}

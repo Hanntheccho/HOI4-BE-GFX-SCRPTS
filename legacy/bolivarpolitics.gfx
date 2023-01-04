@@ -1,0 +1,23 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_COL_GUI_Bar"
+		textureFile1 = "gfx/interface/bolivar_gui/BOL_GUI_progress_bar.dds"
+		textureFile2 = "gfx/interface/bolivar_gui/BOL_GUI_progress_bar_bg.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { 
+			x = 700
+			y = 30
+		}
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+	#spriteType = {
+	#	name = "GFX_COL_GUI_Bar_Tick"
+	#	textureFile = "gfx/interface/bolivar_gui/BOL_GUI_progress_bar_tick.dds"
+	#}
+	#spriteType = {
+	#	name = "GFX_COL_GUI_Bar_Frame"
+	#	textureFile = "gfx/interface/novosibirsk_gui/BOL_GUI_progress_bar_frame.dds"
+	#}
+}

@@ -1,0 +1,122 @@
+spriteTypes = {	
+	##SIL##
+	SpriteType = {
+		name = "GFX_goal_SIL_the_last_leg"
+		texturefile = "gfx/interface/goals/goal_SIL_the_last_leg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_dreaming_big"
+		texturefile = "gfx/interface/goals/goal_SIL_dreaming_big.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_fighting_hard"
+		texturefile = "gfx/interface/goals/goal_SIL_fighting_hard.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_retake_coastal_holdouts"
+		texturefile = "gfx/interface/goals/goal_SIL_retake_coastal_holdouts.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_sieze_fishing_industries"
+		texturefile = "gfx/interface/goals/goal_SIL_sieze_fishing_industries.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_seattle_gunsmithies"
+		texturefile = "gfx/interface/goals/goal_SIL_seattle_gunsmithies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_beyond_the_horizon"
+		texturefile = "gfx/interface/goals/goal_SIL_beyond_the_horizon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_war_plan_priest"
+		texturefile = "gfx/interface/goals/goal_SIL_war_plan_priest.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_war_plan_knight"
+		texturefile = "gfx/interface/goals/goal_SIL_war_plan_knight.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_war_plan_farmer"
+		texturefile = "gfx/interface/goals/goal_SIL_war_plan_farmer.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_like_leaves_in_autumn"
+		texturefile = "gfx/interface/goals/goal_SIL_like_leaves_in_autumn.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_atonement"
+		texturefile = "gfx/interface/goals/goal_SIL_atonement.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_a_breath_of_fresh_air"
+		texturefile = "gfx/interface/goals/goal_SIL_a_breath_of_fresh_air.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_the_national_mythos"
+		texturefile = "gfx/interface/goals/goal_SIL_the_national_mythos.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_the_renovators"
+		texturefile = "gfx/interface/goals/goal_SIL_the_renovators.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_pen_and_sword"
+		texturefile = "gfx/interface/goals/goal_SIL_pen_and_sword.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_fight_to_survive"
+		texturefile = "gfx/interface/goals/goal_SIL_fight_to_survive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_martyr_complex"
+		texturefile = "gfx/interface/goals/goal_SIL_martyr_complex.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_the_last_tomorrow"
+		texturefile = "gfx/interface/goals/goal_SIL_the_last_tomorrow.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_we_were_younger_then"
+		texturefile = "gfx/interface/goals/goal_SIL_we_were_younger_then.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_fullfilment"
+		texturefile = "gfx/interface/goals/goal_SIL_fullfilment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_how_it_will_be"
+		texturefile = "gfx/interface/goals/goal_SIL_how_it_will_be.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_we_did_not_understand_meaning"
+		texturefile = "gfx/interface/goals/goal_SIL_we_did_not_understand_meaning.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_SIL_i_shall_not_grow_old"
+		texturefile = "gfx/interface/goals/goal_SIL_i_shall_not_grow_old.dds"
+	}
+}

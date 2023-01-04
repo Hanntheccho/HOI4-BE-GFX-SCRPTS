@@ -1,0 +1,532 @@
+spriteTypes = {	
+	##TRE##
+	SpriteType = {
+		name = "GFX_goal_TRE_the_untana_regime"
+		texturefile = "gfx/interface/goals/goal_TRE_the_untana_regime.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_restore_civilian_rule"
+		texturefile = "gfx/interface/goals/goal_TRE_restore_civilian_rule.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_begin_assimilation_campaigns"
+		texturefile = "gfx/interface/goals/goal_TRE_begin_assimilation_campaigns.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_rebuilding_america"
+		texturefile = "gfx/interface/goals/goal_TRE_rebuilding_america.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unnabar"
+		texturefile = "gfx/interface/goals/goal_TRE_unnabar.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_fix_the_coastal_divide"
+		texturefile = "gfx/interface/goals/goal_TRE_fix_the_coastal_divide.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_rebuild_the_highways"
+		texturefile = "gfx/interface/goals/goal_TRE_rebuild_the_highways.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_un_economic_and_social_council"
+		texturefile = "gfx/interface/goals/goal_TRE_un_economic_and_social_council.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_end_regulation"
+		texturefile = "gfx/interface/goals/goal_TRE_end_regulation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_integrate_world_economies"
+		texturefile = "gfx/interface/goals/goal_TRE_integrate_world_economies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_ecosoc_elections"
+		texturefile = "gfx/interface/goals/goal_TRE_ecosoc_elections.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_establish_the_oios"
+		texturefile = "gfx/interface/goals/goal_TRE_establish_the_oios.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_who_development_fund"
+		texturefile = "gfx/interface/goals/goal_TRE_who_development_fund.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_form_the_principal_organs"
+		texturefile = "gfx/interface/goals/goal_TRE_form_the_principal_organs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_draft_specialized_agencies"
+		texturefile = "gfx/interface/goals/goal_TRE_draft_specialized_agencies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_the_secretary_general_election"
+		texturefile = "gfx/interface/goals/goal_TRE_the_secretary_general_election.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_rebuild_the_unwto"
+		texturefile = "gfx/interface/goals/goal_TRE_rebuild_the_unwto.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_form_the_unso"
+		texturefile = "gfx/interface/goals/goal_TRE_form_the_unso.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_fulfilling_our_destiny"
+		texturefile = "gfx/interface/goals/goal_TRE_fulfilling_our_destiny.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_proclaim_the_unification_conflict"
+		texturefile = "gfx/interface/goals/goal_TRE_proclaim_the_unification_conflict.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unseco_world_heritage_sites"
+		texturefile = "gfx/interface/goals/goal_TRE_unseco_world_heritage_sites.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_force_commander_office"
+		texturefile = "gfx/interface/goals/goal_TRE_force_commander_office.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_reestablish_human_rights"
+		texturefile = "gfx/interface/goals/goal_TRE_reestablish_human_rights.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_choose_a_stance_on_augmentation"
+		texturefile = "gfx/interface/goals/goal_TRE_choose_a_stance_on_augmentation.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_ai_rights_issue"
+		texturefile = "gfx/interface/goals/goal_TRE_ai_rights_issue.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_dpo_organization"
+		texturefile = "gfx/interface/goals/goal_TRE_dpo_organization.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unstratcom"
+		texturefile = "gfx/interface/goals/goal_TRE_unstratcom.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_untaccom"
+		texturefile = "gfx/interface/goals/goal_TRE_untaccom.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_un_space_forces"
+		texturefile = "gfx/interface/goals/goal_TRE_un_space_forces.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_blue_helmet_deployment"
+		texturefile = "gfx/interface/goals/goal_TRE_blue_helmet_deployment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_the_peacekeeper_model"
+		texturefile = "gfx/interface/goals/goal_TRE_the_peacekeeper_model.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_integrate_global_general_staffs"
+		texturefile = "gfx/interface/goals/goal_TRE_integrate_global_general_staffs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_found_the_pcrs"
+		texturefile = "gfx/interface/goals/goal_TRE_found_the_pcrs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_over_the_atlantic"
+		texturefile = "gfx/interface/goals/goal_TRE_over_the_atlantic.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_beachhead_iceland"
+		texturefile = "gfx/interface/goals/goal_TRE_beachhead_iceland.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_secure_the_british_archipelago"
+		texturefile = "gfx/interface/goals/goal_TRE_secure_the_british_archipelago.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unea"
+		texturefile = "gfx/interface/goals/goal_TRE_unea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_into_scandinavia"
+		texturefile = "gfx/interface/goals/goal_TRE_into_scandinavia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_return_to_geneva"
+		texturefile = "gfx/interface/goals/goal_TRE_return_to_geneva.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_over_the_eurasian_plain"
+		texturefile = "gfx/interface/goals/goal_TRE_over_the_eurasian_plain.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_spread_pan_european_ideals"
+		texturefile = "gfx/interface/goals/goal_TRE_spread_pan_european_ideals.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_to_the_urals"
+		texturefile = "gfx/interface/goals/goal_TRE_to_the_urals.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_dominate_the_mediterranean"
+		texturefile = "gfx/interface/goals/goal_TRE_dominate_the_mediterranean.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_from_panama_to_patagonia"
+		texturefile = "gfx/interface/goals/goal_TRE_from_panama_to_patagonia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_police_action_in_mexico"
+		texturefile = "gfx/interface/goals/goal_TRE_police_action_in_mexico.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_urbanize_mexico"
+		texturefile = "gfx/interface/goals/goal_TRE_urbanize_mexico.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_horizontal_rebuilding_scheme"
+		texturefile = "gfx/interface/goals/goal_TRE_horizontal_rebuilding_scheme.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_occupy_the_caribbean_islands"
+		texturefile = "gfx/interface/goals/goal_TRE_occupy_the_caribbean_islands.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_ultimatum_to_central_america"
+		texturefile = "gfx/interface/goals/goal_TRE_ultimatum_to_central_america.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_finalize_the_untana"
+		texturefile = "gfx/interface/goals/goal_TRE_finalize_the_untana.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_proceed_south"
+		texturefile = "gfx/interface/goals/goal_TRE_proceed_south.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_break_through_the_andes"
+		texturefile = "gfx/interface/goals/goal_TRE_break_through_the_andes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_work_with_compact_loyalists"
+		texturefile = "gfx/interface/goals/goal_TRE_work_with_compact_loyalists.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_internationalize_lithium_deposits"
+		texturefile = "gfx/interface/goals/goal_TRE_internationalize_lithium_deposits.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_land_in_bolivaria"
+		texturefile = "gfx/interface/goals/goal_TRE_land_in_bolivaria.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_prepare_southern_infrastructure"
+		texturefile = "gfx/interface/goals/goal_TRE_prepare_southern_infrastructure.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_anti_totalitarianism_campaign"
+		texturefile = "gfx/interface/goals/goal_TRE_anti_totalitarianism_campaign.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_enter_brazil"
+		texturefile = "gfx/interface/goals/goal_TRE_enter_brazil.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_saesb"
+		texturefile = "gfx/interface/goals/goal_TRE_saesb.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_eradicate_militarism"
+		texturefile = "gfx/interface/goals/goal_TRE_eradicate_militarism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_pacify_the_amazon"
+		texturefile = "gfx/interface/goals/goal_TRE_pacify_the_amazon.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_mobilize_against_la_plata"
+		texturefile = "gfx/interface/goals/goal_TRE_mobilize_against_la_plata.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_permit_civilian_rule"
+		texturefile = "gfx/interface/goals/goal_TRE_permit_civilian_rule.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_prepare_atlantic_dockyards"
+		texturefile = "gfx/interface/goals/goal_TRE_prepare_atlantic_dockyards.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_combine_south_american_nations"
+		texturefile = "gfx/interface/goals/goal_TRE_combine_south_american_nations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_across_the_sahara"
+		texturefile = "gfx/interface/goals/goal_TRE_across_the_sahara.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_landings_in_morocco"
+		texturefile = "gfx/interface/goals/goal_TRE_landings_in_morocco.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_form_north_african_offices"
+		texturefile = "gfx/interface/goals/goal_TRE_form_north_african_offices.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_against_the_mediterranean"
+		texturefile = "gfx/interface/goals/goal_TRE_against_the_mediterranean.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_pacify_egypt"
+		texturefile = "gfx/interface/goals/goal_TRE_pacify_egypt.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_tap_the_niles_power"
+		texturefile = "gfx/interface/goals/goal_TRE_tap_the_niles_power.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_landings_in_south_africa"
+		texturefile = "gfx/interface/goals/goal_TRE_landings_in_south_africa.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_pacify_the_congo"
+		texturefile = "gfx/interface/goals/goal_TRE_pacify_the_congo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_a_meeting_in_sudan"
+		texturefile = "gfx/interface/goals/goal_TRE_a_meeting_in_sudan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_into_the_west"
+		texturefile = "gfx/interface/goals/goal_TRE_into_the_west.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_facilitate_international_trade"
+		texturefile = "gfx/interface/goals/goal_TRE_facilitate_international_trade.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_integrate_african_labs"
+		texturefile = "gfx/interface/goals/goal_TRE_integrate_african_labs.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_create_african_governorships"
+		texturefile = "gfx/interface/goals/goal_TRE_create_african_governorships.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_combine_african_nations"
+		texturefile = "gfx/interface/goals/goal_TRE_combine_african_nations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_appropriate_pan_africanism"
+		texturefile = "gfx/interface/goals/goal_TRE_appropriate_pan_africanism.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_stabilize_ethiopia"
+		texturefile = "gfx/interface/goals/goal_TRE_stabilize_ethiopia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_somalian_intervention"
+		texturefile = "gfx/interface/goals/goal_TRE_somalian_intervention.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_reconnect_the_continent"
+		texturefile = "gfx/interface/goals/goal_TRE_reconnect_the_continent.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_prepare_indian_transports"
+		texturefile = "gfx/interface/goals/goal_TRE_prepare_indian_transports.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_police_action_in_the_middle_east"
+		texturefile = "gfx/interface/goals/goal_TRE_police_action_in_the_middle_east.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unmea"
+		texturefile = "gfx/interface/goals/goal_TRE_unmea.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_ultimatum_to_central_asia"
+		texturefile = "gfx/interface/goals/goal_TRE_ultimatum_to_central_asia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unite_the_oceans"
+		texturefile = "gfx/interface/goals/goal_TRE_unite_the_oceans.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_pacify_india"
+		texturefile = "gfx/interface/goals/goal_TRE_pacify_india.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_the_religions_debate"
+		texturefile = "gfx/interface/goals/goal_TRE_the_religions_debate.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unia"
+		texturefile = "gfx/interface/goals/goal_TRE_unia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_ungmra"
+		texturefile = "gfx/interface/goals/goal_TRE_ungmra.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_in_the_pacific"
+		texturefile = "gfx/interface/goals/goal_TRE_in_the_pacific.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_beachhead_in_new_zealand"
+		texturefile = "gfx/interface/goals/goal_TRE_beachhead_in_new_zealand.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_modern_island_hopping"
+		texturefile = "gfx/interface/goals/goal_TRE_modern_island_hopping.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_pacify_australia"
+		texturefile = "gfx/interface/goals/goal_TRE_pacify_australia.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_the_nusantaran_connection"
+		texturefile = "gfx/interface/goals/goal_TRE_the_nusantaran_connection.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_airbase_development"
+		texturefile = "gfx/interface/goals/goal_TRE_airbase_development.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_the_indochina_question"
+		texturefile = "gfx/interface/goals/goal_TRE_the_indochina_question.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_resolve_the_burmese_issue"
+		texturefile = "gfx/interface/goals/goal_TRE_resolve_the_burmese_issue.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_ultimatum_to_japan"
+		texturefile = "gfx/interface/goals/goal_TRE_ultimatum_to_japan.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_police_action_in_china"
+		texturefile = "gfx/interface/goals/goal_TRE_police_action_in_china.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_unca"
+		texturefile = "gfx/interface/goals/goal_TRE_unca.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_end_the_ideological_disputes"
+		texturefile = "gfx/interface/goals/goal_TRE_end_the_ideological_disputes.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_tying_loose_ends"
+		texturefile = "gfx/interface/goals/goal_TRE_tying_loose_ends.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_goal_TRE_asian_superhighway_developmental_funds"
+		texturefile = "gfx/interface/goals/goal_TRE_asian_superhighway_developmental_funds.dds"
+	}
+}

@@ -1,0 +1,428 @@
+#defined_text = {
+#    name = BEPeaceEventGetTitle
+#    text = {
+#        localization_key = "PEACE_EVENT_TITLE"
+#    }
+#}
+#
+#defined_text = {
+#    name = BEPeaceEventGetQuote
+#    text = {
+#        localization_key = "DEFAULT_CAPITULATION_QUOTE"
+#    }
+#}
+#
+#defined_text = {
+#    name = BEPeaceEventGetQuote
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = FRA
+#            }
+#        }
+#        localization_key = "FRANCOIBERIA_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = GER 
+#            }
+#        }
+#        localization_key = "GERMANY_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = GRN 
+#            }
+#        }
+#        localization_key = "GREENLAND_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = URA
+#            }
+#        }
+#        localization_key = "URAL_DEFEAT_QUOTE"
+#    }
+#     text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = BGV 
+#            }
+#        }
+#        localization_key = "REJINALDO_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = LEG 
+#            }
+#        }
+#        localization_key = "ALVAREZ_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = GRP 
+#            }
+#        }
+#        localization_key = "WATANABE_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = LAM 
+#            }
+#        }
+#        localization_key = "XIMENES_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = BRA
+#            }
+#        }
+#        localization_key = "BRAZIL_DEFEAT_QUOTE"
+#    }
+#      text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = PRU 
+#            }
+#        }
+#        localization_key = "ANDEAN_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = ITA
+#            }
+#        }
+#        localization_key = "ITALY_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = POL 
+#            }
+#        }
+#        localization_key = "POLAND_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = UKR 
+#            }
+#        }
+#        localization_key = "UKRAINE_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = KAZ 
+#            }
+#        }
+#        localization_key = "CENTRALASIA_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = BLR 
+#            }
+#        }
+#        localization_key = "VOSTASLAVIA_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = TZN 
+#            }
+#        }
+#        localization_key = "AFRICANUNION_DEFEAT_QUOTE"
+#    }
+#     text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = COG 
+#            }
+#        }
+#        localization_key = "CONGO_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = SIL 
+#            }
+#        }
+#        localization_key = "SILKPATH_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = KAR 
+#            }
+#        }
+#        localization_key = "KARELIA_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = ONE 
+#            }
+#        }
+#        localization_key = "DISTRICTONE_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = DOS 
+#            }
+#        }
+#        localization_key = "DISTRICTTWO_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = TRE 
+#            }
+#        }
+#        localization_key = "DISTRICTTHREE_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = CUA 
+#            }
+#        }
+#        localization_key = "DISTRICTFOUR_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = CIN 
+#            }
+#        }
+#        localization_key = "DISTRICTFIVE_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = SEI 
+#            }
+#        }
+#        localization_key = "DISTRICTSIX_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = SIT 
+#            }
+#        }
+#        localization_key = "DISTRICTSEVEN_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = OCH 
+#            }
+#        }
+#        localization_key = "DISTRICTEIGHT_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = ARC 
+#            }
+#        }
+#        localization_key = "ARC_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = USA 
+#            }
+#        }
+#        localization_key = "NAVALJUNTA_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = PNM 
+#            }
+#        }
+#        localization_key = "CENTRAL_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = URG
+#            }
+#        }
+#        localization_key = "URUGUAY_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                has_government = harmony
+#                tag = SCO
+#            }
+#        }
+#        localization_key = "DIEDRE_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                NOT = { has_government = harmony }
+#                tag = SCO
+#            }
+#        }
+#        localization_key = "SCOTLAND_DEFEAT_QUOTE"
+#    }
+#    text = {
+#        trigger = {
+#            any_country = {
+#                has_capitulated = yes
+#                has_war = yes
+#                is_puppet = no
+#                is_subject = no
+#                tag = SAF
+#            }
+#        }
+#        localization_key = "SOUTHAFRICA_DEFEAT_QUOTE"
+#    }
+#}
+#

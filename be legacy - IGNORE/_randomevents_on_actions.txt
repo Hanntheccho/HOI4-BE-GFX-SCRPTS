@@ -1,0 +1,512 @@
+#on_actions = {
+#    #on_daily = {
+#    #    effect = {
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_1_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.1 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_2_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.2 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_3_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.3 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_4_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.4 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_5_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.5 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_6_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.6 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_7_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.7 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_8_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.8 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_9_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.9 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_10_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.10 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_12_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.12 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_13_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.13 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_14_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.14 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_17_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.17 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_20_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.20 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					has_tech = augment_var_3
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_11_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				365 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.11 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					OR = {
+#	#						AND = {
+#	#							has_government = supremacy
+#	#							supremacy < 0.5
+#	#						}
+#	#						AND = {
+#	#							has_government = harmony
+#	#							harmony < 0.5
+#	#						}
+#	#						AND = {
+#	#							has_government = purity
+#	#							purity < 0.5
+#	#						}
+#	#						AND = {
+#	#							has_government = neutral
+#	#							neutral < 0.5
+#	#						}
+#	#						AND = {
+#	#							has_government = mastery
+#	#							mastery < 0.5
+#	#						}
+#	#						AND = {
+#	#							has_government = divinity
+#	#							divinity < 0.5
+#	#						}
+#	#					}
+#	#					NOT = {
+#	#						has_country_flag = event_15_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.15 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					amount_manpower_in_deployment_queue > 1000
+#	#					date < 2203.07.15
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					NOT = {
+#	#						has_country_flag = event_16_fired
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				645 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.16 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#	#		if = {
+#	#			limit = {
+#	#				AND = {
+#	#					check_variable = { randomevent_amount < 6 }
+#	#					OR = {
+#	#						AND = {
+#	#							NOT = {
+#	#								ROOT = {
+#	#									any_owned_state = {
+#	#										OR = {
+#	#											is_on_continent = australia
+#	#											is_on_continent = south_america
+#	#											is_on_continent = africa
+#	#										}
+#	#									}
+#	#								}
+#	#							}
+#	#							OR = {
+#	#								AND = {
+#	#									date > 2200.06.1
+#	#									date < 2200.09.1
+#	#								}
+#	#								AND = {
+#	#									date > 2201.06.1
+#	#									date < 2201.09.1
+#	#								}
+#	#								AND = {
+#	#									date > 2202.06.1
+#	#									date < 2202.09.1
+#	#								}
+#	#								AND = {
+#	#									date > 2203.06.1
+#	#									date < 2203.07.15
+#	#								}
+#	#							}
+#	#						}
+#	#						AND = {
+#	#							NOT = {
+#	#								ROOT = {
+#	#									any_owned_state = {
+#	#										OR = {
+#	#											is_on_continent = europe
+#	#											is_on_continent = asia
+#	#											is_on_continent = north_america
+#	#											is_on_continent = middle_east
+#	#										}
+#	#									}
+#	#								}
+#	#							}
+#	#							OR = {
+#	#								AND = {
+#	#									date > 2200.01.1
+#	#									date < 2200.03.1
+#	#								}
+#	#								AND = {
+#	#									date > 2200.12.1
+#	#									date < 2201.03.1
+#	#								}
+#	#								AND = {
+#	#									date > 2201.12.1
+#	#									date < 2202.03.1
+#	#								}
+#	#								AND = {
+#	#									date > 2202.12.1
+#	#									date < 2203.03.1
+#	#								}
+#	#							}
+#	#						}
+#	#					}
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				365 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.18 days = 0 }
+#	#				}
+#	#			}
+#	#			random_list = {
+#	#				365 = {
+#	#				}
+#	#				1 = {
+#	#					country_event = { id = randomevent.19 days = 0 }
+#	#				}
+#	#			}
+#	#		}
+#    #    }
+#    #}
+#
+#	#CAPITULATION EVENT WINDOW WITH FLATLINE TOBE IMPROVED / TOADD MORE QUOTES!!!!
+#
+#    #on_capitulation = {
+#    #    effect = {
+#    #       log = "-----CAPITULATION EVENT TRIGGERED-----"
+#    #       set_global_flag = show_capitulation_super_event
+#	#		FROM = {
+#	#			save_global_event_target_as = winning_country
+#	#		}
+#	#		ROOT = {
+#	#			save_global_event_target_as = losing_country
+#	#		}
+#    #        log = "[GetDateText]: Winner: [winning_country.GetName] | Loser: [losing_country.GetName]"
+#	#
+#    #        #Makes the event show if there are multiple winners/losers
+#    #        if = {
+#	#			limit = {
+#	#				event_target:losing_country = {
+#	#					any_allied_country = {
+#	#						has_war_together_with = event_target:losing_country
+#	#					}
+#	#				}
+#	#			}
+#	#			set_global_flag = losing_country_multiple
+#	#		}
+#	#
+#	#		if = {
+#	#			limit = {
+#	#				event_target:winning_country = {
+#	#					any_allied_country = {
+#	#						has_war_together_with = event_target:winning_country
+#	#					}
+#	#				}
+#	#			}
+#	#			set_global_flag = winning_country_multiple
+#	#		}
+#	#
+#    #        if = {
+#	#			limit = {
+#	#				OR = {
+#	#					ROOT = { is_in_faction = no }
+#	#					ROOT = {
+#	#						all_allied_country = {
+#	#							has_capitulated = yes
+#	#						}
+#	#					}
+#	#				}
+#	#			}
+#	#			log = "[GetDateText]: War has been won!"
+#	#			set_global_flag = war_won
+#    #        }
+#    #    }
+#    #}
+#
+#    #on_nuke_drop = {
+#    #    effect = {
+#    #        log = "---------ORBITAL BOMBARDMENT---------"
+#    #        set_global_flag = first_rod_dropped
+#    #        FROM = {
+#    #            save_global_event_target_as = shafted_state
+#    #        }
+#    #        ROOT = {
+#    #            save_global_event_target_as = shafter
+#    #        }
+#    #        log = "[GetDateText]: [shafter.GetName] has dropped a rod and shafted [shafted_state.Owner.GetName]"
+#    #    }
+#    #}
+#}

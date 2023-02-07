@@ -1,0 +1,701 @@
+#add_namespace = randomevent
+#
+#country_event = {
+#	id = randomevent.1
+#	title = randomevent.1.t
+#	desc = randomevent.1.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.1"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.1.a
+#        random_owned_state = {
+#            add_manpower = 10000
+#        }
+#        add_stability = 0.05
+#        set_country_flag = event_1_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.2
+#	title = randomevent.2.t
+#	desc = randomevent.2.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.2"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.2.a
+#        add_political_power = 20
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#	option = {
+#		name = randomevent.2.b
+#        custom_effect_tooltip = add_20_industrial_power
+#        add_to_variable = { industrial_power = 20 }
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#	option = {
+#		name = randomevent.2.c
+#        trigger = {
+#            check_variable = { corruption_variable < 30 }
+#        }
+#        add_political_power = 15
+#        custom_effect_tooltip = add_15_industrial_power
+#        add_to_variable = { industrial_power = 15 }
+#        set_country_flag = event_2_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.3
+#	title = randomevent.3.t
+#	desc = randomevent.3.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.3"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.3.a
+#        add_war_support = -0.05
+#		random_list = {
+#			34 = {
+#                add_stability = 0.04
+#			}
+#			33 = {
+#                add_stability = 0.08
+#			}
+#			33 = {
+#                add_stability = 0.1
+#			}
+#		}
+#        set_country_flag = event_3_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.4
+#	title = randomevent.4.t
+#	desc = randomevent.4.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.4"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.4.a
+#        if = {
+#            limit = {
+#                num_of_factories > 39
+#            }
+#            add_offsite_building = { type = industrial_complex level = 1 }
+#        }
+#        else = {
+#            custom_effect_tooltip = add_30_industrial_power
+#            add_to_variable = { industrial_power = 30 }
+#        }
+#        set_country_flag = event_4_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.5
+#	title = randomevent.5.t
+#	desc = randomevent.5.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.5"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.5.a
+#        custom_effect_tooltip = add_20_industrial_power
+#        add_to_variable = { industrial_power = 20 }
+#        set_country_flag = event_5_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.6
+#	title = randomevent.6.t
+#	desc = randomevent.6.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.6"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.6.a
+#        add_political_power = 15
+#        custom_effect_tooltip = add_5_industrial_power
+#        add_to_variable = { industrial_power = 5 }
+#        set_country_flag = event_6_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#	option = {
+#		name = randomevent.6.b
+#        random_owned_state = {
+#            add_manpower = 100000
+#        }
+#        add_manpower = 20000
+#        set_country_flag = event_6_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.7
+#	title = randomevent.7.t
+#	desc = randomevent.7.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.7"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.7.a
+#        custom_effect_tooltip = add_20_cultural_power
+#        add_to_variable = { cultural_power = 20 }
+#        set_country_flag = event_7_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.8
+#	title = randomevent.8.t
+#	desc = randomevent.8.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.8"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.8.a
+#		random_list = {
+#			34 = {
+#                custom_effect_tooltip = lose_3_corruption
+#                subtract_from_variable = { corruption_variable = 3 }
+#			}
+#			33 = {
+#                add_stability = 0.08
+#                custom_effect_tooltip = lose_4_corruption
+#                subtract_from_variable = { corruption_variable = 4 }
+#			}
+#			33 = {
+#                add_stability = 0.1
+#                custom_effect_tooltip = lose_5_corruption
+#                subtract_from_variable = { corruption_variable = 5 }
+#			}
+#		}
+#        set_country_flag = event_8_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.9
+#	title = randomevent.9.t
+#	desc = randomevent.9.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.9"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.9.a
+#		add_stability = 0.05
+#        set_country_flag = event_9_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.10
+#	title = randomevent.10.t
+#	desc = randomevent.10.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.10"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.10.a
+#        custom_effect_tooltip = add_20_cultural_power
+#        add_to_variable = { cultural_power = 20 }
+#        set_country_flag = event_10_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.11
+#	title = randomevent.11.t
+#	desc = randomevent.11.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.11"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.11.a
+#        army_experience = -5
+#        navy_experience = -5
+#        air_experience = -5
+#        set_country_flag = event_11_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.12
+#	title = randomevent.12.t
+#	desc = randomevent.12.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.12"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.12.a
+#        add_stability = -0.03
+#        set_country_flag = event_12_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#	option = {
+#		name = randomevent.12.b
+#        add_political_power = -20
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.13
+#	title = randomevent.13.t
+#	desc = randomevent.13.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.13"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.13.a
+#        add_stability = -0.02
+#        set_country_flag = event_13_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.14
+#	title = randomevent.14.t
+#	desc = randomevent.14.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.14"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.14.a
+#        custom_effect_tooltip = lose_30_industrial_power
+#        subtract_from_variable = { industrial_power = 30 }
+#        set_country_flag = event_14_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.15
+#	title = randomevent.15.t
+#	desc = randomevent.15.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.15"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.15.a
+#        if = {
+#            limit = {
+#                has_government = supremacy
+#            }
+#            add_popularity = {
+#                ideology = supremacy
+#                popularity = -0.01
+#            }
+#        }
+#        else_if = {
+#            limit = {
+#                has_government = harmony
+#            }
+#            add_popularity = {
+#                ideology = harmony
+#                popularity = -0.01
+#            }
+#        }
+#        else_if = {
+#            limit = {
+#                has_government = purity
+#            }
+#            add_popularity = {
+#                ideology = purity
+#                popularity = -0.01
+#            }
+#        }
+#        else_if = {
+#            limit = {
+#                has_government = neutral
+#            }
+#            add_popularity = {
+#                ideology = neutral
+#                popularity = -0.01
+#            }
+#        }
+#        else_if = {
+#            limit = {
+#                has_government = mastery
+#            }
+#            add_popularity = {
+#                ideology = mastery
+#                popularity = -0.01
+#            }
+#        }
+#        else_if = {
+#            limit = {
+#                has_government = divinity
+#            }
+#            add_popularity = {
+#                ideology = divinity
+#                popularity = -0.01
+#            }
+#        }
+#        set_country_flag = event_15_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.16
+#	title = randomevent.16.t
+#	desc = randomevent.16.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.16"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.16.a
+#        army_experience = -10
+#        set_country_flag = event_16_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.17
+#	title = randomevent.17.t
+#	desc = randomevent.17.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.17"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.17.a
+#        custom_effect_tooltip = lose_50_industrial_power
+#        subtract_from_variable = { industrial_power = 50 }
+#        set_country_flag = event_17_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.18
+#	title = randomevent.18.t
+#	desc = randomevent.18.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.18"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.18.a
+#        add_manpower = -100
+#        random_owned_state = {
+#            damage_building = {
+#                type = infrastructure
+#                damage = 1
+#            }
+#        }
+#        set_country_flag = event_18_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.19
+#	title = randomevent.19.t
+#	desc = randomevent.19.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.19"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.19.a
+#        add_manpower = -200
+#        random_owned_state = {
+#            damage_building = {
+#                type = infrastructure
+#                damage = 1
+#            }
+#        }
+#        set_country_flag = event_19_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}
+#
+#country_event = {
+#	id = randomevent.20
+#	title = randomevent.20.t
+#	desc = randomevent.20.d
+#	picture = GFX_unknown_event
+#
+#	immediate = {log = "[GetDateText]: [Root.GetName]: event randomevent.20"}
+#
+#	is_triggered_only = yes
+#	
+#	option = {
+#		name = randomevent.20.a
+#        add_manpower = -300
+#        random_owned_state = {
+#            damage_building = {
+#                type = infrastructure
+#                damage = 2
+#            }
+#        }
+#        set_country_flag = event_20_fired
+#        hidden_effect = {
+#            random_list = {
+#                80 = {
+#                    add_to_variable = { randomevent_amount = 1 }
+#                }
+#                20 = {
+#                }
+#            }
+#        }
+#	}
+#}

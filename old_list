@@ -1,0 +1,252 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CountryList : MonoBehaviour
+{
+    // List of all countries
+    public List<Country> allCountries;
+
+    // Default country to return if needed
+    public Country defaultCountry;
+
+    public CountryList()
+    {
+        allCountries = new List<Country>();
+    }
+
+    void Awake()
+    {
+        InitializeCountries();
+        defaultCountry = GetCountryByTag("CHI");
+    }
+
+    private int CalculatePowerProjection(Country country)
+    {
+        // Find the gameObject by name
+        GameObject countryGameObject = GameObject.Find(country.countryTag);
+
+        if (countryGameObject == null)
+        {
+            return 0;
+        }
+
+        // Get the renderer component of the GameObject
+        Renderer renderer = countryGameObject.GetComponent<Renderer>();
+
+        if (renderer == null)
+        {
+            return 0;
+        }
+
+        // Get the size of the object by multiplying width and height
+        float width = renderer.bounds.size.x;
+        float height = renderer.bounds.size.y;
+        float size = width * height;
+
+        // Convert the size to an integer for power projection, then divide by 1000
+        int powerProjection = Mathf.FloorToInt(size / 1000);
+
+        // Assign the calculated power projection to the country
+        country.countryPowerProjection = powerProjection;
+
+        return powerProjection;
+    }
+
+    void InitializeCountries()
+    {
+        Country ADU = new Country("ADU", "Tamazgha", "Tamazgha", "Tamazghese", "Desert", "Mountains", "Unknown", ""); allCountries.Add(ADU);
+        Country AFG = new Country("AFG", "Afghanistan", "Afghanistan", "Afghan", "Mountains", "Desert", "Unknown", ""); allCountries.Add(AFG);
+        Country ALB = new Country("ALB", "Dardania", "Dardania", "Dardanian", "Mountains", "Coast", "Unknown", ""); allCountries.Add(ALB);
+        Country AMU = new Country("AMU", "Chita-Nuzhen", "the Chita-Nuzhen Authority", "Chita-Nuzhen", "Forest", "Marsh", "Unknown", ""); allCountries.Add(AMU);
+        Country ANG = new Country("ANG", "Angola", "Angola", "Angolan", "Hills", "Desert", "Unknown", ""); allCountries.Add(ANG);
+        Country ARC = new Country("ARC", "A.R.C.", "the A.R.C.", "American", "Mountains", "Plains", "Unknown", ""); allCountries.Add(ARC);
+        Country ARG = new Country("ARG", "Argentina", "Argentina", "Argentine", "Mountains", "Plains", "Unknown", ""); allCountries.Add(ARG);
+        Country ASM = new Country("ASM", "Assam-Zogam", "the Assam Military Administration", "Assamese-Zomi", "Mountains", "Forest", "Unknown", ""); allCountries.Add(ASM);
+        Country AST = new Country("AST", "Australasia", "Australasia", "Australasian", "Coast", "Forest", "Unknown", ""); allCountries.Add(AST);
+        Country AZW = new Country("AZW", "Azward", "Azward", "Azwardese", "Mountains", "Marsh", "Unknown", ""); allCountries.Add(AZW);
+        Country BAN = new Country("BAN", "East Bengal", "East Bengal", "East Bengali", "Coast", "Forest", "Unknown", ""); allCountries.Add(BAN);
+        Country BHR = new Country("BHR", "Kavithan Protectorate", "the Kavithan Protectorate", "Kavithan", "Plains", "Mountains", "Unknown", ""); allCountries.Add(BHR);
+        Country BLC = new Country("BLC", "Balochistan", "Balochistan", "Baloch", "Desert", "Mountains", "Unknown", ""); allCountries.Add(BLC);
+        Country BLR = new Country("BLR", "Vostaslavia", "Vostaslavia", "Vostaslavian", "Forest", "Mountains", "Unknown", ""); allCountries.Add(BLR);
+        Country BNG = new Country("BNG", "West Bengal", "West Bengal", "West Bengali", "Coast", "Forest", "Unknown", ""); allCountries.Add(BNG);
+        Country BOL = new Country("BOL", "Surandes", "Surandes", "Surandes", "Mountains", "Rainforest", "Unknown", ""); allCountries.Add(BOL);
+        Country BRA = new Country("BRA", "Federative Republic of Brazil", "the Federative Republic of Brazil", "Brazilian", "Rainforest", "Plains", "Unknown", ""); allCountries.Add(BRA);
+        Country BRD = new Country("BRD", "Warega", "Warega", "Waregan", "Desert", "Mountains", "Unknown", ""); allCountries.Add(BRD);
+        Country BRM = new Country("BRM", "Myanmar", "Myanmar", "Burmese", "Mountains", "Forest", "Unknown", ""); allCountries.Add(BRM);
+        Country BUL = new Country("BUL", "Bulgaria", "Bulgaria", "Bulgarian", "Mountains", "Plains", "Unknown", ""); allCountries.Add(BUL);
+        Country CAL = new Country("CAL", "Spartan Federation", "the Spartan Federation", "Spartan", "Mountains", "Plains", "Unknown", ""); allCountries.Add(CAL);
+        Country CAM = new Country("CAM", "Cambodia", "Cambodia", "Cambodian", "Plains", "Forest", "Unknown", ""); allCountries.Add(CAM);
+        Country CAN = new Country("CAN", "Canada", "Canada", "Canadian", "Forest", "Mountains", "Unknown", ""); allCountries.Add(CAN);
+        Country CAR = new Country("CAR", "Mboumo", "Mboumo", "Mboumo", "Forest", "Plains", "Unknown", ""); allCountries.Add(CAR);
+        Country CAS = new Country("CAS", "District 2", "the District 2", "American", "Hills", "Forest", "Unknown", ""); allCountries.Add(CAS);
+        Country CHA = new Country("CHA", "Tsade", "Tsade", "Tsadian", "Desert", "Hills", "Unknown", ""); allCountries.Add(CHA);
+        Country CHI = new Country("CHI", "People's Republic of China", "the People's Republic of China", "Chinese", "Plains", "Mountains", "Disputed Leadership", "Strategic Cooperation Organization"); allCountries.Add(CHI);
+        Country CHL = new Country("CHL", "Chile", "Chile", "Chilean", "Mountains", "Desert", "Unknown", ""); allCountries.Add(CHL);
+        Country CHO = new Country("CHO", "Chongqing", "Chongqing", "Chinese", "Mountains", "Plains", "Unknown", ""); allCountries.Add(CHO);
+        Country CIN = new Country("CIN", "District 5", "the District 5", "American", "Forest", "Plains", "Unknown", ""); allCountries.Add(CIN);
+        Country CMR = new Country("CMR", "Adamawa", "Adamawa", "Adamawa", "Rainforest", "Hills", "Unknown", ""); allCountries.Add(CMR);
+        Country CNG = new Country("CNG", "England", "England", "English", "Plains", "Forest", "Unknown", ""); allCountries.Add(CNG);
+        Country COG = new Country("COG", "Union of the Kongo", "the Union of the Republic of the Kongo", "Kongolese", "Rainforest", "Hills", "Unknown", ""); allCountries.Add(COG);
+        Country COL = new Country("COL", "United Bolivarian Republic", "the United Bolivarian Republic", "Bolivarian", "Mountains", "Plains", "Unknown", ""); allCountries.Add(COL);
+        Country COS = new Country("COS", "Army of the Andes", "the Army of the Andes", "South Argentinian", "Mountains", "Desert", "Unknown", ""); allCountries.Add(COS);
+        Country CRO = new Country("CRO", "Illyrian Republic", "the Illyrian Republic", "Illyrian", "Mountains", "Coast", "Unknown", ""); allCountries.Add(CRO);
+        Country CSU = new Country("CSU", "Jeju", "Jeju", "Jeju", "Mountains", "Coast", "Unknown", ""); allCountries.Add(CSU);
+        Country CUA = new Country("CUA", "District 4", "the District 4", "American", "Forest", "Coast", "Unknown", ""); allCountries.Add(CUA);
+        Country CUB = new Country("CUB", "Caribbean Union", "the Caribbean Union", "Caribbean", "Coast", "Islands", "Unknown", ""); allCountries.Add(CUB);
+        Country CZE = new Country("CZE", "Czechia", "Czechia", "Czech", "Plains", "Mountains", "Unknown", ""); allCountries.Add(CZE);
+        Country DAH = new Country("DAH", "Benin", "Benin", "Beninese", "Plains", "Rainforest", "Unknown", ""); allCountries.Add(DAH);
+        Country DNG = new Country("DNG", "Dongbei", "Dongbei", "Chinese", "Plains", "Forest", "Unknown", ""); allCountries.Add(DNG);
+        Country DOS = new Country("DOS", "District 2", "the District 2", "American", "Plains", "Mountains", "Unknown", ""); allCountries.Add(DOS);
+        Country ECB = new Country("ECB", "Eastern Command", "the Eastern Command", "Brazilian", "Forest", "Mountains", "Unknown", ""); allCountries.Add(ECB);
+        Country EGY = new Country("EGY", "Republic of Egypt", "the Republic of Egypt", "Egyptian", "Desert", "Coast", "Unknown", ""); allCountries.Add(EGY);
+        Country ENG = new Country("ENG", "England", "England", "English", "Plains", "Coast", "Unknown", ""); allCountries.Add(ENG);
+        Country EQG = new Country("EQG", "Biafra", "Biafra", "Biafran", "Rainforest", "Hills", "Unknown", ""); allCountries.Add(EQG);
+        Country ETH = new Country("ETH", "Ethiopia", "Ethiopia", "Ethiopian", "Hills", "Hills", "Unknown", ""); allCountries.Add(ETH);
+        Country FIN = new Country("FIN", "Finland", "Finland", "Finnish", "Forest", "Marsh", "Unknown", ""); allCountries.Add(FIN);
+        Country FRA = new Country("FRA", "Franco-Iberia", "Franco-Iberia", "Franco-Iberian", "Plains", "Mountains", "Unknown", ""); allCountries.Add(FRA);
+        Country FUJ = new Country("FUJ", "Fujian", "Fujian", "Chinese", "Coast", "Mountains", "Unknown", ""); allCountries.Add(FUJ);
+        Country FZN = new Country("FZN", "Fezzan", "Fezzan", "Fezzanian", "Desert", "Mountains", "Unknown", ""); allCountries.Add(FZN);
+        Country GAB = new Country("GAB", "Ogowe", "Ogowe", "Ogowese", "Rainforest", "Hills", "Unknown", ""); allCountries.Add(GAB);
+        Country GAN = new Country("GAN", "Gansu", "Gansu", "Chinese", "Desert", "Mountains", "Unknown", ""); allCountries.Add(GAN);
+        Country GER = new Country("GER", "German Federation", "the German Federation", "German", "Plains", "Forest", "Unknown", ""); allCountries.Add(GER);
+        Country GHA = new Country("GHA", "Ghana", "Ghana", "Ghanaian", "Hills", "Rainforest", "Unknown", ""); allCountries.Add(GHA);
+        Country GNA = new Country("GNA", "Buketi", "Buketi", "Buketi", "Desert", "Hills", "Unknown", ""); allCountries.Add(GNA);
+        Country GNB = new Country("GNB", "Azanian Union", "the Azanian Union", "Azanian", "Plains", "Hills", "Unknown", ""); allCountries.Add(GNB);
+        Country GND = new Country("GND", "Guangdong", "Guangdong", "Chinese", "Coast", "Mountains", "Unknown", ""); allCountries.Add(GND);
+        Country GNX = new Country("GNX", "Guangxi", "Guangxi", "Chinese", "Mountains", "Forest", "Unknown", ""); allCountries.Add(GNX);
+        Country GRE = new Country("GRE", "Greece", "Greece", "Greek", "Mountains", "Coast", "Unknown", ""); allCountries.Add(GRE);
+        Country GRN = new Country("GRN", "Greenland", "Greenland", "Greenlandish", "Tundra", "Mountains", "Unknown", ""); allCountries.Add(GRN);
+        Country GRP = new Country("GRP", "Governo Republicano Provisório", "Governo Republicano Provisório", "Brazilian", "Rainforest", "Plains", "Unknown", ""); allCountries.Add(GRP);
+        Country GUA = new Country("GUA", "Central American Federation", "the Central American Federation", "Central American", "Mountains", "Rainforest", "Unknown", ""); allCountries.Add(GUA);
+        Country GUI = new Country("GUI", "Guizhou", "Guizhou", "Chinese", "Mountains", "Forest", "Unknown", ""); allCountries.Add(GUI);
+        Country GYA = new Country("GYA", "Guiana", "Guiana", "Guianese", "Rainforest", "Hills", "Unknown", ""); allCountries.Add(GYA);
+        Country HAN = new Country("HAN", "Hainan", "Hainan", "Chinese", "Coast", "Mountains", "Unknown", ""); allCountries.Add(HAN);
+        Country HAZ = new Country("HAZ", "Hazaristan", "Hazaristan", "Hazaristani", "Mountains", "Desert", "Unknown", ""); allCountries.Add(HAZ);
+        Country HNG = new Country("HNG", "England", "England", "English", "Plains", "Forest", "Unknown", ""); allCountries.Add(HNG);
+        Country HUN = new Country("HUN", "Hungary", "Hungary", "Hungarian", "Plains", "Hills", "Unknown", ""); allCountries.Add(HUN);
+        Country ICE = new Country("ICE", "Iceland", "Iceland", "Icelandic", "Tundra", "Mountains", "Unknown", ""); allCountries.Add(ICE);
+        Country IMO = new Country("IMO", "Inner Mongolia", "Inner Mongolia", "Mongolian", "Plains", "Desert", "Unknown", ""); allCountries.Add(IMO);
+        Country INS = new Country("INS", "Nusantaran Association", "the Nusantaran Association", "Nusantaran", "Rainforest", "Coast", "Unknown", ""); allCountries.Add(INS);
+        Country IRE = new Country("IRE", "Ireland", "Ireland", "Irish", "Plains", "Coast", "Unknown", ""); allCountries.Add(IRE);
+        Country ISR = new Country("ISR", "Israel", "Israel", "Israeli", "Desert", "Coast", "Unknown", ""); allCountries.Add(ISR);
+        Country ITA = new Country("ITA", "Italy", "Italy", "Italian", "Mountains", "Coast", "Unknown", ""); allCountries.Add(ITA);
+        Country IVO = new Country("IVO", "Cote D'Ivoire", "Cote D'Ivoire", "Ivorian", "Hills", "Rainforest", "Unknown", ""); allCountries.Add(IVO);
+        Country JAM = new Country("JAM", "Antillae Federation", "the Antillae Federation", "Antillaean", "Islands", "Coast", "Unknown", ""); allCountries.Add(JAM);
+        Country JAP = new Country("JAP", "Japan", "Japan", "Japanese", "Mountains", "Coast", "Unknown", ""); allCountries.Add(JAP);
+        Country JNG = new Country("JNG", "England", "England", "English", "Plains", "Forest", "Unknown", ""); allCountries.Add(JNG);
+        Country KAC = new Country("KAC", "Kachin", "Kachin", "Chinese", "Mountains", "Forest", "Unknown", ""); allCountries.Add(KAC);
+        Country KAR = new Country("KAR", "Karelia", "Karelia", "Karelian", "Forest", "Marsh", "Unknown", ""); allCountries.Add(KAR);
+        Country KAS = new Country("KAS", "Kashmir", "Kashmir", "Kashmirian", "Mountains", "Plains", "Unknown", ""); allCountries.Add(KAS);
+        Country KAV = new Country("KAV", "Kavitha", "the Kavithan Protectorate", "Kavithan", "Plains", "Desert", "Unknown", ""); allCountries.Add(KAV);
+        Country KAZ = new Country("KAZ", "Central Asian Federation", "the Central Asian Federation", "Kazakh", "Plains", "Desert", "Unknown", ""); allCountries.Add(KAZ);
+        Country KOR = new Country("KOR", "Korea", "the People's Republic of Korea", "Korean", "Mountains", "Coast", "Unknown", ""); allCountries.Add(KOR);
+        Country KRL = new Country("KRL", "Kerala", "Kerala", "Keralite", "Coast", "Forest", "Unknown", ""); allCountries.Add(KRL);
+        Country KRT = new Country("KRT", "Karnataka", "Karnataka", "Kannada", "Plains", "Forest", "Unknown", ""); allCountries.Add(KRT);
+        Country LAM = new Country("LAM", "Amazonia", "the Amazonian District", "Amazonian", "Rainforest", "Hills", "Unknown", ""); allCountries.Add(LAM);
+        Country LAO = new Country("LAO", "Laos", "Laos", "Laotian", "Mountains", "Plains", "Unknown", ""); allCountries.Add(LAO);
+        Country LAT = new Country("LAT", "Baltic Union", "the Baltic Union", "Baltic", "Plains", "Forest", "Unknown", ""); allCountries.Add(LAT);
+        Country LBA = new Country("LBA", "Tripolitania", "Tripolitania", "Tripolitanian", "Desert", "Coast", "Unknown", ""); allCountries.Add(LBA);
+        Country LEB = new Country("LEB", "Al-Hilal", "Al-Hilal", "Al-Hilalish", "Mountains", "Desert", "Unknown", ""); allCountries.Add(LEB);
+        Country LEG = new Country("LEG", "Legiao Sertao", "Legiao Sertao", "Brazilian", "Plains", "Forest", "Unknown", ""); allCountries.Add(LEG);
+        Country LIB = new Country("LIB", "Liberia", "Liberia", "Liberian", "Rainforest", "Plains", "Unknown", ""); allCountries.Add(LIB);
+        Country LIT = new Country("LIT", "Lithuania", "Lithuania", "Lithuanian", "Plains", "Forest", "Unknown", ""); allCountries.Add(LIT);
+        Country MAD = new Country("MAD", "Madagascar", "Madagascar", "Malagasy", "Rainforest", "Coast", "Unknown", ""); allCountries.Add(MAD);
+        Country MAH = new Country("MAH", "Maharashtra", "Maharashtra", "Marathi", "Plains", "Mountains", "Unknown", ""); allCountries.Add(MAH);
+        Country MAL = new Country("MAL", "Malaysia", "Malaysia", "Malaysian", "Rainforest", "Mountains", "Unknown", ""); allCountries.Add(MAL);
+        Country MEX = new Country("MEX", "Mexico", "Mexico", "Mexican", "Mountains", "Desert", "Unknown", ""); allCountries.Add(MEX);
+        Country MLI = new Country("MLI", "Mali Federation", "the Malian Federation", "Malian", "Hills", "Desert", "Unknown", ""); allCountries.Add(MLI);
+        Country MLW = new Country("MLW", "Msaga", "Msaga", "Msagan", "Desert", "Hills", "Unknown", ""); allCountries.Add(MLW);
+        Country MON = new Country("MON", "Mongolia", "Mongolia", "Mongolian", "Plains", "Desert", "Unknown", ""); allCountries.Add(MON);
+        Country MRT = new Country("MRT", "Mauritania", "Mauritania", "Mauritanian", "Desert", "Hills", "Unknown", ""); allCountries.Add(MRT);
+        Country NAX = new Country("NAX", "Naxalites", "the Naxal People's Liberation Army", "Naxalite", "Forest", "Mountains", "Unknown", ""); allCountries.Add(NAX);
+        Country NCB = new Country("NCB", "Northern Command", "the Northern Command", "Brazilian", "Rainforest", "Marsh", "Unknown", ""); allCountries.Add(NCB);
+        Country NEP = new Country("NEP", "Nepal", "Nepal", "Nepalese", "Mountains", "Hills", "Unknown", ""); allCountries.Add(NEP);
+        Country NGA = new Country("NGA", "Sokoto", "Sokoto", "Sokotan", "Hills", "Desert", "Unknown", ""); allCountries.Add(NGA);
+        Country NGR = new Country("NGR", "Kanem", "Kanem", "Kanemese", "Hills", "Desert", "Unknown", ""); allCountries.Add(NGR);
+        Country NOR = new Country("NOR", "Norway", "Norway", "Norwegian", "Mountains", "Coast", "Unknown", ""); allCountries.Add(NOR);
+        Country NPP = new Country("NPP", "New Papacy", "the New Papacy", "Catholic", "Plains", "Plains", "Unknown", ""); allCountries.Add(NPP);
+        Country NUE = new Country("NUE", "Nuer", "Nuer", "Nuer", "Hills", "Marsh", "Unknown", ""); allCountries.Add(NUE);
+        Country NZL = new Country("NZL", "New Zealand", "New Zealand", "New Zealand", "Mountains", "Coast", "Unknown", ""); allCountries.Add(NZL);
+        Country OCH = new Country("OCH", "District 8", "the District 8", "American", "Plains", "Hills", "Unknown", ""); allCountries.Add(OCH);
+        Country ODS = new Country("ODS", "Odisha", "Odisha", "Odia", "Plains", "Coast", "Unknown", ""); allCountries.Add(ODS);
+        Country OMA = new Country("OMA", "United Emirates of Oman", "United Emirates of Oman", "Omani", "Desert", "Coast", "Unknown", ""); allCountries.Add(OMA);
+        Country ONE = new Country("ONE", "District 1", "the District 1", "American", "Desert", "Hills", "Unknown", ""); allCountries.Add(ONE);
+        Country ONU = new Country("ONU", "Peacekeepers", "the Peacekeepers", "Peacekeeper", "Plains", "Rainforest", "Unknown", ""); allCountries.Add(ONU);
+        Country ORO = new Country("ORO", "Oromia", "Oromia", "Oromian", "Plains", "Mountains", "Unknown", ""); allCountries.Add(ORO);
+        Country PAD = new Country("PAD", "Padania", "Padania", "Padanian", "Plains", "Mountains", "Unknown", ""); allCountries.Add(PAD);
+        Country PAK = new Country("PAK", "Pashtunistan", "Pashtunistan", "Pashtun", "Mountains", "Plains", "Unknown", ""); allCountries.Add(PAK);
+        Country PAL = new Country("PAL", "Palestine", "Palestine", "Palestinian", "Coast", "Desert", "Unknown", ""); allCountries.Add(PAL);
+        Country PER = new Country("PER", "Iran", "Iran", "Iranian", "Mountains", "Desert", "Unknown", ""); allCountries.Add(PER);
+        Country PNM = new Country("PNM", "North American Union", "the North American Union", "American", "Forest", "Plains", "Unknown", ""); allCountries.Add(PNM);
+        Country POL = new Country("POL", "Poland", "Poland", "Polish", "Plains", "Forest", "Unknown", ""); allCountries.Add(POL);
+        Country PRU = new Country("PRU", "Andean Compact", "the Andean Compact", "Andean", "Mountains", "Plains", "Unknown", ""); allCountries.Add(PRU);
+        Country PUN = new Country("PUN", "Punjab", "Punjab", "Punjabi", "Plains", "Desert", "Unknown", ""); allCountries.Add(PUN);
+        Country QAF = new Country("QAF", "Qafara", "Qafara", "Afar", "Desert", "Hills", "Unknown", ""); allCountries.Add(QAF);
+        Country QAT = new Country("QAT", "Al-Hasa", "Al-Hasa", "Al-Hasi", "Desert", "Coast", "Unknown", ""); allCountries.Add(QAT);
+        Country QIN = new Country("QIN", "Qinghai", "Qinghai", "Chinese", "Hills", "Mountains", "Unknown", ""); allCountries.Add(QIN);
+        Country QUE = new Country("QUE", "Quebec", "Quebec", "Quebequian", "Forest", "Marsh", "Unknown", ""); allCountries.Add(QUE);
+        Country RAJ = new Country("RAJ", "Rajasthan", "Rajasthan", "Rajasthani", "Desert", "Plains", "Unknown", ""); allCountries.Add(RAJ);
+        Country ROM = new Country("ROM", "Romania", "Romania", "Romanian", "Plains", "Forest", "Unknown", ""); allCountries.Add(ROM);
+        Country RSA = new Country("RSA", "District 5", "the District 5", "American", "Plains", "Forest", "Unknown", ""); allCountries.Add(RSA);
+        Country RWA = new Country("RWA", "East Kivu", "East Kivu", "Kivu", "Plains", "Forest", "Unknown", ""); allCountries.Add(RWA);
+        Country SAF = new Country("SAF", "South Africa", "South Africa", "South African", "Plains", "Hills", "Unknown", ""); allCountries.Add(SAF);
+        Country SAU = new Country("SAU", "Arabia", "Arabia", "Arabian", "Desert", "Desert", "Unknown", ""); allCountries.Add(SAU);
+        Country SCB = new Country("SCB", "Southern Command", "the Southern Command", "Brazilian", "Plains", "Forest", "Unknown", ""); allCountries.Add(SCB);
+        Country SCO = new Country("SCO", "Scotland", "Scotland", "Scottish", "Mountains", "Coast", "Unknown", ""); allCountries.Add(SCO);
+        Country SEI = new Country("SEI", "District 6", "the District 6", "American", "Forest", "Plains", "Unknown", ""); allCountries.Add(SEI);
+        Country SHA = new Country("SHA", "Shandong", "Shandong", "Chinese", "Plains", "Coast", "Unknown", ""); allCountries.Add(SHA);
+        Country SHL = new Country("SHL", "Westralia", "Westralia", "Westralian", "Desert", "Coast", "Unknown", ""); allCountries.Add(SHL);
+        Country SIA = new Country("SIA", "Thailand", "Thailand", "Thai", "Plains", "Forest", "Unknown", ""); allCountries.Add(SIA);
+        Country SIB = new Country("SIB", "Russian Republic of Siberia", "the Russian Republic of Siberia", "Siberian", "Tundra", "Tundra", "Unknown", ""); allCountries.Add(SIB);
+        Country SIC = new Country("SIC", "Sichuan", "Sichuan", "Chinese", "Mountains", "Hills", "Unknown", ""); allCountries.Add(SIC);
+        Country SIE = new Country("SIE", "Waumala", "Waumala", "Waumalese", "Plains", "Forest", "Unknown", ""); allCountries.Add(SIE);
+        Country SIL = new Country("SIL", "The Silk Path", "the Silk Path", "American", "Coast", "Plains", "Unknown", ""); allCountries.Add(SIL);
+        Country SIN = new Country("SIN", "Sindh", "Sindh", "Sindhi", "Plains", "Coast", "Unknown", ""); allCountries.Add(SIN);
+        Country SIT = new Country("SIT", "District 7", "the District 7", "American", "Plains", "Plains", "Unknown", ""); allCountries.Add(SIT);
+        Country SLO = new Country("SLO", "Slovakia", "Slovakia", "Slovakian", "Plains", "Mountains", "Unknown", ""); allCountries.Add(SLO);
+        Country SOM = new Country("SOM", "Somalia", "Somalia", "Somalian", "Hills", "Coast", "Unknown", ""); allCountries.Add(SOM);
+        Country SOV = new Country("SOV", "Eurasian Union", "the Eurasian Union", "Eurasian", "Forest", "Marsh", "Unknown", ""); allCountries.Add(SOV);
+        Country SPR = new Country("SPR", "Iberia", "Iberia", "Iberian", "Plains", "Mountains", "Unknown", ""); allCountries.Add(SPR);
+        Country SRL = new Country("SRL", "Sri Lanka", "Sri Lanka", "Sri Lankan", "Coast", "Plains", "Unknown", ""); allCountries.Add(SRL);
+        Country SUD = new Country("SUD", "Sudan", "Sudan", "Sudanese", "Desert", "Hills", "Unknown", ""); allCountries.Add(SUD);
+        Country SWE = new Country("SWE", "Sweden", "Sweden", "Swedish", "Plains", "Forest", "Unknown", ""); allCountries.Add(SWE);
+        Country SYR = new Country("SYR", "Mashriq", "Mashriq", "Mashriqian", "Desert", "Plains", "Unknown", ""); allCountries.Add(SYR);
+        Country TAI = new Country("TAI", "Taiwan", "Taiwan", "Taiwanese", "Mountains", "Coast", "Unknown", ""); allCountries.Add(TAI);
+        Country TAM = new Country("TAM", "Tamilakam", "Tamilakam", "Tamil", "Plains", "Coast", "Unknown", ""); allCountries.Add(TAM);
+        Country TBS = new Country("TBS", "Tibesti", "Tibesti", "Tibesti", "Desert", "Mountains", "Unknown", ""); allCountries.Add(TBS);
+        Country TIB = new Country("TIB", "Tibet", "Tibet", "Tibetan", "Hills", "Mountains", "Unknown", ""); allCountries.Add(TIB);
+        Country TOG = new Country("TOG", "Kwama", "Kwama", "Kwamanese", "Plains", "Forest", "Unknown", ""); allCountries.Add(TOG);
+        Country TRE = new Country("TRE", "District 3", "the District 3", "American", "Plains", "Forest", "Unknown", ""); allCountries.Add(TRE);
+        Country TUN = new Country("TUN", "Union of Maghreb", "the Union of Maghreb", "Maghrebi", "Desert", "Coast", "Unknown", ""); allCountries.Add(TUN);
+        Country TUR = new Country("TUR", "Turkiye", "Turkiye", "Turkish", "Plains", "Mountains", "Unknown", ""); allCountries.Add(TUR);
+        Country TZN = new Country("TZN", "East African Federation", "the East African Federation", "East African", "Plains", "Hills", "Unknown", ""); allCountries.Add(TZN);
+        Country UKR = new Country("UKR", "Ukraine", "Ukraine", "Ukranian", "Plains", "Forest", "Unknown", ""); allCountries.Add(UKR);
+        Country URA = new Country("URA", "Army Group South", "the Army Group South", "Ural", "Mountains", "Marsh", "Unknown", ""); allCountries.Add(URA);
+        Country URG = new Country("URG", "Oriental League", "the Oriental League", "Oriental", "Forest", "Plains", "Unknown", ""); allCountries.Add(URG);
+        Country USA = new Country("USA", "Naval Junta", "the Naval Junta", "American", "Plains", "Mountains", "Unknown", ""); allCountries.Add(USA);
+        Country VEN = new Country("VEN", "Bolivaria", "Bolivaria", "Bolivarian", "Plains", "Coast", "Unknown", ""); allCountries.Add(VEN);
+        Country VIN = new Country("VIN", "Vietnam", "Vietnam", "Vietnamese", "Plains", "Coast", "Unknown", ""); allCountries.Add(VIN);
+        Country VOL = new Country("VOL", "Burkina Faso", "Burkina Faso", "Burkinan", "Plains", "Hills", "Unknown", ""); allCountries.Add(VOL);
+        Country WAA = new Country("WAA", "Wa", "Wa", "Chinese", "Forest", "Mountains", "Unknown", ""); allCountries.Add(WAA);
+        Country XIN = new Country("XIN", "Xinjiang", "Xinjiang", "Chinese", "Desert", "Mountains", "Unknown", ""); allCountries.Add(XIN);
+        Country YAN = new Country("YAN", "Yangtze", "Yangtze", "Chinese", "Plains", "Rivers", "Unknown", ""); allCountries.Add(YAN);
+        Country YEM = new Country("YEM", "Hejaz", "Hejaz", "Hejazi", "Desert", "Coast", "Unknown", ""); allCountries.Add(YEM);
+        Country YNN = new Country("YNN", "Yunnan", "Yunnan", "Chinese", "Mountains", "Hills", "Unknown", ""); allCountries.Add(YNN);
+        Country YUG = new Country("YUG", "Balkan Federation", "the Balkan Federation", "Balkan", "Plains", "Mountains", "Unknown", ""); allCountries.Add(YUG);
+        Country ZAM = new Country("ZAM", "Zambezia", "Zambezia", "Zambezian", "Plains", "Hills", "Unknown", ""); allCountries.Add(ZAM);
+        Country ZHE = new Country("ZHE", "Zhejiang", "Zhejiang", "Chinese", "Plains", "Coast", "Unknown", ""); allCountries.Add(ZHE);
+
+        foreach (Country country in allCountries)
+        {
+            CalculatePowerProjection(country);
+        }
+    }
+
+    // Method to get a Country instance by tag
+    public Country GetCountryByTag(string countryTag)
+    {
+        // Find the country with the specified tag
+        return allCountries.Find(country => country.countryTag == countryTag);
+    }
+}

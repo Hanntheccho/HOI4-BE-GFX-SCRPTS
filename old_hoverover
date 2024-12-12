@@ -1,0 +1,110 @@
+using UnityEngine;
+using UnityEngine.EventSystems;
+
+public class MapObjectClick : MonoBehaviour
+{
+    public GameObject otherObject; // The other GameObject to enable/disable
+    public float hoverScaleIncrease = 0.05f; // Scale increase on hover
+    public float hoverBrightnessIncrease = 0.1f; // Brightness increase on hover
+
+    public AudioSource hoverAudioSource; // AudioSource for hover sound
+    public AudioSource clickAudioSource; // AudioSource for click sound
+
+    private Color originalColor;
+    private Vector3 originalScale;
+    public static string lastClickedObjectName; // Variable to store the name of the last clicked GameObject
+
+    public CountryViewScript countryViewInstance;
+
+    private void Start()
+    {
+        originalColor = GetComponent<SpriteRenderer>().color;
+        originalScale = transform.localScale;
+    }
+
+    private void OnMouseEnter()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+        else
+        {
+            // Enable all child objects on mouse enter
+            EnableAllChildren(true);
+
+            // Increase scale gradually on hover
+            transform.localScale = originalScale + new Vector3(hoverScaleIncrease, hoverScaleIncrease, 0);
+
+            // Increase brightness gradually on hover
+            SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = originalColor + new Color(hoverBrightnessIncrease, hoverBrightnessIncrease, hoverBrightnessIncrease, 0);
+            }
+
+            // Play hover sound
+            if (hoverAudioSource != null)
+            {
+                hoverAudioSource.Play();
+            }
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        // Disable all child objects on mouse exit
+        EnableAllChildren(false);
+
+        // Reset scale and brightness on mouse exit
+        transform.localScale = originalScale;
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = originalColor;
+        }
+    }
+
+    private void EnableAllChildren(bool enable)
+    {
+        // Enable or disable all child objects
+        foreach (Transform child in transform)
+        {
+            child.gameObject.SetActive(enable);
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            return;
+        }
+        else
+        {
+            // Toggle the other GameObject's active state
+            if (otherObject != null)
+            {
+                if (lastClickedObjectName == gameObject.name)
+                {
+                    otherObject.SetActive(!otherObject.activeSelf);
+                }
+                else
+                {
+                    otherObject.SetActive(true);
+                }
+
+                // Save the name of the clicked GameObject
+                lastClickedObjectName = gameObject.name;
+
+                // Play click sound
+                if (clickAudioSource != null)
+                {
+                    clickAudioSource.Play();
+                }
+
+                countryViewInstance.UpdateLastClickedObjectText("notPlayer");
+            }
+        }
+    }
+}

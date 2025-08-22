@@ -1,0 +1,504 @@
+## Division Templates ##
+division_template = {
+	name = "Elite Militia"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 0
+			y = 3
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		recon = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Mechanized Division"
+	regiments = {
+		apc = {
+			x = 0
+			y = 0
+		}
+		apc = {
+			x = 0
+			y = 1
+		}
+		apc = {
+			x = 0
+			y = 2
+		}
+		apc = {
+			x = 0
+			y = 3
+		}
+		apc = {
+			x = 1
+			y = 0
+		}
+		apc = {
+			x = 1
+			y = 1
+		}
+		apc = {
+			x = 1
+			y = 2
+		}
+		apc = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		artillery = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Infantry Division"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		shock_troops = {
+			x = 0
+			y = 3
+		}
+		shock_troops = {
+			x = 1
+			y = 0
+		}
+		shock_troops = {
+			x = 1
+			y = 1
+		}
+		shock_troops = {
+			x = 1
+			y = 2
+		}
+		shock_troops = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		recon = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Shock Division"
+	regiments = {
+		shock_troops = {
+			x = 0
+			y = 0
+		}
+		shock_troops = {
+			x = 0
+			y = 1
+		}
+		shock_troops = {
+			x = 0
+			y = 2
+		}
+		shock_troops = {
+			x = 0
+			y = 3
+		}
+		shock_troops = {
+			x = 1
+			y = 0
+		}
+		shock_troops = {
+			x = 1
+			y = 1
+		}
+		shock_troops = {
+			x = 1
+			y = 2
+		}
+		shock_troops = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		recon = {
+			x = 0
+			y = 0
+		}
+		engineer = {
+			x = 0
+			y = 1
+		}
+		artillery = {
+			x = 0
+			y = 2
+		}
+	}
+}
+
+division_template = {
+	name = "Tank Division"
+	regiments = {
+		MBT = {
+			x = 0
+			y = 0
+		}
+		MBT = {
+			x = 0
+			y = 1
+		}
+		MBT = {
+			x = 0
+			y = 2
+		}
+		rocket_artillery_brigade = {
+			x = 0
+			y = 3
+		}
+		apc = {
+			x = 1
+			y = 0
+		}
+		apc = {
+			x = 1
+			y = 1
+		}
+		apc = {
+			x = 1
+			y = 2
+		}
+		apc = {
+			x = 1
+			y = 3
+		}
+		apc = {
+			x = 1
+			y = 4
+		}
+		apc = {
+			x = 2
+			y = 0
+		}
+	}
+	support = {
+		artillery = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+## Units - Strongest in the area, about 22 units (2/3 as strong as Franco Iberia) ##
+units = {
+	## District 7 Front - 9 Units, 2 tanks
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1211
+		division_template = "Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1211
+		division_template = "Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1144
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1144
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1144
+		division_template = "Shock Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1264
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1264
+		division_template = "Shock Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1264
+		division_template = "Shock Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1205
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1104
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1157
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	## District 6 & 4 Front - 9 Units, 2 tanks
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1351
+		division_template = "Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1351
+		division_template = "Tank Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1189
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1192
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1232
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1417
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1417
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1308
+		division_template = "Shock Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1308
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1308
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1417
+		division_template = "Shock Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	## District 3 Front - 3 is a wasteland, so just a few low level troops to hold (4)
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1475
+		division_template = "Shock Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1508
+		division_template = "Elite Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1508
+		division_template = "Elite Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1459
+		division_template = "Elite Militia"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1
+	}
+}
+

@@ -1,0 +1,489 @@
+division_template = {
+	name = "Brazilian Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+		shock_troops = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Brazilian Rover Division"
+
+	regiments = {
+		rover = { x = 0 y = 0 }
+		rover = { x = 0 y = 1 }
+		rover= { x = 0 y = 2 }
+		rover = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2965
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2965
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2936
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 3256
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+
+	## Guyiana Front ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2545
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2652
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+
+	## Bolivarian Front ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2543
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2462
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2340
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2113
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2135
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+
+	## Andean Front ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2360
+		division_template = "Brazilian Rover Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2360
+		division_template = "Brazilian Rover Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2360
+		division_template = "Brazilian Rover Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1911
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2004
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2445
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2568
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1876
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 1886
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2022
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2546
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2215
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2362
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2607
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2640
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2721
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2637
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2152
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2646
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2632
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 3171
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2913
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2917
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2749
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2885
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+	}
+	## Oriental League Front ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2699
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2717
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 3007
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2803
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 2824
+		division_template = "Brazilian Infantry Division"
+		start_experience_factor = 0.2
+
+	}
+}

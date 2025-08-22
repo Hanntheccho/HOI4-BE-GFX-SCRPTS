@@ -1,0 +1,166 @@
+division_template = {
+	name = "La División del Pueblo"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "La División Blindada del Pueblo"
+
+	regiments = {
+		walker = { x = 0 y = 0 }
+		walker = { x = 0 y = 1 }
+		walker= { x = 0 y = 2 }
+		walker = { x = 0 y = 3 }
+		walker = { x = 1 y = 0 }
+	}
+}
+
+## Units - 14 ##
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1834
+		division_template = "La División Blindada del Pueblo"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1590
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1535
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1487
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1790
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1725
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1608
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2425
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2441
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2236
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2009
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2236
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2425
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1993
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2134
+		division_template = "La División del Pueblo"
+		start_experience_factor = 0.3
+	}
+}

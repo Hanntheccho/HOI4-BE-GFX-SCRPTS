@@ -1,0 +1,344 @@
+division_template = {
+	name = "Motorisierte Infanterie Division"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Jägertrupp Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Panzergrenadier Division"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		artillery = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Panzerbrigadier Division"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		rocket_artillery_brigade = {x = 0 y = 3}
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+		apc = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+units = { ## Slightly weaker than franco iberia, so about 28 (5 less troops)
+	### FRENCH FRONT ###
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4496
+		division_template = "Panzerbrigadier Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4661
+		division_template = "Panzerbrigadier Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4656
+		division_template = "Panzerbrigadier Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4626
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4627
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4655
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4502
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4551
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4614
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4601
+		division_template = "Jägertrupp Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4788
+		division_template = "Jägertrupp Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5034
+		division_template = "Jägertrupp Division"
+		start_experience_factor = 0.3
+	}
+
+	## PADANIAN FRONT ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4728
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5035
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5181
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	## SLOVENIAN FRONT ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5317
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5515
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5393
+		division_template = "Motorisierte Infanterie Division"
+		start_experience_factor = 0.3
+	}
+
+	## HUNGARIAN/SLOVAK FRONT ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5638
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5605
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5690
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5683
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+
+	## INTERIOR DIVISIONS ##
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4620
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4727
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5009
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5120
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4870
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5298
+		division_template = "Panzergrenadier Division"
+		start_experience_factor = 0.3
+	}
+}

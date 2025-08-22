@@ -1,0 +1,740 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "countrytradeview"
+		position = { x=-606 y=112}
+		show_position = { x=0 y =112 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=544 height=100%% }
+		clipping = yes
+
+		#hide_sound = menu_close_window
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_null"
+			alwaystransparent = yes
+		}
+
+		background ={
+			name ="pol_view_bg2"
+			spriteType = "GFX_trade_view_bg_large"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "bgbgbgbggbggbg"
+			size = { width=550 height=100%% }
+
+			background ={
+				name ="pol_view_bg2"
+				position = {
+					x = 0
+					y = 0
+				}
+				spriteType = "GFX_tiled_alpha"
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+		}
+
+		iconType = {
+			name = "trade_header"
+			position = { x = -10000 y = 43 }
+			quadTextureSprite = "GFX_trade_header"
+		}
+
+		instantTextboxType = {
+			name = "factories_total"
+			position = { x = 10000 y = 49 } #position = { x = 216 y = 49 }
+			font = "Arialsmall"
+			maxWidth = 45
+			maxHeight = 18
+			format = left
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "factories_used"
+			position = { x = 10000 y = 49 } #position = { x = 268 y = 49 }
+			font = "Arialsmall"
+			maxWidth = 120
+			maxHeight = 18
+			format = center
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "factories_available"
+			position = { x = 10000 y = 49 } #position = { x = 388 y = 49 }
+			font = "Arialsmall"
+			maxWidth = 120
+			maxHeight = 18
+			format = center
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "resources"
+			position = { x = 10 y = 34 }
+			size = { width = 518 height = 156 }
+			verticalScrollbar = "right_vertical_slider"
+
+			iconType = {
+				name ="resources_bg"
+				spriteType = "GFX_trade_resource_bg"
+				position = {x=-6 y=-40}
+			}
+
+			instantTextboxType = {
+				name = "balanced_title"
+				position = { x=12 y=12 }
+				font = "Arialsmallest"
+				text = ""
+				maxWidth = 90
+				maxHeight = 18
+				format = left
+				#alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "produced_title"
+				position = { x=12 y=32 }
+				font = "Arialsmallest"
+				text = ""
+				maxWidth = 90
+				maxHeight = 18
+				format = left
+				#alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "imported_title"
+				position = { x=12 y=52 }
+				font = "Arialsmallest"
+				text = ""
+				maxWidth = 90
+				maxHeight = 18
+				format = left
+				#alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "exported_title"
+				position = { x=12 y=72 }
+				font = "Arialsmallest"
+				text = ""
+				maxWidth = 78
+				maxHeight = 18
+				format = left
+				#alwaystransparent = yes
+			}
+
+			instantTextboxType = {
+				name = "needed_title"
+				position = { x=12 y=92 }
+				font = "Arialsmallest"
+				text = ""
+				maxWidth = 78
+				maxHeight = 18
+				format = left
+				#alwaystransparent = yes
+			}
+
+			gridBoxType = {
+				name = "resources_grid"
+				position = { x = 4 y = -20 }
+				size = { width = 422 height = 100%% }
+				slotsize = { width = 85 height = 156 }
+				max_slots = { x = 6 y = 1 }
+				format = "UPPER_LEFT"
+			}
+		}
+
+		buttonType = {
+			name = "sort_country"
+			position = {x=10000 y=400} #position = {x=15 y=400}
+			quadTextureSprite ="GFX_trade_filter_btn_country"
+			clicksound = click_scroll
+		}
+
+		buttonType = {
+			name = "sort_export"
+			position = {x=10000 y=400} #position = {x=185 y=400}
+			quadTextureSprite ="GFX_trade_filter_btn_export"
+			clicksound = click_scroll
+		}
+
+		buttonType = {
+			name = "sort_request"
+			position = {x=10000 y=400} #position = {x=285 y=400}
+			quadTextureSprite ="GFX_trade_filter_btn_delivered"
+			clicksound = click_scroll
+		}
+
+		buttonType = {
+			name = "sort_convoys"
+			position = {x=10000 y=400} #position = {x=390 y=400}
+			quadTextureSprite ="GFX_trade_filter_btn_convoy"
+			clicksound = click_scroll
+		}
+
+		containerWindowType = {
+			name = "filters"
+			position = { x = 11 y = 187 }
+			size = { width = 450 height = 50 }
+			verticalScrollbar = "right_vertical_slider"
+
+			gridBoxType = {
+				name = "resources_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 400 height = 100%% }
+				slotsize = { width = 85 height = 50 }
+				max_slots_vertical = 1
+				format = "UPPER_LEFT"
+			}
+		}
+
+		containerWindowType = {
+			name = "country_filters"
+			position = { x = 10000 y = 278 } #position = { x = 10 y = 278 }
+			size = { width = 520 height = 50 }
+			verticalScrollbar = "right_vertical_slider"
+
+
+			gridBoxType = {
+				name = "country_filters_grid"
+				position = { x = -10 y = 12 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 170 height = 35 }
+				max_slots_horizontal = 3
+				format = "UPPER_LEFT"
+			}
+		}
+
+		containerWindowType = {
+			name = "trade"
+			position = { x = 14 y = 230 }
+			size = { width = 500 height = 100%% }
+			verticalScrollbar = "right_vertical_slider"
+			margin = {top = 8 bottom = 10 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_null"
+			}
+
+			gridBoxType = {
+				name = "trade_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 490 height = 45 }
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 10000 y = 5 }
+			quadTextureSprite ="GFX_close"
+			font = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
+		name = "tradeoffer_window"
+		position = { x= -263 y= -218}
+		size = { width=527 height=407 }
+		moveable = yes
+		click_to_front = yes
+		orientation= center
+		fade_time = 200
+		fade_type = linear
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_default_bg"
+		}
+
+		instantTextboxType = {
+			name = "country_extra"
+			position = { x = 115 y = 28 }
+			font = "Arialsmallest"
+			text = "▀ ▀▀ ▀▀▀▀▀  ▀    ▀▀▀▀▀  ▀ ▀▀ ▀ ▀▀   ▀ ▀▀ ▀  ▀ ▀  ▀   ▀"
+			maxWidth = 500
+			maxHeight = 18
+			format = left
+			multiline = no
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "min_amount"
+			position = { x = -10000 y = 279 }
+			font = Arialcap
+			text = "0"
+			maxWidth = 80
+			maxHeight = 18
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "max_amount"
+			position = { x = 246 y = 249 }
+			font = Arialcap
+			text = "max"
+			maxWidth = 150
+			maxHeight = 18
+			format = right
+		}
+
+		containerWindowType = {
+			name = "extra_thing"
+			size = { width=521 height=401 }
+			position = {
+				x = 3
+				y = 3
+			}
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_default_bg"
+				alwaystransparent = yes
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tradeoffer_window_bg"
+				position = {
+					x = 3
+					y = 3
+				}
+			}
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_default_bg"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "extra_thing2"
+			size = { width=431 height=30 }
+			position = {
+				x = 48
+				y = 33
+			}
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_line"
+				alwaystransparent = yes
+			}
+		}
+
+		instantTextboxType = {
+			name = "country_extra2"
+			position = { x = 115 y = 28 }
+			font = "Arialsmallest"
+			text = "▀ ▀▀"
+			maxWidth = 500
+			maxHeight = 18
+			format = left
+			multiline = no
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "flags"
+			position = { x = 294 y = 140 }
+			size = { width = 220 height = 176 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_null"
+				alwaystransparent = yes
+			}
+
+			gridBoxType = {
+				name = "flags_grid"
+				position = { x = 10 y = 13 }
+				size = { width = 100 height = 100% }
+				slotsize = { width=30 height=30 }
+				max_slots_horizontal = 6
+				max_slots_vertical = 3
+				format = "UPPER_LEFT"
+			}
+		}
+
+		iconType = {
+			name = "player_flag"
+			quadTextureSprite ="GFX_construction_flag_mod"
+			position = { x = 20 y = 10 }
+		}
+
+		instantTextboxType = {
+			name = "country"
+			position = { x = 160 y = 24 }
+			font = "Arialcap"
+			text = "country"
+			maxWidth = 330
+			maxHeight = 18
+			format = left
+			multiline = no
+		}
+
+		iconType ={
+			name ="resources_icon"
+			spriteType = "GFX_resources_strip"
+			position = { x = 31 y = 80 }
+		}
+
+		instantTextboxType = {
+			name = "trade"
+			position = { x = 69 y = 70 }
+			font = "Arialsmallest"
+			text = ""
+			maxWidth = 300
+			maxHeight = 100
+			format = left
+		}
+
+		buttonType = {
+			name = "buy_needed_amount_button"
+			position = { x = 362 y = -55 }
+			spriteType = "GFX_button_123x34"
+			font = "Arialsmall"
+			text = "AUTO SET"
+			pdx_tooltip = "SET_NEEDED_AMOUNT"
+			orientation = LOWER_LEFT
+		}
+
+		instantTextboxType = {
+			name = "trade_reset"
+			position = { x = 124 y = 318 }
+			font = "Arial16"
+			text = "TRADE_RESET"
+			maxWidth = 290
+			maxHeight = 80
+			format = center
+		}
+
+		iconType ={
+			name ="convoys_icon"
+			spriteType = "GFX_topbar_convoys"
+			position = {x=10000 y=211}
+		}
+
+		instantTextboxType = {
+			name = "convoys_description"
+			position = { x = 69 y = 165 }
+			font = "Arialsmallest"
+			text = ""
+			maxWidth = 220
+			maxHeight = 80
+			format = left
+		}
+
+		iconType = {
+			name = "civilian_factory_icon"
+			position = { x = 70 y = 10000 }
+			spriteType = "GFX_non_available_factory_icon"
+		}
+
+		instantTextboxType = {
+			name = "factories_description"
+			position = { x = 104 y = 235 }
+			font = "Arialsmallest"
+			text = ""
+			maxWidth = 220
+			maxHeight = 80
+			format = left
+			fixedsize = yes
+		}
+
+		extendedScrollbarType = {
+			name = "buy_slider"
+			position = { x = 116 y = 290 }
+			size = { width = 300 height = 18 }
+			tileSize = { width = 12 height = 12}
+			maxValue = 1
+			minValue = 0
+			stepSize = 1
+			startValue = 0
+			horizontal = yes
+			clickonly = yes
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_null"
+				position = { x= -52 y = -11 }
+			}
+
+			slider = {
+				name = "Slider"
+				quadTextureSprite = "GFX_scroll_drager"
+				position = { x=0 y = -2 }
+			}
+
+			track = {
+				name = "Track"
+				quadTextureSprite = "GFX_scroll_track_horisontal"
+				position = { x=0 y = 4 }
+				alwaystransparent = yes
+			}
+
+			decreaseButton = {
+				name = "Decrease"
+				quadTextureSprite = "GFX_scroll_left"
+				position = { x=3 y = 2 }
+				clicksound = click_scroll
+			}
+
+			increaseButton = {
+				name = "Increase"
+				quadTextureSprite = "GFX_scroll_right"
+				position = { x=-19 y = -16 }
+				clicksound = click_scroll
+			}
+		}
+
+		iconType ={
+			name ="warning_icon"
+			spriteType = "GFX_warning_red"
+			position = { x = 277 y = 245 }
+		}
+
+		buttonType = {
+			name = "send_button"
+			position = { x = 202 y = -55 }
+			quadTextureSprite ="GFX_button_123x34"
+			font = "Arial"
+			text = "OK"
+			Orientation = "LOWER_LEFT"
+			clicksound = click_send
+			pdx_tooltip = "SEND"
+		}
+
+		buttonType = {
+			name = "cancel_button"
+			position = { x = -62 y = -36 }
+			quadTextureSprite ="GFX_close"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CANCEL"
+			scale = 0.8
+		}
+	}
+
+	containerWindowType = {
+		name = "resources_info_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 150 height = 100 }
+		clipping = no
+
+		buttonType ={
+			name ="resources_icon"
+			spriteType = "GFX_resources_strip"
+			position = { x= 7 y = -4 }
+		}
+
+		instantTextboxType = {
+			name = "balance"
+			position = { x=13 y=35 }
+			font = "Focusfont"
+			maxWidth = 57
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "produced"
+			position = { x=13 y=60 }
+			font = "Focusfont"
+			maxWidth = 57
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "imported"
+			position = { x=13 y=85 }
+			font = "Focusfont"
+			maxWidth = 57
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "exported"
+			font = "Focusfont"
+			position = { x=13 y=110 }
+			maxWidth = 57
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "special_project"
+			font = "hoi_16mbs"
+			position = { x=20 y=94 }
+			maxWidth = 50
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "production_line"
+			font = "hoi_16mbs"
+			position = { x=20 y=113 }
+			maxWidth = 50
+			maxHeight = 18
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "needed"
+			position = { x=13 y=133 }
+			font = "Focusfont"
+			maxWidth = 57
+			maxHeight = 28
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "neededType"
+			position = { x=9 y=133 }
+			font = "Focusfont"
+			maxWidth = 50
+			maxHeight = 28
+			format = left
+		}
+
+		buttonType = {
+			name = "cancel_imports"
+			position = { x= 51 y= -4 }
+			pdx_tooltip = "CANCEL_RESOURCE_IMPORT"
+			quadTextureSprite ="GFX_cancel"
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "resources_filter_entry"
+		position = { x = 0 y = 1 }
+		size = { width = 75 height = 50 }
+		clipping = no
+
+		buttonType = {
+			name = "background"
+			position = {x=0 y=0}
+			quadTextureSprite ="GFX_TRADE_resource_btn"
+			clicksound = click_checkbox
+		}
+
+		iconType = {
+			name ="icon"
+			spriteType = "GFX_resources_strip"
+			position = { x= 32 y = 12 }
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "filter_entry"
+		position = { x = 40 y = -6 }
+		size = { width = 168 height = 50 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_nullobject"
+			clicksound = click_scroll
+		}
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 5 y = 10 }
+			font = "Arial16"
+			text = "name"
+			maxWidth = 110
+			maxHeight = 18
+			fixedsize = yes
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "country_trade_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 480 height = 45 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_country_trade_entry_bg"
+			clicksound = click_action
+		}
+
+		buttonType = {
+			name = "country_flag"
+			quadTextureSprite ="GFX_construction_flag"
+			position = { x= 4 y = -6}
+			#alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "country"
+			position = { x = 10000 y = 9 } #position = { x = 52 y = 9 }
+			font = "Focusfont"
+			text = "name"
+			vertical_alignment = center
+			maxWidth = 110
+			maxHeight = 28
+			fixedsize = yes
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "exported"
+			position = { x = 284 y = 13 }
+			font = "Focusfont"
+			text = ""
+			format = center
+			maxWidth = 100
+			maxHeight = 18
+		}
+
+		instantTextboxType = {
+			name = "available_export"
+			position = { x = 127 y = 13 }
+			font = "Focusfont"
+			text = ""
+			format = center
+			maxWidth = 110
+			maxHeight = 18
+		}
+
+		instantTextboxType = {
+			name = "convoys"
+			position = { x = -10000 y = 12 }
+			font = "Focusfont"
+			text = ""
+			format = center
+			maxWidth = 100
+			maxHeight = 18
+		}
+	}
+}

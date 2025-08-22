@@ -1,0 +1,64 @@
+### Corporate Security Units ###
+## More trained, smaller in number
+
+division_template = {
+	name = "Morgan Industries Armored Corporate Security"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		rocket_artillery_brigade = {x = 0 y = 3}
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+		apc = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		logistics_company = {x = 0 y = 1}
+		engineer = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Morgan Industries Mechanized Corporate Security"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		logistics_company = {x = 0 y = 1}
+		engineer = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Morgan Industries Quick Response Corporate Security"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		artillery = {x = 0 y = 2}
+	}
+}

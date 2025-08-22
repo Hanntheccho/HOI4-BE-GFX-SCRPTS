@@ -1,0 +1,204 @@
+division_template = {
+	name = "Prophets Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+}
+
+division_template = {
+	name = "Emissaries of God"	#a mechanized template for the player/ai is not used in units = {}#
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Eternal Victory"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		maintenance_company = {x = 0 y = 3}
+	}
+}
+
+
+
+units = {
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10018
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10018
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10018
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9951
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10077 # stationed juuust outside the border
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10093
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10091
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10038
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10076
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10007
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9977
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10018
+		division_template = "Prophets Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+
+			name = "Eternal Victory"
+
+		location = 10018
+		division_template = "Eternal Victory"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		}
+
+}

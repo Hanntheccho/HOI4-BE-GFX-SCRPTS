@@ -1,0 +1,158 @@
+division_template = {
+	name = "Mali Regional Defense Tactical Batallion"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		apc = { x = 2 y = 0 }
+
+
+	}
+
+}
+
+division_template = {
+	name = "Mechanized Rover Brigade"
+
+	regiments = {
+		rover = { x = 0 y = 0 }
+		rover = { x = 0 y = 1 }
+		rover= { x = 0 y = 2 }
+		rover = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Maritime and Amphibious Assault Special Operations Group"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+
+division_template = {
+	name = "Pre-Mistake Armored Division"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		MBT = { x = 2 y = 0 }
+		MBT = { x = 2 y = 1 }
+		MBT = { x = 2 y = 2 }
+		MBT = { x = 2 y = 3	}
+		rocket_artillery_brigade = { x = 3 y = 0 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+
+
+units = {
+
+						division = {
+		name = "Groupe d’intervention de la Gendarmerie nationale" #name of the GIGN -  mali build their military off of the french therefor this reference
+		location = 3444
+		division_template = "Maritime and Amphibious Assault Special Operations Group"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1	#
+		}
+
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3747
+		division_template = "Mechanized Rover Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+		}
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3605
+		division_template = "Mali Regional Defense Tactical Batallion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3492
+		division_template = "Mali Regional Defense Tactical Batallion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3432
+		division_template = "Mali Regional Defense Tactical Batallion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4037
+		division_template = "Mali Regional Defense Tactical Batallion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3493
+		division_template = "Pre-Mistake Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+}

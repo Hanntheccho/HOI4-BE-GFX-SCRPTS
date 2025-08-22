@@ -1,0 +1,795 @@
+division_template = {
+	name = "Joint Staff Headquarters"	#VP units
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Central Command"	#VP units
+	is_locked = yes
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+		infantry = { x = 3 y = 2 }
+		infantry = { x = 4 y = 0 }
+		infantry = { x = 4 y = 1 }
+		infantry = { x = 4 y = 2 }
+	}
+}
+
+## good template but bad units
+
+division_template = {
+	name = "PLA Revolutionary Guard"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		artillery = {x = 0 y = 2}
+	}
+}
+
+
+division_template = {
+	name = "PLA Mechanized Infantry Division"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Armored Recon Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		recon = {x = 0 y = 0}
+		signal_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Motorized Red Guard Division"
+
+	regiments = {
+		rover = { x = 0 y = 0 }
+		rover = { x = 0 y = 1 }
+		rover = { x = 0 y = 2 }
+		rover = { x = 0 y = 3 }
+		rover = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		signal_company = { x = 0 y = 1 }
+	}
+}
+
+
+
+#BIIG Division - symbolizes an entire corps
+division_template = {
+	name = "Reorganized PLA Elements"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		MBT= { x = 0 y = 3 }
+		MBT= { x = 0 y = 4 }
+		rocket_artillery_brigade = {x = 1 y = 0}
+		rocket_artillery_brigade = {x = 1 y = 1}
+		artillery_brigade  = {x = 1 y = 2}
+		artillery_brigade  = {x = 1 y = 3}
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		apc = { x = 2 y = 2 }
+		apc = { x = 2 y = 3 }
+		apc = { x = 2 y = 4 }
+		MBT = { x = 3 y = 0 }
+		MBT = { x = 3 y = 1 }
+		MBT = { x = 3 y = 2 }
+		MBT = { x = 3 y = 3 }
+		apc = { x = 4 y = 0 }
+		apc = { x = 4 y = 1 }
+	}
+	support = {
+		engineer = {x = 0 y = 0}
+		recon = {x = 0 y = 1}
+		maintenance_company = {x = 0 y = 2}
+		artillery = {x = 0 y = 3}
+		signal_company = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11709
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12539
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12552
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11813
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12405
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12307
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10624
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11175
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11220
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11387
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11620
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11602
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11500
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11774
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12080
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11417
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12147
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12693
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12708
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12812
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12724
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11230
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10558
+		division_template = "Joint Staff Headquarters"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12258
+		division_template = "Central Command"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12193
+		division_template = "PLA Revolutionary Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12146
+		division_template = "PLA Revolutionary Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12243
+		division_template = "PLA Revolutionary Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6	#
+		}
+
+
+		division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12264
+		division_template = "PLA Revolutionary Guard"
+		start_experience_factor = 0.35
+		start_equipment_factor = 0.7	#
+		}
+
+
+				division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12085
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+				division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11924
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+						division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12337
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+						division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12355
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+						division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12518
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.75	#
+		}
+
+
+division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11990
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12079
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+		division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12316
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+		division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12199
+		division_template = "Armored Recon Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+		division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12449
+		division_template = "Reorganized PLA Elements"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+
+division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12204
+		division_template = "Reorganized PLA Elements"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+		division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11499
+		division_template = "Reorganized PLA Elements"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11230
+		division_template = "Reorganized PLA Elements"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+								division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11718
+		division_template = "Reorganized PLA Elements"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+								division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12020
+		division_template = "Reorganized PLA Elements"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+			division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12015
+		division_template = "Motorized Red Guard Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8	#
+		}
+
+			division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12142
+		division_template = "Motorized Red Guard Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.9	#
+		}
+
+division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10589
+		division_template = "Motorized Red Guard Division"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.34	#
+		}
+
+		division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11948
+		division_template = "Motorized Red Guard Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6	#
+		}
+
+				division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11779
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11948
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+division = {
+			division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12147
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12111
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12287
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11827
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+	location = 11638
+	division_template = "PLA Mechanized Infantry Division"
+	start_experience_factor = 0.5
+	start_equipment_factor = 1	#
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12018
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6	#
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12164
+		division_template = "PLA Mechanized Infantry Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.6	#
+	}
+}

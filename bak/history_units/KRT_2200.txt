@@ -1,0 +1,166 @@
+division_template = {
+	name = "Light Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+}
+
+division_template = {
+	name = "Armored Mobile Infantry Force"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		apc = { x = 3 y = 0 }
+		apc = { x = 3 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Heavy Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		maintenance_company = {x = 0 y = 1}
+	}
+}
+
+
+units = {
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9843
+		division_template = "Light Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9843
+		division_template = "Light Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9843
+		division_template = "Light Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10000
+		division_template = "Light Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10000
+		division_template = "Light Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10192
+		division_template = "Heavy Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10191
+		division_template = "Heavy Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+								division = {
+		name = "Experimental Fast Division"
+		location = 10000
+		division_template = "Armored Mobile Infantry Force"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1	#
+		}
+
+
+
+										division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10070
+		division_template = "Heavy Brigade" #newly mobilized - extremely understrenght
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3	#
+		}
+
+}

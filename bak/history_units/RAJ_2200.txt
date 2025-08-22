@@ -1,0 +1,224 @@
+division_template = {
+	name = "Light Rifle Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+}
+
+
+division_template = {
+	name = "Medium Rifle Division"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+}
+
+division_template = {
+	name = "Mechanized Rover Brigade"
+
+	regiments = {
+		rover = { x = 0 y = 0 }
+		rover = { x = 0 y = 1 }
+		rover= { x = 0 y = 2 }
+		rover = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+	}
+}
+
+
+division_template = {
+	name = "Punjabi Armored Division"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		recon = {x = 0 y = 2}
+		maintenance_company = {x = 0 y = 3}
+	}
+}
+
+division_template = {
+	name = "Mechanized Guards Division"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		apc = { x = 3 y = 0 }
+		apc = { x = 3 y = 1 }
+	}
+	support = {
+		recon = {x = 0 y = 0}
+	}
+}
+
+
+units = { #6 units
+
+		division = {
+		name = "1st Punjabi Volunteer Division" # made up of punjabs that joined rajahstan and/or are sympathetic to RAJ
+		location = 9784
+		division_template = "Punjabi Armored Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6 	#volunteers get bad equips
+		}
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9895
+		division_template = "Mechanized Guards Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9698
+		division_template = "Mechanized Guards Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9758
+		division_template = "Mechanized Rover Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9682
+		division_template = "Light Rifle Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9702
+		division_template = "Light Rifle Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+		}
+
+
+
+
+
+
+		#+5 units
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9785
+		division_template = "Medium Rifle Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9762
+		division_template = "Medium Rifle Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9710
+		division_template = "Light Rifle Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		}
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9761
+		division_template = "Medium Rifle Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9879
+		division_template = "Medium Rifle Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1
+		}
+
+		#no air wings cuz air meta is cringe!#
+
+}

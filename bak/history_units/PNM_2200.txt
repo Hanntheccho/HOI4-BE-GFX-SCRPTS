@@ -1,0 +1,136 @@
+## Division Templates ##
+division_template = {
+	name = "Mechanized Division"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Walker Division"
+
+	regiments = {
+		walker = { x = 0 y = 0 }
+		walker = { x = 0 y = 1 }
+		walker= { x = 0 y = 2 }
+		walker = { x = 0 y = 3 }
+		walker = { x = 1 y = 0 }
+		walker = { x = 1 y = 1 }
+		walker = { x = 1 y = 2 }
+		walker = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+## Units -- 9 units, 3/4 as strong as ARC ##
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 496
+		division_template = "Walker Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 496
+		division_template = "Walker Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 496
+		division_template = "Walker Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 496
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 477
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 477
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 594
+		division_template = "Mechanized Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 565
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 639
+		division_template = "Infantry Division"
+		start_experience_factor = 0.5
+	}
+}

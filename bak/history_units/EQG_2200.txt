@@ -1,0 +1,239 @@
+### Corporate Security Units ###
+## More trained, smaller in number
+
+division_template = {
+	name = "Morgan Industries Armored Corporate Security"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		rocket_artillery_brigade = {x = 0 y = 3}
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+		apc = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		logistics_company = {x = 0 y = 1}
+		engineer = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Morgan Industries Mechanized Corporate Security"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		logistics_company = {x = 0 y = 1}
+		engineer = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Morgan Industries Quick Response Corporate Security"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		artillery = {x = 0 y = 2}
+	}
+}
+
+units = { ## Only like 18 divisions, but they are much better
+	# MBT #
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4622
+		division_template = "Morgan Industries Armored Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4176
+		division_template = "Morgan Industries Armored Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	# Mechanized #
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4135
+		division_template = "Morgan Industries Mechanized Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4158
+		division_template = "Morgan Industries Mechanized Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4240
+		division_template = "Morgan Industries Mechanized Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	## Infantry ##
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4326
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4417
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4839
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5018
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5084
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5269
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5080
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4988
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4243
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4654
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4734
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5019
+		division_template = "Morgan Industries Quick Response Corporate Security"
+		start_experience_factor = 0.3
+	}
+}

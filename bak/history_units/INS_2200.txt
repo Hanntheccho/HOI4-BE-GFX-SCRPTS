@@ -1,0 +1,464 @@
+division_template = {
+	name = "Conscript Garrison"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+}
+
+
+division_template = {
+	name = "Strongpoint Defense Group"		#For VPs
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		artillery = {x = 0 y = 1}
+	}
+}
+
+
+
+division_template = {
+	name = "Heavy Infantry Group"		#For VPs
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+			shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Mixed Heavy Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		shock_troops = { x = 1 y = 0 }
+		MBT = { x = 2 y = 0 }
+	}
+	support = {
+		recon = {x = 0 y = 0}
+	}
+}
+
+
+units = { #lots of units - but not good quality 33 Units
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11178
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.15
+		start_equipment_factor = 1
+		}
+
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11290
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11398
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10964
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11124
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11549
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11870
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12312
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12788
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11713
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12249
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11896
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12311
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12476
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12485
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11713
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12893
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13325
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13036
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+								division = {
+		division_name = {		#fresh troops severely under equipped in eastern parts and phillipines
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12520
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		}
+
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12547
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		}
+
+
+										division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12799
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.3
+		}
+
+
+										division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13575
+		division_template = "Conscript Garrison"
+		start_experience_factor = 0.2
+		start_equipment_factor =  0.3
+		}
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12249
+		division_template = "Heavy Infantry Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12249
+		division_template = "Heavy Infantry Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11124
+		division_template = "Heavy Infantry Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+					division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12249
+		division_template = "Strongpoint Defense Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+
+										division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11124
+		division_template = "Strongpoint Defense Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+										division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11290
+		division_template = "Strongpoint Defense Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+										division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11870
+		division_template = "Strongpoint Defense Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+												division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12788
+		division_template = "Strongpoint Defense Group"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+		}
+
+
+												division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11178
+		division_template = "Mixed Heavy Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		}
+
+												division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11398
+		division_template = "Mixed Heavy Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.85
+		}
+}

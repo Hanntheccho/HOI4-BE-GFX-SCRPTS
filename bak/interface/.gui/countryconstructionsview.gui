@@ -1,0 +1,714 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "countryconstructionsview"
+		position = { x=-606 y=112}
+		show_position = { x=0 y =112 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=544 height=100%% }
+		clipping = yes
+
+		#hide_sound = menu_close_window
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_null"
+			alwaystransparent = yes
+		}
+
+		background ={
+			name ="pol_view_bg2"
+			spriteType = "GFX_trade_view_bg_large"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "bgbgbgbggbggbg"
+			size = { width=550 height=100%% }
+
+			background ={
+				name ="pol_view_bg2"
+				position = {
+					x = 0
+					y = 0
+				}
+				spriteType = "GFX_tiled_alpha"
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "count_container"
+			position = { x=-220 y=12 }
+			orientation = upper_right
+			iconType ={
+				name ="bg"
+				spriteType = "GFX_generic_box_80"
+				position = { x=35 y=1 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "REPAIR_ASSIGNMENT_INFO_FACTORIES"
+			}
+
+			iconType = {
+				name = "factories_used"
+				position = { x=3 y=2 }
+				spriteType = "GFX_factory_icon_with_wrench"
+				frame = 1
+				pdx_tooltip = "REPAIR_ASSIGNMENT_INFO_FACTORIES"
+			}
+
+			instantTextboxType = {
+				name = "factories_used_txt"
+				position = { x=50 y=6 }
+				font = "hoi_18b"
+				text = "42"
+				maxWidth = 50
+				maxHeight = 25
+				fixedsize = yes
+				format = center
+				pdx_tooltip = "REPAIR_ASSIGNMENT_INFO_FACTORIES"
+			}
+			buttonType = {
+				name = "factories_sub_1x"
+				position = { x=31 y=2 }
+				quadTextureSprite = "GFX_subtract_one"
+				font = "hoi_16mbs"
+				clicksound = click_default
+				pdx_tooltip = "PRODUCTION_SUB_FACTORIES_CLICK"
+			}
+			buttonType = {
+				name = "factories_sub_5x"
+				position = { x=31 y=2 }
+				quadTextureSprite = "GFX_subtract_5"
+				font = "hoi_16mbs"
+				clicksound = click_default
+				pdx_tooltip = "PRODUCTION_SUB_FACTORIES_CLICK"
+			}
+			buttonType = {
+				name = "factories_sub_10x"
+				position = { x=31 y=2 }
+				quadTextureSprite = "GFX_subtract_10"
+				font = "hoi_16mbs"
+				clicksound = click_default
+				pdx_tooltip = "PRODUCTION_SUB_FACTORIES_CLICK"
+			}
+			buttonType = {
+				name = "factories_add_1x"
+				position = { x=95 y=2 }
+				quadTextureSprite = "GFX_add_one"
+				font = "hoi_16mbs"
+				clicksound = click_default
+				pdx_tooltip = "PRODUCTION_ADD_FACTORIES_CLICK"
+			}
+			buttonType = {
+				name = "factories_add_5x"
+				position = { x=95 y=2 }
+				quadTextureSprite = "GFX_add_5"
+				font = "hoi_16mbs"
+				clicksound = click_default
+				pdx_tooltip = "PRODUCTION_ADD_FACTORIES_CLICK"
+			}
+			buttonType = {
+				name = "factories_add_10x"
+				position = { x=95 y=2 }
+				quadTextureSprite = "GFX_add_10"
+				font = "hoi_16mbs"
+				clicksound = click_default
+				pdx_tooltip = "PRODUCTION_ADD_FACTORIES_CLICK"
+			}
+		}
+
+		containerWindowType = {
+			name = "production_win_top"
+			position = { x = 48 y = 0 }
+			size = { width = 100% height = 80% }
+			verticalScrollbar = "right_vertical_slider"
+
+			instantTextboxType = {
+				name = "available_factories_value"
+				position = { x = -10000 y = 147 }
+				font = "Arial16"
+				text = "20/37"
+				maxWidth = 70
+				maxHeight = 20
+				format = right
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "traded_factories_value"
+				position = { x = -10000 y = 47 }
+				font = "Focusfont"
+				text = "99"
+				maxWidth = 70
+				maxHeight = 20
+				format = right
+			}
+
+			instantTextboxType = {
+				name = "local_factories_value"
+				position = { x = -10000 y = 67 }
+				font = "Focusfont"
+				text = "99"
+				maxWidth = 70
+				maxHeight = 20
+				format = right
+			}
+
+			instantTextboxType = {
+				name = "cic_bank_value"
+				position = { x = -10000 y = 24 }
+				font = "hoi_18mbs"
+				borderSize = { x = 0 y = 0 }
+				text = "0"
+				maxWidth = 70
+				maxHeight = 20
+				format = right
+				hide = yes # Remove this line to show CIC bank info in the Constructions view.
+			}
+
+			instantTextboxType = {
+				name = "construction_speed_value"
+				position = { x = -10000 y = 20 }
+				font = "Arialsmallest"
+				text = "99"
+				maxWidth = 70
+				maxHeight = 20
+				format = left
+			}
+		}
+
+		containerWindowType = {
+			name = "production_lines"
+			position = { x = -5 y = 12 }
+			size = { width = 454 height = 100%% }
+			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 50
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+			margin = { top = 10 left = 0 bottom = 10 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_null"
+			}
+
+			gridBoxType = {
+				name = "item_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 100% height = 100%% }
+				slotsize = { width = 500 height = 1 }
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+		}
+
+		containerWindowType = {
+			name = "possible_constructions"
+			position = { x = 436 y = 0 }
+			size = { width = 104 height = 585 }
+
+			positionType = {
+				name = "minimized_offset"
+				position = { x = 420 y = 0 }
+			}
+
+			containerWindowType = {
+				name = "possible_state_constructions"
+				position = { x = 0 y = 0 }
+				size = { width = 267 height = 100% }
+
+				background = {
+					name = "state_buildings_background"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_diplo_details_header"
+					pdx_tooltip = "STATE_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
+
+				iconType = {
+					name = "state_constructions"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_state_constructions"
+				}
+
+				instantTextboxType = {
+					name = "state_constructions_text"
+					position = { x = 60 y = 20 }
+					font = "hoi_16mbs"
+					text = "STATE_BUILDINGS"
+					maxWidth = 160
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+
+				gridBoxType = {
+					name = "non_shared_item_grid"
+					position = { x = 28 y = 52 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 4
+					format = "UPPER_LEFT"
+				}
+			}
+
+
+			containerWindowType = {
+				name = "possible_shared_constructions"
+				position = { x = 0 y = 50 }
+				size = { width = 267 height = 100% }
+
+				background = {
+					name = "shared_buildings_background"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_diplo_details_header"
+					pdx_tooltip = "SHARED_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
+
+				iconType = {
+					name = "shared_constructions"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_shared_constructions"
+				}
+
+				instantTextboxType = {
+					name = "shared_constructions_text"
+					position = { x = 60 y = 20 }
+					font = "hoi_16mbs"
+					text = "SHARED_BUILDINGS"
+					maxWidth = 160
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+
+
+				gridBoxType = {
+					name = "shared_item_grid"
+					position = { x = 28 y = 52 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 4
+					format = "UPPER_LEFT"
+				}
+			}
+
+
+			containerWindowType = {
+				name = "possible_province_constructions"
+				position = { x = 0 y = 100 }
+				size = { width = 267 height = 100% }
+
+				background = {
+					name = "province_buildings_background"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_diplo_details_header"
+					pdx_tooltip = "PROVINCE_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
+
+				iconType = {
+					name = "province_constructions"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_province_constructions"
+				}
+
+				instantTextboxType = {
+					name = "province_constructions_text"
+					position = { x = 60 y = 20 }
+					font = "hoi_16mbs"
+					text = "PROVINCE_BUILDINGS"
+					maxWidth = 160
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+
+				gridBoxType = {
+					name = "province_item_grid"
+					position = { x = 28 y = 52 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 4
+					format = "UPPER_LEFT"
+				}
+			}
+
+
+			containerWindowType = {
+				name = "possible_facility_constructions"
+				position = { x = 0 y = 150 }
+				size = { width = 267 height = 100% }
+
+				background = {
+					name = "facility_buildings_background"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_diplo_details_header"
+					pdx_tooltip = "FACILITY_BUILDINGS_BACKGROUND_TOOLTIP"
+				}
+
+				iconType = {
+					name = "facility_constructions"
+					position = { x = 5 y = 9 }
+					quadTextureSprite = "GFX_facility_constructions"
+				}
+
+				instantTextboxType = {
+					name = "facility_constructions_text"
+					position = { x = 60 y = 20 }
+					font = "hoi_16mbs"
+					text = "FACILITY_BUILDINGS"
+					maxWidth = 160
+					maxHeight = 10
+					format = left
+					alwaystransparent = yes
+				}
+
+				gridBoxType = {
+					name = "facility_item_grid"
+					position = { x = 28 y = 52 }
+					size = { width = 100% height = 100% }
+					slotsize = { width = 46 height = 44 }
+					max_slots_horizontal = 4
+					format = "UPPER_LEFT"
+				}
+			}
+		}
+
+		buttonType = {
+			name = "minimize"
+			position = { x = 10000 y = 935 }
+			quadTextureSprite ="GFX_event_button_minimize"
+			font = "Main_14_black"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CONSTRUCTION_MINIMIZE"
+		}
+
+		buttonType = {
+			name = "expand"
+			position = { x = 10000 y = 935 }
+			quadTextureSprite ="GFX_event_button_minimize"
+			font = "Main_14_black"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = "CONSTRUCTION_EXPAND"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 10000 y = 5 }
+			quadTextureSprite ="GFX_close"
+			font = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+		}
+
+		#todo remove, text icons are not being displayed unless they are in gui
+		buttonType = {
+			name = "temp"
+			position = { x = -402 y = 9 }
+			quadTextureSprite ="GFX_backhoe_icon_small"
+			font = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+		}
+
+		iconType ={
+			name = "tutorial_glow"
+			spriteType = "GFX_tutorial_building_icon_glow"
+			hide = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "start_construction_entry"
+		position = { x=0 y=4 }
+		size = { width = 45 height = 45 }
+		clipping = no
+
+		iconType = {
+			name = "shadow"
+			position = { x = -3 y = -3 }
+			spriteType = "GFX_buildings_strip_shadow"
+		}
+
+		buttonType = {
+			name = "start_construction_button"
+			position = { x = 0 y = 0 }
+			spriteType = "GFX_buildings_strip"
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "start_construction_overlay"
+			position = { x = -10000 y = 0 }
+			quadTextureSprite = "GFX_construction_glow_overlay"
+		}
+	}
+
+	containerWindowType = {
+		name = "convert_ic_entry"
+		position = { x=0 y= 4 }
+		size = { width = 45 height = 45 }
+		clipping = no
+
+		buttonType = {
+			name = "convert_ic_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite ="GFX_convert_ic_button"
+			clicksound = click_default
+			font = "Main_14_black"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "CONSTRUCTION_CONVERT_IC_TOOLTIP"
+			pdx_tooltip_delayed = "CONSTRUCTION_CONVERT_IC_TOOLTIP_DELAYED"
+		}
+
+		iconType = {
+			name = "convert_ic_overlay"
+			position = { x = -1 y = 0 }
+			quadTextureSprite = "GFX_construction_glow_overlay"
+		}
+	}
+
+	containerWindowType = {
+		name = "production_building_line_entry"
+		position = { x=23 y=0 }
+		size = { width = 400 height = 62 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_null"
+			pdx_tooltip = "PRODUCTION_DRAG_N_DROP"
+		}
+
+		instantTextboxType = {
+			name = "factories"
+			position = { x = 5 y = 6 }
+			font = Arialcap
+			text = "-"
+			maxWidth = 200
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "queued"
+			position = { x = 174 y = 6 }
+			font = Arialcap
+			text = "-"
+			maxWidth = 200
+			maxHeight = 20
+			format = center
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "hide_that_now"
+			spriteType = "GFX_construction_entry_bg"
+			position = { x= 0 y = 1 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "progress"
+			spriteType = "GFX_construction_progressbar_mod"
+			position = { x= 1 y = 53 }
+		}
+
+		iconType = {
+			name = "new_glow"
+			position = { x = 10000 y = 2 }
+			spriteType = "GFX_construction_line_glow"
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "relative_flag"
+			quadTextureSprite ="GFX_construction_flag"
+			position = { x= 0 y = 0}
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "location"
+			position = { x = 55 y = 6 }
+			font = "Arialsmallcap"
+			text = "Maus"
+			maxWidth = 220
+			maxHeight = 40
+			format = left
+			fixedsize = yes
+			vertical_alignment = bottom
+			#alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "shadow_thing"
+			position = { x = -1 y = 0 }
+			spriteType = "GFX_buildings_strip_shadow"
+		}
+
+		iconType = {
+			name = "picture"
+			position = { x = 2 y = 3 }
+			spriteType = "GFX_buildings_strip"
+		}
+
+		iconType = {
+			name = "overlay"
+			position = { x = -10000 y = 5 }
+			spriteType = "GFX_building_status_overlay"
+			frame = 2
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "repair"
+			spriteType = "GFX_building_repair"
+			position = { x= -10000 y = 7 }
+		}
+
+		iconType = {
+			name = "ongoing_contruction_anim"
+			spriteType = "GFX_ongoing_contruction_anim"
+			position = { x = 254 y = 10000 }
+		}
+
+		buttonType = {
+			name = "increase_priority"
+			position = { x=10000 y=11 } #position = { x=320 y=11 }
+			quadTextureSprite = "GFX_scroll_up"
+			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "decrease_priority"
+			position = { x=10000 y=11 } #position = { x=351 y=11 }
+			quadTextureSprite = "GFX_scroll_down"
+			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "increase_amount"
+			quadTextureSprite ="GFX_add_one"
+			position = { x = 10000 y = 5 } #position = { x = 220 y = 5 }
+			pdx_tooltip = "CONSTRUCTION_INCREASE_AMOUNT_LABEL"
+			pdx_tooltip_delayed = "CONSTRUCTION_MAXIMIZE"
+			#scale = 0.9
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "decrease_amount"
+			quadTextureSprite ="GFX_subtract_one"
+			position = { x = 10000 y = 28 } #position = { x = 220 y = 28 }
+			#scale = 0.9
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "close_production_line"
+			position = { x = 330 y = 10 }
+			quadTextureSprite = "GFX_cancel"
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "scorched_icon"
+			position = { x = 10000 y = 10 }
+			quadTextureSprite ="GFX_scorched_earth"
+			pdx_tooltip = "SCORCHED_EARTH_STATE_PREVENT_REPAIRS"
+		}
+	}
+
+	containerWindowType = {
+		name = "static_consumer_goods_entry"
+		position = { x=-10000 y=0 }
+		size = { width = 400 height = 0 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "factories"
+			position = { x = 289 y = 21 }
+			font = "Focusfont"
+			text = "-"
+			maxWidth = 50
+			maxHeight = 20
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "static_traded_factories_entry"
+		position = { x=-10000 y=0 }
+		size = { width = 400 height = 0 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "factories"
+			position = { x = 289 y = 21 }
+			font = "Focusfont"
+			text = "-"
+			maxWidth = 50
+			maxHeight = 20
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "static_project_factories_entry"
+		position = { x=-10000 y=0 }
+		size = { width = 400 height = 0 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "factories"
+			position = { x = 289 y = 21 }
+			font = "Focusfont"
+			text = "-"
+			maxWidth = 50
+			maxHeight = 20
+			format = center
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "static_contract_payment_entry"
+		position = { x=0 y=0 }
+		size = { width = 400 height = 52 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "factories"
+			position = { x = 254 y = 17 }
+			font = "hoi_18b"
+			text = "-"
+			maxWidth = 50
+			maxHeight = 20
+			format = center
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "open_market_view_btn"
+			position = { x = 305 y = 12 }
+			quadTextureSprite ="GFX_button_94x31"
+			font = "hoi_16mbs"
+			Orientation = "UPPER_LEFT"
+			text = "CONSTRUCTION_GO_TO_MARKET_BUTTON"
+		}
+	}
+}

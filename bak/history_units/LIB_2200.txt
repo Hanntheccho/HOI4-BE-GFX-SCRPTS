@@ -1,0 +1,120 @@
+division_template = {
+	name = "Regional Defense Tactical Batallion"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+
+	}
+
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+	}
+}
+
+division_template = {
+	name = "National Guard Brigade"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 0 y = 4 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+
+division_template = {
+	name = "Pre-Mistake Armored Division"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		MBT = { x = 2 y = 0 }
+		MBT = { x = 2 y = 1 }
+		MBT = { x = 2 y = 2 }
+		MBT = { x = 2 y = 3	}
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+
+
+units = {
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3503
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+		}
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3529
+		division_template = "Regional Defense Tactical Batallion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3556
+		division_template = "Regional Defense Tactical Batallion"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3628
+		division_template = "Pre-Mistake Armored Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+		}
+
+
+}

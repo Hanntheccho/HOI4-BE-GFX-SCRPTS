@@ -1,0 +1,114 @@
+division_template = {
+	name = "Peoples Light Division"			#propagandist name - really just bad milita
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+
+}
+
+division_template = {
+	name = "Shock Division"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Heavy Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		maintenance_company = {x = 0 y = 1}
+	}
+}
+
+
+units = {
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10470
+		division_template = "Peoples Light Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10519
+		division_template = "Peoples Light Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.8	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10515
+		division_template = "Peoples Light Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.9	#
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10409
+		division_template = "Shock Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10420
+		division_template = "Shock Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+}

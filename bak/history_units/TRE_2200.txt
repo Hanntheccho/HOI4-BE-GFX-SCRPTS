@@ -1,0 +1,44 @@
+## Division Templates ##
+division_template = {
+	name = "Militia Warband"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+## Units -- Shitty ##
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1712
+		division_template = "Militia Warband"
+		start_experience_factor = 0.4
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1616
+		division_template = "Militia Warband"
+		start_experience_factor = 0.2
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1712
+		division_template = "Militia Warband"
+		start_experience_factor = 0.2
+	}
+}

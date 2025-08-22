@@ -1,0 +1,143 @@
+division_template = {
+	name = "Grand Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Grand Walker Division"
+
+	regiments = {
+		walker = { x = 0 y = 0 }
+		walker = { x = 0 y = 1 }
+		walker= { x = 0 y = 2 }
+		walker = { x = 0 y = 3 }
+		walker = { x = 1 y = 0 }
+		walker = { x = 1 y = 1 }
+		walker = { x = 1 y = 2 }
+		walker = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Grand Elite Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+units = { ## 10 units ##
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2377
+		division_template = "Grand Walker Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2354
+		division_template = "Grand Elite Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2553
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2602
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2578
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2357
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2387
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2150
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2366
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2093
+		division_template = "Grand Infantry Division"
+		start_experience_factor = 0.5
+	}
+}

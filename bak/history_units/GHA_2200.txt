@@ -1,0 +1,148 @@
+division_template = {
+	name = "Light Rifle Milita"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		shock_troops = {
+			x = 2
+			y = 0
+		}
+		shock_troops = {
+			x = 2
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	regiments = {
+		apc = {
+			x = 0
+			y = 0
+		}
+		apc = {
+			x = 0
+			y = 1
+		}
+		apc = {
+			x = 0
+			y = 2
+		}
+		rover = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		recon = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+division_template = {
+	name = "Armored Brigade"
+	regiments = {
+		MBT = {
+			x = 0
+			y = 0
+		}
+		MBT = {
+			x = 0
+			y = 1
+		}
+		MBT = {
+			x = 0
+			y = 2
+		}
+		rover = {
+			x = 1
+			y = 0
+		}
+	}
+	support = {
+		recon = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3944
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4057
+		division_template = "Armored Brigade"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4049
+		division_template = "Light Rifle Milita"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4067
+		division_template = "Light Rifle Milita"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3981
+		division_template = "Light Rifle Milita"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4001
+		division_template = "Light Rifle Milita"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7		#
+	}
+}

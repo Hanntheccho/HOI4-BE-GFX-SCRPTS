@@ -1,0 +1,310 @@
+division_template = {
+	name = "División de Walker"
+
+	regiments = {
+		walker = { x = 0 y = 0 }
+		walker = { x = 0 y = 1 }
+		walker = { x = 0 y = 2 }
+		walker = { x = 0 y = 3 }
+		walker = { x = 1 y = 0 }
+		walker = { x = 1 y = 1 }
+		walker = { x = 1 y = 2 }
+		walker = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "División Acorazada"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		rocket_artillery_brigade = {x = 0 y = 3}
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+		apc = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "División de Rover"
+
+	regiments = {
+		rover = { x = 0 y = 0 }
+		rover = { x = 0 y = 1 }
+		rover = { x = 0 y = 2 }
+		rover = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+	}
+}
+
+division_template = {
+	name = "División de Infantería"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "División de Infantería de Élite"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		artillery = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "División de Infantería Mecanizada"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+## Units -- 20 troops, 7 walkers, 2 rovers, 1 mbt, 3 elite infantry, 5 regular infantry, 2 mechanized ##
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Grupo Manticore"
+		location = 1720
+		division_template = "División de Walker"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Grupo Manticore"
+		location = 1704
+		division_template = "División de Walker"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Grupo Manticore"
+		location = 1720
+		division_template = "División de Walker"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Arthemace Professionals"
+		location = 1640
+		division_template = "División de Walker"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Arthemace Professionals"
+		location = 1658
+		division_template = "División de Walker"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Aegis Defense Services"
+		location = 1611
+		division_template = "División de Walker"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Aegis Defense Services"
+		location = 2186
+		division_template = "División de Walker"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Adean 1st Rover Division"
+		location = 1948
+		division_template = "División de Rover"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Adean 2nd Rover Division"
+		location = 1895
+		division_template = "División de Rover"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "50 Caliber Solutions"
+		location = 1895
+		division_template = "División Acorazada"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Mechanized Infantry Division"
+		location = 2447
+		division_template = "División de Infantería Mecanizada"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Mechanized Infantry Division"
+		location = 2320
+		division_template = "División de Infantería Mecanizada"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Elite Infantry Division"
+		location = 2144
+		division_template = "División de Infantería de Élite"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Elite Infantry Division"
+		location = 2284
+		division_template = "División de Infantería de Élite"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Elite Infantry Division"
+		location = 2095
+		division_template = "División de Infantería de Élite"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Andean 1st Infantry Division"
+		location = 1885
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Andean 2nd Infantry Division"
+		location = 1821
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Andean 3rd Infantry Division"
+		location = 1851
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Andean 4th Infantry Division"
+		location = 1965
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		name = "Andean 5th Infantry Division"
+		location = 2029
+		division_template = "División de Infantería"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,257 @@
+division_template = {
+	name = "National Guard"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		signal_company = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+
+	support = {
+		engineer = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Walker Armored Division"
+
+	regiments = {
+		walker = { x = 0 y = 0 }
+		walker = { x = 0 y = 1 }
+		walker= { x = 0 y = 2 }
+		walker = { x = 0 y = 3 }
+		walker = { x = 1 y = 0 }
+		walker = { x = 1 y = 1 }
+		walker = { x = 1 y = 2 }
+		walker = { x = 1 y = 3 }
+	}
+
+	support = {
+		engineer = {x = 0 y = 0}
+		recon = {x = 0 y = 1}
+		logistics_company = {x = 0 y = 2}
+	}
+}
+
+units = { ## About 27 troops, mostly infantry, some walkers
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5196
+		division_template = "Walker Armored Division"
+		start_experience_factor = 0.3
+	}
+
+	##Infantry
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6477
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6490
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6394
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6298
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6056
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5821
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5519
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5876
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5930
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6322
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+
+	##National guard
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5805
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5655
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6031
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5289
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6086
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 5442
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6135
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 6381
+		division_template = "National Guard"
+		start_experience_factor = 0.3
+	}
+}

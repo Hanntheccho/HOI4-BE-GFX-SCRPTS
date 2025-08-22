@@ -1,0 +1,102 @@
+## Division Templates ##
+division_template = {
+	name = "Infantry Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Rover Division"
+
+	regiments = {
+		rover = { x = 0 y = 0 }
+		rover = { x = 0 y = 1 }
+		rover= { x = 0 y = 2 }
+		rover = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+		apc = { x = 1 y = 4 }
+	}
+}
+
+
+## Units ##
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1166
+		division_template = "Rover Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1132
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1166
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {#
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1457
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= {#
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1414
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division= { #
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1326
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1349
+		division_template = "Infantry Division"
+		start_experience_factor = 0.3
+	}
+}

@@ -1,0 +1,1090 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "countrydeploymentview"
+		position = { x=-606 y=112}
+		show_position = { x=0 y =112 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=544 height=100%% }
+		clipping = yes
+
+		#hide_sound = menu_close_window
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_null"
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "military_tab"
+			position = { x = 5 y = 0 }
+			size = { width = 100%% height = 100%% }
+
+			containerWindowType = {
+				name = "divisions"
+				position = { x=0 y=20 }
+				size = { width=422 height=-2 }
+				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+				margin = { bottom = 10}
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_null"
+				}
+
+				gridboxtype = {
+					name = "deployments_list_gridbox"
+					position = { x = 23 y = 0 }
+					size = { width = -10 height = 100%% }
+					slotsize = { width = 1 height = 1 }
+					format = "UPPER_LEFT"
+					max_slots_horizontal = 1
+				}
+			}
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 10000 y = 5 }
+			quadTextureSprite ="GFX_close"
+			font = "Arial"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+	}
+
+	containerWindowType = {
+		name = "templatedeploymentwindow"
+		position = { x=-606 y=112}
+		show_position = { x=0 y =112 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=544 height=100%% }
+		clipping = no
+
+		#hide_sound = menu_close_window
+		show_sound = menu_open_window
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_null"
+			alwaystransparent = yes
+		}
+
+		background ={
+			name ="pol_view_bg2"
+			spriteType = "GFX_research_view_bg_large"
+			position = { x= 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "bgbgbgbggbggbg"
+			size = { width=550 height=100%% }
+
+			background ={
+				name ="pol_view_bg2"
+				position = {
+					x = 0
+					y = 0
+				}
+				spriteType = "GFX_tiled_alpha"
+				Orientation = "UPPER_LEFT"
+				alwaystransparent = yes
+			}
+		}
+
+		instantTextboxType = {
+			name = "special_forces_cap"
+			position = { x = -10000 y = 63 }
+			font = "hoi_18mbs"
+			maxWidth = 80
+			maxHeight = 20
+			format = left
+			text = "THINGS"
+		}
+
+		containerWindowType = {
+			name = "templates"
+			position = { x=430 y=7 }
+			size = { width=142 height=98%% }
+			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+			margin = { top = 10 bottom = 10 }
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_null"
+			}
+
+			gridboxtype = {
+				name = "templates_grid"
+				position = { x = 14 y = 0 }
+				size = { width = 120 height = 100%% }
+				slotsize = { width = 120 height = 1 }
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+		}
+
+		containerWindowType = {
+			name = "show_decommissioned_templates_window"
+			position = { x=10000 y=4 } #position = { x=4 y=4 }
+			size = { width=373 height=44 }
+
+			#background = {
+			#	name = "Background"
+			#	quadTextureSprite ="GFX_tiled_plain_bg_small"
+			#}
+
+			buttonType = {
+				name = "checkbox"
+				position = { x = 0 y = 0 }
+				quadTextureSprite ="GFX_nullobject"
+				clicksound = click_checkbox
+				text = "ALL DIVISIONS"
+				font = "Arialsmallest"
+				shortcut = "X"
+			}
+		}
+
+		buttonType = {
+			name = "open_designer_button"
+			position = { x = -10000 y = 114 }
+			quadTextureSprite ="GFX_tiling_button"
+			clicksound = click_default
+		}
+
+		dropDownBoxType = {
+			name = "foreign_templates_drop_down"
+			position = { x = -10000 y = 26 } #position = { x=38 y=26 }
+			size = { width = 60 height = 40 }
+			switch_frame_on_expand = no
+
+			expandButton = {
+				name = "expand_button"
+				position = { x = -65 y = 17 }
+				quadTextureSprite ="GFX_foreign_templates_dropdown_button"
+				font = "Main_14_black"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_default
+				#scale = 0.83
+			}
+
+			expandedWindow = {
+				name = "expanded_window"
+				position = { x=-40 y= 63 }
+				show_position = { x = 335 y = 63 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 300
+				size = { width=300 height=430 }
+				verticalScrollbar = "right_vertical_slider"
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+				margin = { top = 7 bottom = 7 right = 6 }
+				#clipping = no
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+					position = { x = 0 y = 0 }
+				}
+
+				gridBoxType = {
+					name = "foreign_templates_grid"
+					position = { x = 8 y = 0 }
+					size = { width = 199 height = 100%% }
+					slotsize = { width = 256 height = 70 }
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+			}
+		}
+
+		containerWindowType = {
+			name = "div_templ_custom_icon_view"
+			position = { x=0 y=95 }
+			size = { width=375 height=100%% }
+			moveable = yes
+			fade_time = 500
+			fade_type = linear
+			verticalScrollbar = "right_vertical_slider"
+			scroll_wheel_factor = 50
+			smooth_scrolling = yes
+			margin = { top=9 left=0 bottom=9 right=0 }
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_tiled_window_1b_thin_border"
+			}
+
+			buttonType = {
+				name = "back"
+				position = { x=20 y=6 }
+				font = "Arialsmallestcap"
+				text = "BACK"
+				quadTextureSprite = "GFX_tiling_button"
+				size = { x=221 y=36 }
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "default"
+				position = { x=20 y=47 }
+				font = "Arialsmallest"
+				text = "DEFAULT_DIV_TEMPL_SYMBOL"
+				quadTextureSprite = "GFX_tiling_button"
+				size = { x=221 y=36 }
+				clicksound = click_default
+			}
+
+			gridBoxType = {
+				name = "symbols_grid"
+				position = { x=11 y=88 }
+				size = { width=355 height=100%% }
+				slotsize = { width=84 height=50 }
+				max_slots_horizontal = 4
+				format = "UPPER_LEFT"
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "foreign_template_item"
+		size = { width = 270 height = 66  }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_focus_tooltip"
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "owner_flag"
+			quadTextureSprite ="GFX_flag_small2"
+			position = { x= 13 y = 24 }
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 65 y = 25 }
+			font = "Arial"
+			text = "Maus"
+			maxWidth = 160
+			maxHeight = 20
+			format = left
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "current_autonomy_level_icon"
+			position = { x = -50 y = 15 }
+			quadTextureSprite = "GFX_autonomy_unknown_icon"
+			Orientation = "UPPER_RIGHT"
+		}
+
+		iconType = {
+			name = "div_designer_colonial_flag_frame"
+			position = { x = 11 y = 6 }
+			quadTextureSprite = "GFX_div_designer_colonial_flag_frame"
+		}
+	}
+
+	containerWindowType = {
+		name = "named_division_template_entry"
+		position = { x=19 y=2 }
+		size = { width=75 height=90 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_null"
+			position = { x=-5 y=0 }
+		}
+
+		background = {
+			name = "Background_obsolete"
+			quadTextureSprite ="GFX_deployment_named_division_obsolete_bg"
+			position = { x=-10000 y=0 }
+		}
+
+		buttonType = {
+			name = "add_template_button"
+			position = { x = -5 y = 0 }
+			quadTextureSprite ="GFX_deployment_named_division_bg" #quadTextureSprite ="GFX_small_button_71x26"
+			font = "Arial16"
+			text = "DEPLOYMENT_ADD_TEMPLATE"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "counter"
+			position = { x=-10 y=2 }
+			spriteType = "GFX_technology_medium"
+			clicksound = click_default
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "obsolete_template_warning"
+			quadTextureSprite ="GFX_obsolete_template_warning"
+			position = { x= 10000 y = 15 }
+		}
+
+		iconType = {
+			name = "special_forces_icon"
+			spriteType = "GFX_special_forces_icon"
+			position = { x = 10000 y = 40 }
+			frame = 3
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "can_paradrop_icon"
+			spriteType = "GFX_can_paradrop_icon_small"
+			position = { x = 10000 y = 42 }
+			frame = 2
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="division_priority_icon"
+			spriteType = "GFX_div_deploy_priority_icon_strip"
+			position = { x=10000 y=16 }
+			frame = 1
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 10000 y = 17 }
+			font = "Focusfont"
+			maxWidth = 220
+			maxHeight = 40
+			format = left
+			vertical_alignment = center
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "obsolete"
+			position = { x=10000 y=52 } #position = { x=52 y=52 }
+			spriteType = "GFX_toggle_obsolete_button"
+			clicksound = click_default
+			scale = 0.7
+		}
+
+		instantTextboxType = {
+			name = "template_cap"
+			position = { x = 95 y = 48 }
+			text = "10/10"
+			font = "hoi_18mbs"
+			maxWidth = 60
+			maxHeight = 20
+			format = center
+			vertical_alignment = center
+		}
+
+		buttonType = {
+			name = "edit_button"
+			position = { x = -7 y = 54 }
+			quadTextureSprite = "GFX_tiling_button"
+			font = "Arial16"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "delete_button"
+			position = { x = -34 y = 10 }
+			quadTextureSprite = "GFX_cancel"
+			font = "Arial16"
+			text = "DELETE_TEMPLATE_BT"
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "foreign_template_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 7 y = 15 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_div_designer_colonial_flag_frame2"
+			position = { x= 9 y = 8 }
+		}
+
+		iconType = {
+			name = "exile_force_flag_frame"
+			quadTextureSprite ="GFX_div_designer_exile_flag_frame2"
+			position = { x= 9 y = 11 }
+		}
+	}
+
+	containerWindowType = {
+		name = "deploy_entry"
+		position = { x = -10000 y = 0}
+		size = { width = 493 height = 0 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 10 y = 5 }
+			font = Arialcap
+			text = "Maus"
+			maxWidth = 500
+			maxHeight = 20
+			format = left
+			alwaystransparent = yes
+			multiline = no
+		}
+
+		iconType = {
+			name = "Background"
+			quadTextureSprite ="GFX_deploy_reinforcements_entry"
+			position = { x = -45 y = -5}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "deploy_icon_tiled_bg"
+			quadTextureSprite = "GFX_deploy_icon_tiled_bg"
+			position = { x = 11 y = 0}
+		}
+
+		iconType = {
+			name = "reinforcements_icon"
+			position = { x=11 y=0 }
+			spriteType = "GFX_reinforcements_icon"
+			alwaystransparent = yes
+		}
+
+		background = {
+			name = "deploy_priority_title_bg"
+			spriteType = "GFX_deploy_priority_title_bg"
+			alwaystransparent = no
+			position = { x = 110 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "army_equipment"
+			spriteType = "GFX_equipment_icon"
+			position = { x=0 y=13 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "equipment_progressbar"
+			spriteType = "GFX_deployment_progressbar"
+			position = { x=-17 y=40 }
+			alwaystransparent = yes
+		}
+
+		background = {
+			name = "deploy_priority_equipment_meter_bg"
+			spriteType = "GFX_deploy_priority_equipment_meter_bg"
+			alwaystransparent = no
+			position = { x = 0 y = 10 }
+		}
+
+		buttonType = {
+			name = "low_prio"
+			position = { x = 350 y = 12 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "medium_prio"
+			position = { x = 390 y = 12 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 3
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "high_prio"
+			position = { x = 430 y = 12 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+	}
+
+	containerWindowType = {
+		name = "supply_deploy_entry"
+		position = { x = -10000 y = 0}
+		size = { width = 493 height = 0 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 10 y = 5 }
+			font = Arialcap
+			text = "Maus"
+			maxWidth = 500
+			maxHeight = 20
+			format = left
+			alwaystransparent = yes
+			multiline = no
+		}
+
+		iconType = {
+			name = "Background"
+			quadTextureSprite ="GFX_deploy_reinforcements_entry"
+			position = { x = -45 y = -5}
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "deploy_icon_tiled_bg"
+			quadTextureSprite = "GFX_deploy_icon_tiled_bg"
+			position = { x = 10 y = 0}
+		}
+
+		iconType = {
+			name = "reinforcements_icon"
+			position = { x=11 y=0 }
+			spriteType = "GFX_reinforcements_icon"
+			alwaystransparent = yes
+		}
+
+		background = {
+			name = "deploy_priority_title_bg"
+			spriteType = "GFX_deploy_priority_title_bg"
+			position = { x = 110 y = 0 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "army_equipment"
+			spriteType = "GFX_equipment_icon"
+			position = { x=0 y=13 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "equipment_progressbar"
+			spriteType = "GFX_deployment_progressbar"
+			position = { x=-17 y=43 }
+			alwaystransparent = yes
+		}
+
+		background = {
+			name = "deploy_priority_equipment_meter_bg"
+			spriteType = "GFX_deploy_priority_equipment_meter_bg"
+			alwaystransparent = no
+			position = { x = 0 y = 10 }
+		}
+
+		buttonType = {
+			name = "low_prio"
+			position = { x = 350 y = 12 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "medium_prio"
+			position = { x = 390 y = 12 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 3
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "high_prio"
+			position = { x = 430 y = 12 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			frame = 1
+			clicksound = click_default
+		}
+	}
+	containerWindowType = {
+		name = "military_deployment_conveyor_summary_view"
+		position = { x=-12 y=0 }
+		size = { width=510 height=40 }
+
+		instantTextboxType = {
+			name = "lines_count"
+			position = { x = 10000 y = 0 }
+			font = Arialcap
+			text = "1"
+			maxWidth = 330
+			maxHeight = 20
+			format = right
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "conveyor_collapse_btn"
+			position = { x=10000 y=5 }
+			quadTextureSprite = "GFX_military_deployment_end_line_view_bg"
+			font = "Arial"
+			clicksound = click_default
+			frame = 1
+		}
+
+		iconType = {
+			name = "army_equipment"
+			spriteType = "GFX_equipment_state_icon"
+			position = { x=-10000 y=9 }
+		}
+
+		iconType = {
+			name = "equipment_progressbar"
+			spriteType = "GFX_deployment_entry_progressbar"
+			position = { x=-10000 y=17 }
+		}
+
+		buttonType = {
+			name = "priority_up_btn"
+			position = { x=10000 y=4 } #position = { x=51 y=4 }
+			quadTextureSprite = "GFX_change_conveyor_order_btn"
+			font = "Arial"
+			clicksound = click_default
+			frame = 1
+		}
+
+		buttonType = {
+			name = "priority_down_btn"
+			position = { x=10000 y=4 } #position = { x=76 y=4 }
+			quadTextureSprite = "GFX_change_conveyor_order_btn"
+			font = "Arial"
+			clicksound = click_default
+			frame = 2
+		}
+	}
+
+	containerWindowType = {
+		name = "military_deployment_conveyor_end_view"
+		position = { x=-10000 y=-3 }
+		size = { width=486 height=5 }
+
+		background = {
+			name = "background"
+			quadTextureSprite ="GFX_military_deployment_end_line"
+		}
+	}
+
+	containerWindowType = {
+		name = "military_deployment_line_view"
+		position = { x=-5 y=0 }
+		size = { width=450 height=40 }
+		clipping = no
+
+		containerWindowType = {
+			name = "line_back_military_deployment_mod"
+			size = { width=380 height=40 }
+
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_alpha"
+				position = {
+					x = -7
+					y = 0
+				}
+				alwaystransparent = yes
+			}
+		}
+
+		dropDownBoxType = {
+			name = "division_name_dropdown"
+			position = { x = 5 y = 5 }
+			size = { width = 150 height = 30 }
+
+			editBoxType = {
+				name = "editbox"
+				position = { x = 10000 y = 8 } #position = { x = 3 y = 8 }
+				font = "Focusfont"
+				size = { x=175 y=19 }
+			}
+
+			expandButton = {
+				name = "expand_button"
+				position = { x = 10000 y = 7 } #position = { x = 30 y = 7 }
+				quadTextureSprite ="GFX_collapse_or_close" # Frame 1 = down, 2 = up, 3 = cancel
+				font = "Main_14_black"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_default
+				scale = 0.8
+			}
+
+			expandedWindow = {
+				name = "expanded_window"
+				position = { x=0 y= -300 }
+				show_position = { x = -5 y = 30 }
+				show_animation_type = decelerated
+				hide_animation_type = accelerated
+				animation_time = 300
+				size = { width=250 height=300 }
+				verticalScrollbar = "right_vertical_slider"
+				margin = { top = 7 bottom = 7 right = 6 }
+
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_tiled_window_1b_thin_border"
+					position = { x = 0 y = 0 }
+				}
+
+				gridBoxType = {
+					name = "grid"
+					position = { x = 8 y = 0 }
+					size = { width = 250 height = 286 }
+					slotsize = { width = 250 height = 30 }
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+
+				instantTextboxType = {
+					name = "empty"
+					position = { x = 10 y = 130 }
+					font = "Arial"
+					maxWidth = 210
+					maxHeight = 60
+					format = center
+					text = "DEPLOYMENT_LINE_OUT_OF_NAMES"
+				}
+			}
+		}
+
+		instantTextboxType = {
+			name = "eq_tag"
+			position = { x = 10 y = 5 }
+			font = "Arialsmallest"
+			text = "▀ [EQ_PROGRESS]"
+			maxWidth = 170
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+
+		iconType = {
+			name = "army_equipment"
+			spriteType = "GFX_equipment_state_icon"
+			position = { x=-10000 y=9 }
+		}
+
+		iconType = {
+			name = "equipment_progressbar"
+			spriteType = "GFX_deployment_entry_progressbar"
+			position = { x=30 y=25 }
+		}
+
+		instantTextboxType = {
+			name = "xp_tag"
+			position = { x = 156 y = 5 }
+			font = "Arialsmallest"
+			text = "▀ [XP_PROGRESS}"
+			maxWidth = 170
+			maxHeight = 20
+			format = left
+			fixedsize = yes
+		}
+
+		iconType = {
+			name = "army_training"
+			spriteType = "GFX_army_experience"
+			position = { x=-10000 y=13 }
+		}
+
+		iconType = {
+			name = "training_progressbar"
+			spriteType = "GFX_deployment_entry_progressbar"
+			position = { x=185 y=25 }
+		}
+
+		instantTextboxType = {
+			name = "series_number"
+			position = { x = 10000 y = 13 }
+			font = "Focusfont"
+			text = "1"
+			maxWidth = 65
+			maxHeight = 20
+			pdx_tooltip = "CONVEYOR_SERIES_CURRENT_AMOUNT_DESC"
+			format = right
+			fixedsize = yes
+		}
+
+		buttonType = {
+			name = "deploy_line_button"
+			position = { x=302 y=4 }
+			quadTextureSprite = "GFX_deploy_line_button"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "cancel_line_button"
+			position = { x=340 y=4 }
+			quadTextureSprite = "GFX_cancel"
+			pdx_tooltip = "CONVEYOR_LINE_CANCEL_DESC"
+			clicksound = click_close
+		}
+	}
+
+
+	containerWindowType = {
+		name = "division_name_dropdown_entry"
+		position = { x=0 y=0 }
+		size = { width = 218 height = 30 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_focus_tooltip"
+			clicksound = click_default
+		}
+
+		instantTextboxType = {
+			name = "name"
+			position = { x = 9 y = 8 }
+			font = "Arialsmallest"
+			maxWidth = 215
+			maxHeight = 30
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+	}
+
+	containerWindowType = {
+		name = "military_deployment_conveyor_view"
+		position = { x=-12 y=0 }
+		size = { width=406 height=82 }
+		clipping = no
+
+		instantTextboxType = {
+			name = "generic_name_edit_extra"
+			position = { x = 12 y = 18 }
+			font = "Arialsmallest"
+			text = "▀  {NAME}........................................................................."
+			maxWidth = 440
+			maxHeight = 33
+			pdx_tooltip = "CONVEYOR_SERIES_AMOUNT_DESC"
+			format = left
+		}
+
+		containerWindowType = {
+			name = "back_military_deployment_mod"
+			size = { width=380 height=82 }
+
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_alpha"
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "back_military_deployment_mod2"
+			size = { width=380 height=40 }
+			position = {
+				x = 0
+				y = 82
+			}
+
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_alpha"
+				alwaystransparent = yes
+			}
+		}
+
+		editBoxType = {
+			name = "generic_name_edit"
+			position = { x = 90 y = 12 }
+			font = "Arialsmallest"
+			size = { x=280 y=35 }
+			pdx_tooltip = "CONVEYOR_GENERIC_NAME_EDIT_DESC"
+		}
+
+		iconType = {
+			name = "template_icon"
+			position = { x=0 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="division_priority_icon"
+			spriteType = "GFX_div_deploy_priority_icon_strip"
+			position = { x=10000 y=22 }
+			frame = 1
+		}
+
+		iconType = {
+			name = "foreign_template_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 12 y = 49 }
+		}
+
+		iconType = {
+			name = "colonial_force_flag_frame"
+			quadTextureSprite ="GFX_div_designer_colonial_flag_frame2"
+			position = { x= 13 y = 44 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "exile_force_flag_frame"
+			quadTextureSprite ="GFX_div_designer_exile_flag_frame2"
+			position = { x= 13 y = 44 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "obsolete_template_warning"
+			quadTextureSprite ="GFX_obsolete_template_warning"
+			position = { x= 10000 y = 21 }
+			pdx_tooltip = "DECOMMISSIONED_TEMPLATE_WARNING_TOOLTIP"
+		}
+
+		buttonType = {
+			name = "deploy_location_button"
+			position = { x=58 y=46 }
+			quadTextureSprite = "GFX_conveyor_location_btn"
+			font = "Arial16"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "deploy_group_button"
+			spriteType = "GFX_conveyor_group_btn"
+			position = { x=10 y=46 }
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "deploy_group_button_icon"
+			position = { x=10000 y=48 }
+			spriteType = "GFX_conveyor_group_btn_frame"
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "decrease_amount"
+			position = { x = 200 y = 91 }
+			quadTextureSprite = "GFX_naval_decrease_amount"
+			pdx_tooltip = "CONVEYOR_SERIES_DECREASE_DESC"
+			font = "Arialsmallest"
+			clicksound = click_default
+			font = "Focusfont"
+			text = "<<<"
+		}
+
+		instantTextboxType = {
+			name = "amount"
+			position = { x = 240 y = 94 }
+			font = "Focusfont"
+			text = "INFINITY"
+			maxWidth = 33
+			maxHeight = 33
+			pdx_tooltip = "CONVEYOR_SERIES_AMOUNT_DESC"
+			format = centre
+		}
+
+		buttonType = {
+			name = "increase_amount"
+			position = { x = 280 y = 91 }
+			quadTextureSprite = "GFX_naval_decrease_amount"
+			pdx_tooltip = "CONVEYOR_SERIES_INCREASE_DESC"
+			clicksound = click_default
+			font = "Focusfont"
+			text = ">>>"
+		}
+
+		buttonType = {
+			name = "low_prio"
+			position = { x = -10000 y = 9 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			pdx_tooltip = "DEPLOYMENT_LOW_PRIORITY_DESC"
+			frame = 1
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "medium_prio"
+			position = { x = -10000 y = 9 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			pdx_tooltip = "DEPLOYMENT_MEDIUM_PRIORITY_DESC"
+			frame = 3
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "high_prio"
+			position = { x = -10000 y = 9 }
+			font = "Arialsmallest"
+			quadTextureSprite = "GFX_deploy_priority"
+			pdx_tooltip = "DEPLOYMENT_HIGH_PRIORITY_DESC"
+			frame = 1
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "add_button"
+			position = { x = 308 y = 49 }
+			quadTextureSprite ="GFX_military_deployment_add_line_btn"
+			font = "Arial16" #removing does remove the btn?¿?¿
+			clicksound = click_default
+		}
+
+		iconType = {
+			name = "add_limit_bg"
+			position = { x=-10000 y=52 }
+			spriteType = "GFX_add_limit_bg"
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "add_limit"
+			position = { x = 316 y = 52 }
+			font = "Arialsmallest"
+			text = "4"
+			maxWidth = 17
+			maxHeight = 33
+			format = center
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "deploy_conveyor_button"
+			position = { x=346 y=47 }
+			quadTextureSprite = "GFX_deploy_conveyor_button"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "cancel_conveyor_button"
+			position = { x=346 y=3 }
+			quadTextureSprite = "GFX_cancel"
+			pdx_tooltip = "CANCEL_CONVEYOR_TOOLTIP"
+			clicksound = click_close
+		}
+	}
+}

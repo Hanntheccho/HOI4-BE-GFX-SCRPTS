@@ -1,0 +1,169 @@
+division_template = {
+	name = "Light Border Security Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+}
+
+division_template = {
+	name = "Heavy Border Security Brigade"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 2 y = 0 }
+		shock_troops = { x = 2 y = 1 }
+	}
+
+}
+
+
+division_template = {
+	name = "Mechanized Defense Group"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		rover = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+
+
+division_template = {
+	name = "Armored Division"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		MBT= { x = 0 y = 3 }
+		MBT= { x = 0 y = 4 }
+		rover = { x = 1 y = 0 }
+		rover = { x = 1 y = 0 }
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+
+	}
+	support = {
+		engineer = {x = 0 y = 0}
+	}
+}
+
+
+units = {
+
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11238
+		division_template = "Armored Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1	#
+	}
+
+
+
+
+		division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11301
+		division_template = "Armored Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1	#
+	}
+
+		division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11199
+		division_template = "Heavy Border Security Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+	}
+
+
+			division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11497
+		division_template = "Light Border Security Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+	}
+
+
+
+			division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11391
+		division_template = "Mechanized Defense Group"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+	}
+
+					division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11492
+		division_template = "Light Border Security Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+	}
+
+
+					division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11301
+		division_template = "Light Border Security Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+	}
+
+
+
+
+
+				division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 11278
+		division_template = "Light Border Security Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+	}
+}

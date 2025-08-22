@@ -1,0 +1,491 @@
+division_template = {
+	name = "Light Infantry"
+	regiments = {
+		infantry = {
+			x = 0
+			y = 0
+		}
+		infantry = {
+			x = 0
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 1
+			y = 0
+		}
+		infantry = {
+			x = 1
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+		infantry = {
+			x = 2
+			y = 0
+		}
+		infantry = {
+			x = 2
+			y = 1
+		}
+		infantry = {
+			x = 0
+			y = 2
+		}
+	}
+}
+
+## good template but bad units
+division_template = {
+	name = "Islamic Revolutionary Guard Corps"
+	regiments = {
+		shock_troops = {
+			x = 0
+			y = 0
+		}
+		shock_troops = {
+			x = 0
+			y = 1
+		}
+		shock_troops = {
+			x = 0
+			y = 2
+		}
+		shock_troops = {
+			x = 0
+			y = 3
+		}
+		shock_troops = {
+			x = 1
+			y = 0
+		}
+		shock_troops = {
+			x = 1
+			y = 1
+		}
+		shock_troops = {
+			x = 1
+			y = 2
+		}
+		shock_troops = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		recon = {
+			x = 0
+			y = 0
+		}
+		engineer = {
+			x = 0
+			y = 1
+		}
+		artillery = {
+			x = 0
+			y = 2
+		}
+	}
+}
+
+division_template = {
+	name = "Mechanized Brigade"
+	regiments = {
+		apc = {
+			x = 0
+			y = 0
+		}
+		apc = {
+			x = 0
+			y = 1
+		}
+		apc = {
+			x = 0
+			y = 2
+		}
+		apc = {
+			x = 0
+			y = 3
+		}
+		apc = {
+			x = 1
+			y = 0
+		}
+		apc = {
+			x = 1
+			y = 1
+		}
+		apc = {
+			x = 1
+			y = 2
+		}
+		apc = {
+			x = 1
+			y = 3
+		}
+	}
+	support = {
+		recon = {
+			x = 0
+			y = 0
+		}
+	}
+}
+
+#BIIG Division - symbolizes an entire corps - once again badly equipped
+division_template = {
+	name = "Combined Armored Corps"
+	regiments = {
+		MBT = {
+			x = 0
+			y = 0
+		}
+		MBT = {
+			x = 0
+			y = 1
+		}
+		MBT = {
+			x = 0
+			y = 2
+		}
+		MBT = {
+			x = 0
+			y = 3
+		}
+		MBT = {
+			x = 0
+			y = 4
+		}
+		rocket_artillery_brigade = {
+			x = 1
+			y = 0
+		}
+		rocket_artillery_brigade = {
+			x = 1
+			y = 1
+		}
+		artillery_brigade = {
+			x = 1
+			y = 2
+		}
+		artillery_brigade = {
+			x = 1
+			y = 3
+		}
+		apc = {
+			x = 2
+			y = 0
+		}
+		apc = {
+			x = 2
+			y = 1
+		}
+		apc = {
+			x = 2
+			y = 2
+		}
+		apc = {
+			x = 2
+			y = 3
+		}
+		apc = {
+			x = 2
+			y = 4
+		}
+		MBT = {
+			x = 3
+			y = 0
+		}
+		MBT = {
+			x = 3
+			y = 1
+		}
+		MBT = {
+			x = 3
+			y = 2
+		}
+		MBT = {
+			x = 3
+			y = 3
+		}
+		shock_troops = {
+			x = 4
+			y = 0
+		}
+		shock_troops = {
+			x = 4
+			y = 1
+		}
+	}
+	support = {
+		engineer = {
+			x = 0
+			y = 0
+		}
+		recon = {
+			x = 0
+			y = 1
+		}
+		maintenance_company = {
+			x = 0
+			y = 2
+		}
+		artillery = {
+			x = 0
+			y = 3
+		}
+	}
+}
+
+units = {
+	#sadly no specific names here
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8807
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8918
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9007
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8807
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8904
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8879
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8635
+		division_template = "Combined Armored Corps"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.75		#
+	}
+	##################################
+	#eastern units are lower priority#
+	##################################
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9125
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9211
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.7		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9220
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9345
+		division_template = "Combined Armored Corps"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.5		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9288
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9271
+		division_template = "Light Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8		#
+	}
+	#islamic guard on VPs#
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9270
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9032
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8884
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8841
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9151
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8926
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8812
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8926
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.8
+		start_equipment_factor = 0.6		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8945
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8706
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.8		#
+	}
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 8985
+		division_template = "Islamic Revolutionary Guard Corps"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.6		#
+	}
+}

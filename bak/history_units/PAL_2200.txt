@@ -1,0 +1,121 @@
+division_template = {
+	name = "Armored Division"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		artillery_brigade  = {x = 1 y = 0}
+		artillery_brigade  = {x = 1 y = 1}
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		apc = { x = 2 y = 2 }
+
+	}
+	support = {
+		engineer = {x = 0 y = 0}
+		recon = {x = 0 y = 1}
+		maintenance_company = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Heavy Infantry Guards Division"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = { x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+	}
+}
+
+
+division_template = {
+	name = "Mechanized Guards Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+	}
+	support = {
+		recon = {x = 0 y = 0}
+	}
+}
+
+
+division_template = {
+	name = "High Mobility Division"
+
+	regiments = {
+		rover = { x = 0 y = 0 }
+		rover = { x = 0 y = 1 }
+		rover= { x = 0 y = 2 }
+		rover = { x = 0 y = 3 }
+		rover = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+	}
+
+		support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7765
+		division_template = "High Mobility Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7789
+		division_template = "Mechanized Guards Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7765
+		division_template = "Heavy Infantry Guards Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+			division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7717
+		division_template = "Mechanized Guards Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+}

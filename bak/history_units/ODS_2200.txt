@@ -1,0 +1,151 @@
+division_template = {
+	name = "Odeshian Light Brigade"			#propagandist name - really just bad milita
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		shock_troops = { x = 2 y = 0 }
+		shock_troops = { x = 2 y = 1 }
+	}
+
+		support = {
+		engineer = { x = 0 y = 0 }
+		artillery = {x = 0 y = 1}
+	}
+
+}
+
+division_template = {
+	name = "Mechanized Shock Division"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		artillery = {x = 0 y = 1}
+	}
+}
+
+division_template = {
+	name = "Heavy Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		MBT = { x = 2 y = 0 }
+		MBT = { x = 2 y = 1 }
+		artillery_brigade = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		engineer = { x = 0 y = 1 }
+
+		maintenance_company = {x = 0 y = 3}
+	}
+}
+
+
+units = {
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10227
+		division_template = "Odeshian Light Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10321
+		division_template = "Odeshian Light Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10396
+		division_template = "Odeshian Light Brigade"
+		start_experience_factor = 0.3
+		start_equipment_factor = 1	#
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10367
+		division_template = "Odeshian Light Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10493
+		division_template = "Mechanized Shock Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+						division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10388
+		division_template = "Mechanized Shock Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+								division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10309
+		division_template = "Heavy Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+}

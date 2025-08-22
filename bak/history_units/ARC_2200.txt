@@ -1,0 +1,158 @@
+## Division Templates ##
+division_template = {
+	name = "Public Safety Division"
+	#template_counter = 003
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+division_template = {
+	name = "Public Compliance Division"
+	#template_counter = 004
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		MBT= { x = 0 y = 3 }
+		MBT= { x = 0 y = 4 }
+		rocket_artillery_brigade = {x = 1 y = 0}
+		rocket_artillery_brigade = {x = 1 y = 1}
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		apc = { x = 2 y = 2 }
+		apc = { x = 2 y = 3 }
+		apc = { x = 2 y = 4 }
+		apc = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		recon = {x = 0 y = 2}
+		maintenance_company = {x = 0 y = 3}
+	}
+}
+
+## Units -- Small amount, but they are the best at game start ##
+units = {
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1825
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1825
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1833
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1833
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1833
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1825
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1833
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1825
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1833
+		division_template = "Public Safety Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1833
+		division_template = "Public Compliance Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1825
+		division_template = "Public Compliance Division"
+		start_experience_factor = 0.9
+	}
+	division= {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1833
+		division_template = "Public Compliance Division"
+		start_experience_factor = 0.9
+	}
+}

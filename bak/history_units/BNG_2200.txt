@@ -1,0 +1,157 @@
+division_template = {
+	name = "Bichchhu Bahini"	#named after modern day gangs in bangladesh
+	is_locked = yes # given that there are alot 1INF tmeplates i locked them as to not confuse the ai
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+
+}
+
+
+division_template = {
+	name = "Munna Group"	#named after modern day gangs in bangladesh
+	is_locked = yes # given that there are alot 1INF tmeplates i locked them as to not confuse the ai
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+
+}
+
+
+division_template = {
+	name = "Black Cobra"	#named after modern day gangs in bangladesh	/ black cobra best equipped
+	is_locked = yes # given that there are alot 1INF tmeplates i locked them as to not confuse the ai
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+	}
+
+}
+
+
+division_template = {
+	name = "Mobillized RAB Group" #police special forces of bangladesh - small template that is not locked
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		apc = { x = 1 y = 0 }
+	}
+
+}
+
+
+units = {
+
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10538
+		division_template = "Bichchhu Bahini"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+		}
+
+
+
+			division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10540
+		division_template = "Bichchhu Bahini"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+		}
+
+
+			division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10540
+		division_template = "Bichchhu Bahini"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+		}
+
+
+			division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10485
+		division_template = "Munna Group"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+		}
+
+
+					division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10485
+		division_template = "Munna Group"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+		}
+
+
+
+							division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10536
+		division_template = "Black Cobra"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.8
+		}
+
+
+
+							division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10553
+		division_template = "Black Cobra"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6
+		}
+
+
+							division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10539
+		division_template = "Black Cobra"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+		}
+
+
+							division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10521
+		division_template = "Mobillized RAB Group"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+		}
+
+}

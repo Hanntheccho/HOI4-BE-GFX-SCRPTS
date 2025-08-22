@@ -1,0 +1,265 @@
+##Infantry - Few very well equipped###
+division_template = {
+	name = "Light Ranger Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+
+# Generic Infantry Template ##Infantry - Few very well equipped###
+division_template = {
+	name = "Heavy Ranger Division"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+	}
+}
+
+## Elites
+division_template = {
+	name = "Heavy Weapons Brigade"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		artillery = {x = 0 y = 1}
+	}
+}
+
+#Generic Mechanized
+division_template = {
+	name = "Mechanized Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+	}
+	support = {
+		recon = {x = 0 y = 0}
+	}
+}
+
+##First - Tank Division
+division_template = {
+	name = "Armored Division"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT = { x = 0 y = 2 }
+		MBT = { x = 0 y = 3 }
+		MBT = { x = 0 y = 4 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		MBT = { x = 1 y = 2 }
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		apc = { x = 2 y = 2 }
+		apc = { x = 2 y = 3 }
+		apc = { x = 2 y = 4 }
+		apc = { x = 3 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		recon = {x = 0 y = 1}
+		engineer = {x = 0 y = 2}
+	}
+}
+
+units = { ## 18 units ##
+	division = {
+		name = "1st Coastal Defense Division"
+
+		location = 13524
+		division_template = "Light Ranger Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.95
+	}
+
+
+	division = {
+		name = "2nd Coastal Defense Division"
+
+		location = 13455
+		division_template = "Light Ranger Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+
+	division = {
+		name = "5th Coastal Defense Division"
+
+		location = 13266
+		division_template = "Light Ranger Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "3rd Coastal Defense Division"
+
+		location = 12784
+		division_template = "Light Ranger Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "4th Coastal Defense Division"
+
+		location = 13161
+		division_template = "Light Ranger Division"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "1st Shock Division"
+
+		location = 12989
+		division_template = "Heavy Ranger Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "2nd Shock Division"
+
+		location = 12989
+		division_template = "Heavy Ranger Division"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "1st Heavy Brigade"
+
+		location = 12985
+		division_template = "Heavy Weapons Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "2nd Heavy Brigade"
+
+		location = 12986
+		division_template = "Heavy Weapons Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "3rd Heavy Brigade"
+
+		location = 12987
+		division_template = "Heavy Weapons Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "4th Heavy Brigade"
+
+		location = 13052
+		division_template = "Heavy Weapons Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "5th Heavy Brigade"
+
+		location = 13060
+		division_template = "Heavy Weapons Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "Experimental Mechanized Brigade"
+
+		location = 13376
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "Light Amored Brigade"
+
+		location = 13509
+		division_template = "Mechanized Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "1st Amored Defense Division"
+
+		location = 13435
+		division_template = "Armored Division"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "2nd Amored Defense Division"
+
+		location = 13435
+		division_template = "Armored Division"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "3rd Amored Defense Division"
+
+		location = 13266
+		division_template = "Armored Division"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+
+	division = {
+		name = "Special Operations Heavy Amored Division"
+
+		location = 13271
+		division_template = "Armored Division"
+		start_experience_factor = 0.75
+		start_equipment_factor = 1
+	}
+}

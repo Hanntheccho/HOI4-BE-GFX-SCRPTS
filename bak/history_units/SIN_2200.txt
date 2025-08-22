@@ -1,0 +1,127 @@
+division_template = {
+	name = "Muslim League Paramilitary"	#Big Division# reaaaaally badly equipped
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+
+
+	}
+
+}
+
+
+
+division_template = {
+	name = "Regional Guard" #more regionalized form of national guard formed post-mistake
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops = { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		recon = { x = 0 y = 2 }
+	}
+}
+
+
+division_template = {
+	name = "Pre-Mistake Armored Division"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		MBT = { x = 2 y = 0 }
+		MBT = { x = 2 y = 1 }
+		MBT = { x = 2 y = 2 }
+		MBT = { x = 2 y = 3	}
+		rocket_artillery_brigade = { x = 3 y = 0 }
+	}
+
+	support = {
+		artillery = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+	}
+}
+
+
+
+units = {
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 9647
+		division_template = "Muslim League Paramilitary"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 9593
+		division_template = "Muslim League Paramilitary"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 9543
+		division_template = "Regional Guard"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 9532
+		division_template = "Pre-Mistake Armored Division"
+		start_experience_factor = 0.4
+		start_equipment_factor = 0.8
+	}
+
+
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+
+		location = 9582
+		division_template = "Pre-Mistake Armored Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.75
+	}
+}

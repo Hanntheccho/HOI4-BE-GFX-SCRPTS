@@ -1,0 +1,299 @@
+division_template = {
+	name = "Light Riflemen"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 3 y = 0 }
+		infantry = { x = 3 y = 1 }
+
+	}
+
+}
+
+
+## Elites
+division_template = {
+	name = "Heavy Infantry Brigade"
+
+	regiments = {
+		shock_troops = { x = 0 y = 0 }
+		shock_troops = { x = 0 y = 1 }
+		shock_troops= { x = 0 y = 2 }
+		shock_troops = { x = 0 y = 3 }
+		shock_troops = { x = 1 y = 0 }
+		shock_troops = { x = 1 y = 1 }
+		shock_troops = { x = 1 y = 2 }
+		shock_troops = { x = 1 y = 3 }
+	}
+	support = {
+		recon = { x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		artillery = {x = 0 y = 2}
+	}
+}
+
+division_template = {
+	name = "Mechanized Guards Brigade"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc= { x = 0 y = 2 }
+		apc = { x = 0 y = 3 }
+		apc = { x = 1 y = 0 }
+		apc = { x = 1 y = 1 }
+		apc = { x = 1 y = 2 }
+		apc = { x = 1 y = 3 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+	}
+}
+
+
+
+#BIIG Division - symbolizes an entire corps
+division_template = {
+	name = "Combined Armored Corps"
+
+	regiments = {
+		MBT = { x = 0 y = 0 }
+		MBT = { x = 0 y = 1 }
+		MBT= { x = 0 y = 2 }
+		MBT= { x = 0 y = 3 }
+		MBT= { x = 0 y = 4 }
+		rocket_artillery_brigade = {x = 1 y = 0}
+		rocket_artillery_brigade = {x = 1 y = 1}
+		artillery_brigade  = {x = 1 y = 2}
+		artillery_brigade  = {x = 1 y = 3}
+		apc = { x = 2 y = 0 }
+		apc = { x = 2 y = 1 }
+		apc = { x = 2 y = 2 }
+		apc = { x = 2 y = 3 }
+		apc = { x = 2 y = 4 }
+		MBT = { x = 3 y = 0 }
+		MBT = { x = 3 y = 1 }
+		MBT = { x = 3 y = 2 }
+		MBT = { x = 3 y = 3 }
+	}
+	support = {
+		engineer = {x = 0 y = 0}
+		recon = {x = 0 y = 1}
+		maintenance_company = {x = 0 y = 2}
+	}
+}
+
+
+units = {
+
+	division = {
+		name = "51st Infantry Division"
+		location = 8028
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+			division = {
+		name = "87th Infantry Division"
+		location = 7984
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+			division = {
+		name = "14th Infantry Division"
+		location = 8050
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+			division = {
+		name = "15th Infantry Division"
+		location = 7128
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+			division = {
+		name = "16th Infantry Division"
+		location = 8131
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+#1st Army - around istanbul
+	division = {
+		name = "15th Infantry Division"
+		location = 7128
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+			division = {
+		name = "Corps Engineer Combat Regiment"
+		location = 7177
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+					division = {
+		name = "23rd Tactical Motorized Infantry Division"
+		location = 7050
+		division_template = "Light Riflemen"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+			division = {
+		name = "41st Commando Brigade"
+		location = 6858
+		division_template = "Heavy Infantry Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+
+			division = {
+		name = "66th Mechanized Infantry Brigade"
+		location = 7051
+		division_template = "Mechanized Guards Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+		#5th Corps
+
+		division = {
+		name = "5th Army Corps"
+		location = 6828
+		division_template = "Combined Armored Corps"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+				#8th Corps
+
+		division = {
+		name = "8th Army Corps"
+		location = 7232
+		division_template = "Combined Armored Corps"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+		#12th corps
+				division = {
+		name = "12th Army Corps"
+		location = 7232
+		division_template = "Combined Armored Corps"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+		#2nd Army - around izmir
+
+			division = {
+		name = "1st Commando Brigade"
+		location = 6789
+		division_template = "Heavy Infantry Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+			division = {
+		name = "2nd Commando Brigade"
+		location = 6962
+		division_template = "Heavy Infantry Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+
+			division = {
+		name = "28th Mechanized Infantry Brigade"
+		location = 7095
+		division_template = "Mechanized Guards Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+					division = {
+		name = "6th Mechanized Infantry Brigade"
+		location = 7095
+		division_template = "Mechanized Guards Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+						#9th Corps
+
+		division = {
+		name = "9th Army Corps"
+		location = 8276
+		division_template = "Combined Armored Corps"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+
+					division = {
+		name = "58th Mechanized Infantry Brigade"
+		location = 7294
+		division_template = "Mechanized Guards Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+					division = {
+		name = "2nd Commando Brigade"
+		location = 6962
+		division_template = "Heavy Infantry Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+					division = {
+		name = "49th Commando Brigade"
+		location = 6962
+		division_template = "Heavy Infantry Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+					division = {
+		name = "1st Special Operations Batallion"
+		location = 7437
+		division_template = "Heavy Infantry Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+
+					division = {
+		name = "6th Commando Brigade"
+		location = 7279
+		division_template = "Heavy Infantry Brigade"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1	#
+		}
+}

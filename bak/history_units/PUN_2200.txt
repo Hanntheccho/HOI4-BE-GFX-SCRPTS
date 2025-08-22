@@ -1,0 +1,140 @@
+division_template = {
+	name = "Army Remnant" #Units that are a mix of things to symbolize that these formations a ragtag and adhoc
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		apc = { x = 1 y = 0 }
+		MBT = { x = 2 y = 0 }
+	}
+
+}
+
+
+division_template = {
+	name = "Regrouped Punjabi Armored Division"
+
+	regiments = {
+		apc = { x = 0 y = 0 }
+		apc = { x = 0 y = 1 }
+		apc = { x = 0 y = 2 }
+		MBT = { x = 1 y = 0 }
+		MBT = { x = 1 y = 1 }
+		shock_troops = { x = 2 y = 0 }
+	}
+	support = {
+		artillery = {x = 0 y = 0}
+		engineer = {x = 0 y = 1}
+		maintenance_company = {x = 0 y = 3}
+	}
+}
+
+
+division_template = {
+	name = "Levy Milita Division"	#Big Division# reaaaaally badly equipped
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+		infantry = { x = 2 y = 3 }
+	}
+
+}
+
+
+
+units = {
+
+		division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9774
+		division_template = "Levy Milita Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5 	# Bad Equipment
+		}
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9859
+		division_template = "Levy Milita Division"
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.5 	# Bad Equipment
+		}
+
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9774
+		division_template = "Levy Milita Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6 	# Bad Equipment
+		}
+
+
+
+				division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9783
+		division_template = "Levy Milita Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.6 	# Bad Equipment
+		}
+
+
+					division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9723
+		division_template = "Army Remnant"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9 	#
+		}
+
+
+							division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9756
+		division_template = "Army Remnant"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.9 	#
+		}
+
+
+
+
+									division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9903
+		division_template = "Regrouped Punjabi Armored Division"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.9 	#
+		}
+	}
